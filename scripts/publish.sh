@@ -3,7 +3,7 @@ git add .
 git commit -m 'building'
 git checkout master
 # pull other changes
-git pull origin master
+git pull elewa master
 # enter gitbook source
 cd src
 # build new gitbook
@@ -17,7 +17,7 @@ cd ..
 git add .
 git commit -m 'publishing'
 # publish changes
-git push origin master
+git push elewa master
 
 # to execute this file run this command in terminal:
 # chmod a+x ./publish.sh
