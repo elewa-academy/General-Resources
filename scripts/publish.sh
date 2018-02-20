@@ -10,7 +10,7 @@ cd src
 gitbook build
 # copy it out of the way for branch change
 # f to overwirte last publication
-cp -rf ./_book/. ../docs/ 
+cp -rf ./docs/. ../docs_src/ 
 # return to parent directory
 cd ..
 # commit recent build
