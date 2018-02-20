@@ -5,7 +5,7 @@ git checkout master
 # pull other changes
 git pull elewa master
 # enter gitbook source
-cd src
+cd docs_src
 # build new gitbook
 gitbook build
 # copy it out of the way for branch change
