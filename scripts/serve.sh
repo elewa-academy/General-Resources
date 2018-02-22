@@ -1,7 +1,7 @@
 #  ---  this script does not save or commit  ---
 
 # navigate to gitbook src
-cd docs
+cd docs_src
 
 # start a dev server
 gitbook serve
