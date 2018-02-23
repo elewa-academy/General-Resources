@@ -10,6 +10,7 @@
   * [Software Development](./key-resources/software-development.md)
   * [The Internet](./key-resources/the-internet.md)
 * [Soft Skills](./soft-skills/README.md)
+  * [Reading Sourcecode](./soft-skills/reading-sourcecode.md)
   * [Collaboration](./soft-skills/collaboration.md)
   * [Agile](./soft-skills/agile.md)
   * [SCRUM](./soft-skills/scrum.md)
