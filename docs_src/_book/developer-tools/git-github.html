@@ -1,0 +1,1603 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Git & GitHub · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="debuggers-linters.md" />
+    
+    
+    <link rel="prev" href="code-editors.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Front Page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../key-resources/">
+            
+                <a href="../key-resources/">
+            
+                    
+                    Key Resources
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../key-resources/course-objectives.md">
+            
+                <span>
+            
+                    
+                    Course Objectives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../key-resources/mindset-expectations.md">
+            
+                <span>
+            
+                    
+                    Mindset & Expectations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../key-resources/good-learning-habits.md">
+            
+                <span>
+            
+                    
+                    Good Learning Habits
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../key-resources/problem-solving.html">
+            
+                <a href="../key-resources/problem-solving.html">
+            
+                    
+                    Problem Solving
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../key-resources/programming-paradigms.html">
+            
+                <a href="../key-resources/programming-paradigms.html">
+            
+                    
+                    Programming & Paradigms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../key-resources/software-development.md">
+            
+                <span>
+            
+                    
+                    Software Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../key-resources/the-internet.md">
+            
+                <span>
+            
+                    
+                    The Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../key-resources/using-this-curriculum.html">
+            
+                <a href="../key-resources/using-this-curriculum.html">
+            
+                    
+                    Using This Curriculum
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../soft-skills/">
+            
+                <a href="../soft-skills/">
+            
+                    
+                    Soft Skills
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../soft-skills/reading-sourcecode.html">
+            
+                <a href="../soft-skills/reading-sourcecode.html">
+            
+                    
+                    Reading Sourcecode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../soft-skills/collaboration.md">
+            
+                <span>
+            
+                    
+                    Collaboration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../soft-skills/agile.md">
+            
+                <span>
+            
+                    
+                    Agile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../soft-skills/scrum.md">
+            
+                <span>
+            
+                    
+                    SCRUM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../javascript/">
+            
+                <a href="../javascript/">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../javascript/notional-machine.md">
+            
+                <span>
+            
+                    
+                    Notional Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../javascript/fundamentals.html">
+            
+                <a href="../javascript/fundamentals.html">
+            
+                    
+                    FUNdamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../javascript/es-star.md">
+            
+                <span>
+            
+                    
+                    ES*
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../javascript/async.md">
+            
+                <span>
+            
+                    
+                    Asynchronicity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../javascript/good-practices.md">
+            
+                <span>
+            
+                    
+                    Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../javascript/runtimes-compatibility.md">
+            
+                <span>
+            
+                    
+                    Runtimes & Compatibility
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../javascript/supersets-extensions.md">
+            
+                <span>
+            
+                    
+                    Supersets & Extensions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../javascript/tricky-things.html">
+            
+                <a href="../javascript/tricky-things.html">
+            
+                    
+                    Tricky Things
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../css-html/">
+            
+                <a href="../css-html/">
+            
+                    
+                    CSS & HTML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../css-html/the-basics.md">
+            
+                <span>
+            
+                    
+                    The Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../css-html/html5.md">
+            
+                <span>
+            
+                    
+                    HTML5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../css-html/deeper-css.md">
+            
+                <span>
+            
+                    
+                    Deeper CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../css-html/scss.md">
+            
+                <span>
+            
+                    
+                    SCSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../css-html/sass.md">
+            
+                <span>
+            
+                    
+                    SASS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../css-html/less.md">
+            
+                <span>
+            
+                    
+                    LESS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../programming-resources/">
+            
+                <a href="../programming-resources/">
+            
+                    
+                    Programming Resources
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../programming-resources/from-english-to-code.md">
+            
+                <span>
+            
+                    
+                    From English to Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../programming-resources/clean-code.html">
+            
+                <a href="../programming-resources/clean-code.html">
+            
+                    
+                    Clean Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../programming-resources/testing-101.md">
+            
+                <span>
+            
+                    
+                    Testing 101
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../programming-resources/prebugging-error-handling.md">
+            
+                <span>
+            
+                    
+                    Prebugging & Error-Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../programming-resources/code-project-organization.md">
+            
+                <span>
+            
+                    
+                    Code & Project Organizing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../programming-resources/development-techniques.md">
+            
+                <span>
+            
+                    
+                    Development Techniques
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../programming-resources/pair-programming.md">
+            
+                <span>
+            
+                    
+                    Pair Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Developer Tools
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="chrome.html">
+            
+                <a href="chrome.html">
+            
+                    
+                    Chrome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="terminal.html">
+            
+                <a href="terminal.html">
+            
+                    
+                    Terminal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="code-editors.md">
+            
+                <span>
+            
+                    
+                    Code Editors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.4" data-path="git-github.html">
+            
+                <a href="git-github.html">
+            
+                    
+                    Git & GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="debuggers-linters.md">
+            
+                <span>
+            
+                    
+                    Debuggers & Linters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="npm-node-yarn.md">
+            
+                <span>
+            
+                    
+                    Node/NPM & Yarn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="building-traspilers.md">
+            
+                <span>
+            
+                    
+                    Building & Transpilers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="deployment.md">
+            
+                <span>
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../application-design/">
+            
+                <a href="../application-design/">
+            
+                    
+                    Application Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../application-design/immutable-data.md">
+            
+                <span>
+            
+                    
+                    Pure Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../application-design/objects-in-js.md">
+            
+                <span>
+            
+                    
+                    Objects in JS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../application-design/logic-vs-framework.md">
+            
+                <span>
+            
+                    
+                    Logic vs. Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../application-design/mvc-separation-concerns.html">
+            
+                <a href="../application-design/mvc-separation-concerns.html">
+            
+                    
+                    MVC & Separation of Concerns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../application-design/data-modeling.html">
+            
+                <a href="../application-design/data-modeling.html">
+            
+                    
+                    Data Modeling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../application-design/mvc-lh-dependacny-injection.md">
+            
+                <span>
+            
+                    
+                    MVC-LH & Dependancy Injectionn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../application-design/design-patterns.md">
+            
+                <span>
+            
+                    
+                    Design Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../application-design/restful-routes.html">
+            
+                <a href="../application-design/restful-routes.html">
+            
+                    
+                    RESTful Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../application-design/data-relationships.html">
+            
+                <a href="../application-design/data-relationships.html">
+            
+                    
+                    Data Relationships
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../application-design/apis.md">
+            
+                <span>
+            
+                    
+                    APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../application-design/microservices.html">
+            
+                <a href="../application-design/microservices.html">
+            
+                    
+                    Microservices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../application-design/frontend-apps.md">
+            
+                <span>
+            
+                    
+                    FrontEnd Apps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../application-design/immutable-data.md">
+            
+                <span>
+            
+                    
+                    Immutable Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="../application-design/security.html">
+            
+                <a href="../application-design/security.html">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../core-libraries/">
+            
+                <a href="../core-libraries/">
+            
+                    
+                    Core Libraries
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../core-libraries/core-fs-resources.md">
+            
+                <span>
+            
+                    
+                    Core FS Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../core-libraries/express.md">
+            
+                <span>
+            
+                    
+                    Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../core-libraries/ejs.html">
+            
+                <a href="../core-libraries/ejs.html">
+            
+                    
+                    EJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../core-libraries/jest.md">
+            
+                <span>
+            
+                    
+                    Jest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../core-libraries/mongo-mongoose.md">
+            
+                <span>
+            
+                    
+                    Mongo & Mongoose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../core-libraries/passport.md">
+            
+                <span>
+            
+                    
+                    Passport
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../core-libraries/lodash.html">
+            
+                <a href="../core-libraries/lodash.html">
+            
+                    
+                    Lodash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../core-libraries/react.md">
+            
+                <span>
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../core-libraries/builders-bundlers.html">
+            
+                <a href="../core-libraries/builders-bundlers.html">
+            
+                    
+                    Builders & Bundlers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../other-libs-frwrks/">
+            
+                <a href="../other-libs-frwrks/">
+            
+                    
+                    Other Libs & Frwrks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../other-libs-frwrks/fullstack-tutorials.md">
+            
+                <span>
+            
+                    
+                    Fullstack Tutorials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../other-libs-frwrks/ui-ux-tools-libs.md">
+            
+                <span>
+            
+                    
+                    UI/UX Tools & Libs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../other-libs-frwrks/testing-libs-frwrks.md">
+            
+                <span>
+            
+                    
+                    Testing Libss & Frwrks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../other-libs-frwrks/backend-libs-frwrks.md">
+            
+                <span>
+            
+                    
+                    Backend Libs & Frwrks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../other-libs-frwrks/frontend-libs-frwrks.md">
+            
+                <span>
+            
+                    
+                    Frontend Libs & Frwrks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../other-libs-frwrks/fullstack-frameworks.md">
+            
+                <span>
+            
+                    
+                    Fullstack Frameworks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../cs-101/">
+            
+                <a href="../cs-101/">
+            
+                    
+                    CS 101
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../cs-101/algorithms.md">
+            
+                <span>
+            
+                    
+                    Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../cs-101/recursion.md">
+            
+                <span>
+            
+                    
+                    Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../cs-101/data-structures.md">
+            
+                <span>
+            
+                    
+                    Data Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../in-the-wild/">
+            
+                <a href="../in-the-wild/">
+            
+                    
+                    In The Wild
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../in-the-wild/your-portfolio.md">
+            
+                <span>
+            
+                    
+                    Your Portfolio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../in-the-wild/job-search.md">
+            
+                <span>
+            
+                    
+                    Job Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../in-the-wild/interview-preparation.md">
+            
+                <span>
+            
+                    
+                    Interview Preparation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../in-the-wild/open-source-contributing.html">
+            
+                <a href="../in-the-wild/open-source-contributing.html">
+            
+                    
+                    Open-Source Contributing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Git & GitHub</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="git-and-hub-101">Git and Hub 101</h1>
+<hr>
+<h3 id="why-git-and-github-">Why GIT and GitHub ?</h3>
+<ul>
+<li>GIT: To organize your development process and protect your codebase against human error.</li>
+<li>GitHub: Because finished code isn&apos;t a finished project.  </li>
+</ul>
+<p>In the colaborative world of web development, a project (or your piece of one) isn&apos;t finished until someone else can understand it - be it a co-worker, collaborator, yourself in a month, or some rando. GIT and Github allows you to protect your code against silly mistakes, organize, and document your code so others know how to use it and what to use it for.</p>
+<hr>
+<h3 id="whats-git-">What&apos;s GIT ?</h3>
+<ul>
+<li>Git is a command-line application that allows you to travel through time.  Every commit saves a complete image of your directory structure at the time of commiting (actually your staged directory structure, but whatever for now). </li>
+<li>Git allows you to create alternative universes.  With branches you can save two copies of the same directory that differ by a single file/method/bug/...  This is very practical for testing experimental features, fixing bugs, or sharing work across a group.</li>
+<li>Git allows you to commune with parallel dimensions.  &apos;Pull&apos; and &apos;push&apos; allows your local git commit tree to synchronize with a git tree located anywhere on the internet.  This is how you will use GitHub and how multiple people are able to collaborate on the same codebase.</li>
+</ul>
+<p>Git has more tricks up it&apos;s sleeves, but these 3 will carry farther than you can see without awakening your third eye.</p>
+<h3 id="whats-github-">What&apos;s GitHub ?</h3>
+<p>tl;dr - it can be anything you need it to be.  </p>
+<p>We&apos;ll be discussing the following uses in this course:</p>
+<ul>
+<li>Remote hosting for Git repositories.  With pushing and pulling, you can use GitHub to back up your work.  If you stop there, you&apos;re a fool. GitHub can do so much more for you.</li>
+<li><a href="https://elium-student.github.io" target="_blank">Personal portfolio</a>. GitHub has built-in tools for hosting static pages. With a little ingenuity this can be used to build a pretty sick portfolio that&apos;s fully integrated with your GitHub account.</li>
+</ul>
+<p>These are for you to explore on your own:</p>
+<ul>
+<li>Social network and linkedin for developers.</li>
+<li>Project hosting and project management.</li>
+<li>An infinite library of useful code to study or use. </li>
+<li>Interactive documentation.</li>
+<li>Integrator with many apps - we&apos;ve used sketchboard.io&apos;s integration.</li>
+<li></li>
+</ul>
+<p>We&apos;ve created this curriculum entirely on GitHub relying mostly on these features: github pages, organizations, issues, repo hosting, and projects.</p>
+<hr>
+<h3 id="how-does-this-all-fit-together-">How does this all fit together ?</h3>
+<p><img src="https://github.com/jankeLearning/diagrams/blob/master/git-hub/where-it-fits.png" alt=""></p>
+<p>Git is like a really <strong>epic save button</strong> for your files and directories - officially Git is called a version control system.</p>
+<p>To compare, a <em>save</em> in a text editor would record all of the words of a document as a single file. You are only ever given one record of the file like <code>essay.doc</code> unless you make duplicate copies (which would be difficult to remember to do and keep track of):</p>
+<p><code>essay-draft1.doc</code>, <code>essay-draft2.doc</code>, <code>essay-final.doc</code></p>
+<p>A <em>save</em> in Git however, would record differences of files and folders AND keep a <strong>historical record of each save</strong>. This feature is a game changer. As an individual developer, Git enables you to review how your project grows and to easily look at or restore file states from the past. Once connected to a network, Git allows you to push your project to GitHub for sharing and collaborating with other developers.</p>
+<p>While Git works on your <em>local</em> machine, GitHub is a <em>remote</em> storage facility on the web for all your coding projects. This means that by learning Git, you will get to showcase your portfolio on GitHub! This is really important because almost all software development companies consider the ability to use Git as an <strong>essential skill for a modern web developer</strong> to have; having a portfolio will provide proof to future potential employers as to what you are capable of.</p>
+<p>In the next lesson we will go over the basic workflow of using Git which should enhance your understanding and demonstrate why Git is so useful.</p>
+<p>And finally, you will set up a project with Git and this will serve as a template for setting up your future projects.</p>
+<h2 id="learning-outcome">Learning Outcome:</h2>
+<p><em>By the end of this lesson you should be able to:</em></p>
+<ul>
+<li>Define what kind of program Git is</li>
+<li>Describe the differences between Git and a text editor in terms of what they save and their record keeping</li>
+<li>Describe whether Git and GitHub work at a local or remote level</li>
+<li>Describe why Git is useful for an individual developer and a team of developers    </li>
+</ul>
+<hr>
+<h2 id="ssh-keys">SSH keys</h2>
+<p><a href="https://jdblischak.github.io/2014-09-18-chicago/novice/git/05-sshkeys.html" target="_blank">a how and why to article</a></p>
+<hr>
+<p>Study resources:</p>
+<ul>
+<li><a href="https://blog.red-badger.com/blog/2016/11/29/gitgithub-in-plain-english" target="_blank">Git and Github in plain English</a>.  Out standing overview.</li>
+<li>Complete <a href="https://www.vikingcodeschool.com/web-development-basics/getting-to-know-git" target="_blank">git workflow and overview</a>.</li>
+<li><p>The <a href="https://github.com/adrianholovaty/git_workflow" target="_blank">git workflow cheatsheet</a> to git.  All the commands you need for our workflow.</p>
+</li>
+<li><p>Derek Banas&apos; <a href="https://www.youtube.com/watch?v=r63f51ce84A" target="_blank">introduction videos</a>, if you&apos;re into videos.  </p>
+</li>
+<li>A little <a href="https://www.youtube.com/watch?v=1h9_cB9mPT8&amp;feature=youtu.be&amp;t=13s" target="_blank">history</a></li>
+<li>Comprehensive [git CheatSheet] from Tiimgreen(<a href="https://github.com/tiimgreen/github-cheat-sheet" target="_blank">https://github.com/tiimgreen/github-cheat-sheet</a>).</li>
+<li>Learn <a href="http://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html" target="_blank">git tagging</a>.  </li>
+<li>Another great resource for understanding tags in git (<a href="https://www.youtube.com/watch?v=Yvy5PijsVZw" target="_blank">https://www.youtube.com/watch?v=Yvy5PijsVZw</a>)</li>
+<li><a href="http://jlord.us/git-it/" target="_blank">Some common tasks</a></li>
+</ul>
+<p>Practice resources: </p>
+<ul>
+<li>The best place to <a href="http://learngitbranching.js.org/" target="_blank">practice git branching</a>.</li>
+<li>A <a href="https://www.git-game.com" target="_blank">CLI game</a>.  Play is learning.</li>
+<li>For the very technical, this site helps you learn Git by <a href="http://kushagragour.in/blog/2014/01/build-git-learn-git/" target="_blank">building Git</a> - super cool</li>
+<li><a href="http://www.vikingcodeschool.com/web-development-basics/git-calisthenics" target="_blank">Git Calisthenics</a>.</li>
+</ul>
+<p>THE resource: </p>
+<ul>
+<li>I you REALLY want to know <a href="https://www.youtube.com/watch?v=1ffBJ4sVUb4&amp;list=TLj1nt5nzukA8" target="_blank">how git works</a>. </li>
+</ul>
+<p>Practice projects:</p>
+<ol>
+<li><a href="https://github.com/jankeLearning/content-md/git/project-1-basics.md" target="_blank">basics</a>  // dead link </li>
+<li><a href="https://github.com/jankeLearning/content-md/git/project-2-branching.md" target="_blank">branching</a>  </li>
+<li><a href="https://github.com/jankeLearning/content-md/git/project-3-decommitting.md" target="_blank">undoing commits</a>  </li>
+</ol>
+<p>We will be doing almost everything on GitHub.  GitHub comes with many great tools for collaboration.  These are the elementals.</p>
+<h2 id="projects">projects</h2>
+<p>repos</p>
+<h1 id="github-repos-1">GitHub Repos 1</h1>
+<p>Finished code isn&apos;t a finished project.  Navigable and helpful GitHub repositories are finished projects. Fortunately git provides all the tools necessary to organize your code in a developer-friendly way and GitHub provides a great interface for exploring well-organized projects.</p>
+<p>Building a good repo is a little tricky and will take some practice.  It requires careful planning and extra attention through your development process.  At the end you will have something that looks like this: <a href="https://github.com/elium-student/my-first-repo" target="_blank">A complete repository</a>.</p>
+<hr>
+<h3 id="what-makes-a-good-repo">What makes a good repo?</h3>
+<p>You will begin implementing these features in week 1 project:</p>
+<ul>
+<li><a href="https://gist.github.com/PurpleBooth/109311bb0361f32d87a2" target="_blank">An informative README</a></li>
+<li><a href="http://semver.org" target="_blank">Version tags</a> - versions are fully functional releases, they can be downloaded and run without crashing.</li>
+<li>Branches - gh-pages branch, master release branch. </li>
+<li>gh-pages demo
+*tests - for now, simple hand-build testing suites</li>
+</ul>
+<p>Later in the course we will discuss how to use these features in a repo:</p>
+<ul>
+<li>documentation - wiki, gh-pages, markdown.  There are many ways to do this</li>
+<li>Full testing suites</li>
+<li>Contributing guidelines - ideas for contributors, code of conduct, ...</li>
+<li>Github projects - for organizing collaborative directly in the repo</li>
+<li>Pull requests and issues</li>
+</ul>
+<p>This lesson is the first in a series of lessons that will cover how to use GitHub to organize your entire development process.  This series will include lessons on Agile and Scrum methodologies by Juan David and will culminate in the final colaborative projects in the last 4 weeks of this program.</p>
+<hr>
+<h3 id="skillz">skillz</h3>
+<p>These skills will be necesary for completing week 1&apos;s GitHub project:  </p>
+<ul>
+<li>committing, branching, and tagging locally.</li>
+<li>pushing and pulling from remote branches  </li>
+<li>pushing tags to remote repos  </li>
+<li>hosting a gh-pages static site  </li>
+</ul>
+<hr>
+<p>gh-pages</p>
+<hr>
+<h3 id="gists">Gists</h3>
+<p>These are designed for sharing code snippets.  You can send them as a link, edit them, fork them, and they stay connected to your GitHub account so you can always find them back. They&apos;re ideal for asking questions over slack, copy-pasting error messages and notes on solving them, sharing solutions, or sharing neat tricks.  Simple to use but crucial. </p>
+<ul>
+<li>Create a new gist <a href="https://gist.github.com" target="_blank">HERE</a></li>
+<li>Search ALL gists <a href="https://gist.github.com/discover" target="_blank">HERE</a></li>
+<li><a href="https://help.github.com/articles/about-gists/" target="_blank">About Gists</a></li>
+<li><a href="https://help.github.com/articles/creating-gists/" target="_blank">How-to</a></li>
+</ul>
+<hr>
+<h3 id="issues">Issues</h3>
+<p>These are part of the GitHub workflow. Issues are connected to a specific repository.  You can use them as a todo list, to assign tasks to team members, or as notes for yourself.  Using these effectively can be tricky, it requires organization and planning.  </p>
+<ul>
+<li><a href="https://help.github.com/articles/about-issues/" target="_blank">About Issues</a></li>
+<li><a href="https://guides.github.com/features/issues/" target="_blank">How-to Issues</a></li>
+<li><a href="https://developer.github.com/v3/issues/" target="_blank">Dominate Issues</a></li>
+</ul>
+<hr>
+<h3 id="pull-requests">Pull Requests</h3>
+<p>These are used for contributing to other people&apos;s GitHub repositories.  You will be using pull requests to improve your content over the next 3 months.  If you&apos;re reading a lesson and would like suggest better wording, new resources, extra exercises, ...  send us a pull request!  You&apos;ll be getting practice collaborating and improving your classmate&apos;s study materials at the same time.</p>
+<ul>
+<li><a href="https://help.github.com/articles/about-pull-requests/" target="_blank">About Pull Requests</a></li>
+<li><a href="https://gist.github.com/Chaser324/ce0505fbed06b947d962" target="_blank">Fork - Work - Pull Request  tutorial</a></li>
+<li><a href="https://yangsu.github.io/pull-request-tutorial/" target="_blank">Complete pull/merge cycle tutorial</a></li>
+</ul>
+<p>full project repos</p>
+<pre><code>pages
+    live demo or landing page - something more marketing-oriented
+wiki
+    documentation, auto-generated - where a developer would go to learn how to use it
+readmes
+    practical navigation of codebase - one per folder
+issues
+    tasks - used to assign work to team-members. cards on projects
+project
+    managing progress of issues
+pull requests
+    merging eachother&apos;s things. cards on projects
+branches
+    for developing features or fixing bugs 
+versions
+    stable releases, don&apos;t all need to be on master
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="code-editors.md" class="navigation navigation-prev " aria-label="Previous page: Code Editors">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="debuggers-linters.md" class="navigation navigation-next " aria-label="Next page: Debuggers & Linters">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Git & GitHub","level":"1.7.4","depth":2,"next":{"title":"Debuggers & Linters","level":"1.7.5","depth":2,"path":"developer-tools/debuggers-linters.md","ref":"./developer-tools/debuggers-linters.md","articles":[]},"previous":{"title":"Code Editors","level":"1.7.3","depth":2,"path":"developer-tools/code-editors.md","ref":"./developer-tools/code-editors.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"developer-tools/git-github.md","mtime":"2018-02-23T11:24:51.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-02-23T11:36:28.402Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
