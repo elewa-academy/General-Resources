@@ -1,0 +1,1 @@
+those developer skills that don't involve writing code
