@@ -78,5 +78,6 @@
   * [Recursion](./cs-101/recursion.md)
   * [Data Structures](./cs-101/data-structures.md)
 * [Professional Resources](./professional-resources/README.md)
+  * [Your Portfolio](./professional-resources/your-portfolio.md)
   * [Job Search](./professional-resources/job-search.md)
   * [Interview Preparation](./professional-resources/interview-preparation.md)
