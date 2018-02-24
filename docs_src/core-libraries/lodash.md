@@ -13,3 +13,4 @@ Exercises
 * [TDD style](https://github.com/karolbilicki/lodash-exercises/blob/master/index.js)     
 * [also TDD style](https://codepen.io/katyjustiss/pen/RPrYYO)  
 * [ironhack labs](https://github.com/ironhack-labs/lab-javascript-lodash-exercises).  Most comprehensive set here  
+
