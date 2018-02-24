@@ -1,0 +1,1578 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Clean Code · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="testing-101.md" />
+    
+    
+    <link rel="prev" href="from-english-to-code.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Front Page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../key-resources/">
+            
+                <a href="../key-resources/">
+            
+                    
+                    Key Resources
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../key-resources/course-objectives.md">
+            
+                <span>
+            
+                    
+                    Course Objectives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../key-resources/mindset-expectations.md">
+            
+                <span>
+            
+                    
+                    Mindset & Expectations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../key-resources/good-learning-habits.md">
+            
+                <span>
+            
+                    
+                    Good Learning Habits
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../key-resources/problem-solving.html">
+            
+                <a href="../key-resources/problem-solving.html">
+            
+                    
+                    Problem Solving
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../key-resources/programming-paradigms.html">
+            
+                <a href="../key-resources/programming-paradigms.html">
+            
+                    
+                    Programming & Paradigms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../key-resources/software-development.md">
+            
+                <span>
+            
+                    
+                    Software Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../key-resources/the-internet.md">
+            
+                <span>
+            
+                    
+                    The Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../key-resources/using-this-curriculum.html">
+            
+                <a href="../key-resources/using-this-curriculum.html">
+            
+                    
+                    Using This Curriculum
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../soft-skills/">
+            
+                <a href="../soft-skills/">
+            
+                    
+                    Soft Skills
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../soft-skills/reading-sourcecode.html">
+            
+                <a href="../soft-skills/reading-sourcecode.html">
+            
+                    
+                    Reading Sourcecode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../soft-skills/collaboration.md">
+            
+                <span>
+            
+                    
+                    Collaboration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../soft-skills/agile.md">
+            
+                <span>
+            
+                    
+                    Agile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../soft-skills/scrum.md">
+            
+                <span>
+            
+                    
+                    SCRUM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../javascript/">
+            
+                <a href="../javascript/">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../javascript/notional-machine.md">
+            
+                <span>
+            
+                    
+                    Notional Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../javascript/fundamentals.html">
+            
+                <a href="../javascript/fundamentals.html">
+            
+                    
+                    FUNdamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../javascript/es-star.md">
+            
+                <span>
+            
+                    
+                    ES*
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../javascript/async.md">
+            
+                <span>
+            
+                    
+                    Asynchronicity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../javascript/good-practices.md">
+            
+                <span>
+            
+                    
+                    Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../javascript/runtimes-compatibility.md">
+            
+                <span>
+            
+                    
+                    Runtimes & Compatibility
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../javascript/supersets-extensions.md">
+            
+                <span>
+            
+                    
+                    Supersets & Extensions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../javascript/tricky-things.html">
+            
+                <a href="../javascript/tricky-things.html">
+            
+                    
+                    Tricky Things
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../css-html/">
+            
+                <a href="../css-html/">
+            
+                    
+                    CSS & HTML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../css-html/the-basics.md">
+            
+                <span>
+            
+                    
+                    The Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../css-html/html5.md">
+            
+                <span>
+            
+                    
+                    HTML5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../css-html/deeper-css.md">
+            
+                <span>
+            
+                    
+                    Deeper CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../css-html/scss.md">
+            
+                <span>
+            
+                    
+                    SCSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../css-html/sass.md">
+            
+                <span>
+            
+                    
+                    SASS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../css-html/less.md">
+            
+                <span>
+            
+                    
+                    LESS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Programming Resources
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="from-english-to-code.md">
+            
+                <span>
+            
+                    
+                    From English to Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="clean-code.html">
+            
+                <a href="clean-code.html">
+            
+                    
+                    Clean Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="testing-101.md">
+            
+                <span>
+            
+                    
+                    Testing 101
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="prebugging-error-handling.md">
+            
+                <span>
+            
+                    
+                    Prebugging & Error-Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="code-project-organization.md">
+            
+                <span>
+            
+                    
+                    Code & Project Organizing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="development-techniques.md">
+            
+                <span>
+            
+                    
+                    Development Techniques
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="pair-programming.md">
+            
+                <span>
+            
+                    
+                    Pair Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../developer-tools/">
+            
+                <a href="../developer-tools/">
+            
+                    
+                    Developer Tools
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../developer-tools/chrome.html">
+            
+                <a href="../developer-tools/chrome.html">
+            
+                    
+                    Chrome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../developer-tools/terminal.html">
+            
+                <a href="../developer-tools/terminal.html">
+            
+                    
+                    Terminal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../developer-tools/code-editors.md">
+            
+                <span>
+            
+                    
+                    Code Editors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../developer-tools/git-github.html">
+            
+                <a href="../developer-tools/git-github.html">
+            
+                    
+                    Git & GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../developer-tools/debuggers-linters.md">
+            
+                <span>
+            
+                    
+                    Debuggers & Linters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../developer-tools/npm-node-yarn.md">
+            
+                <span>
+            
+                    
+                    Node/NPM & Yarn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../developer-tools/building-traspilers.md">
+            
+                <span>
+            
+                    
+                    Building & Transpilers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../developer-tools/deployment.md">
+            
+                <span>
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../application-design/">
+            
+                <a href="../application-design/">
+            
+                    
+                    Application Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../application-design/immutable-data.md">
+            
+                <span>
+            
+                    
+                    Pure Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../application-design/objects-in-js.md">
+            
+                <span>
+            
+                    
+                    Objects in JS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../application-design/logic-vs-framework.md">
+            
+                <span>
+            
+                    
+                    Logic vs. Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../application-design/mvc-separation-concerns.html">
+            
+                <a href="../application-design/mvc-separation-concerns.html">
+            
+                    
+                    MVC & Separation of Concerns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../application-design/data-modeling.html">
+            
+                <a href="../application-design/data-modeling.html">
+            
+                    
+                    Data Modeling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../application-design/mvc-lh-dependacny-injection.md">
+            
+                <span>
+            
+                    
+                    MVC-LH & Dependancy Injectionn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../application-design/design-patterns.md">
+            
+                <span>
+            
+                    
+                    Design Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../application-design/restful-routes.html">
+            
+                <a href="../application-design/restful-routes.html">
+            
+                    
+                    RESTful Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../application-design/data-relationships.html">
+            
+                <a href="../application-design/data-relationships.html">
+            
+                    
+                    Data Relationships
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../application-design/apis.md">
+            
+                <span>
+            
+                    
+                    APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../application-design/microservices.html">
+            
+                <a href="../application-design/microservices.html">
+            
+                    
+                    Microservices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../application-design/frontend-apps.md">
+            
+                <span>
+            
+                    
+                    FrontEnd Apps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../application-design/immutable-data.md">
+            
+                <span>
+            
+                    
+                    Immutable Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="../application-design/security.html">
+            
+                <a href="../application-design/security.html">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../core-libraries/">
+            
+                <a href="../core-libraries/">
+            
+                    
+                    Core Libraries
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../core-libraries/core-fs-resources.md">
+            
+                <span>
+            
+                    
+                    Core FS Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../core-libraries/express.md">
+            
+                <span>
+            
+                    
+                    Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../core-libraries/ejs.html">
+            
+                <a href="../core-libraries/ejs.html">
+            
+                    
+                    EJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../core-libraries/jest.md">
+            
+                <span>
+            
+                    
+                    Jest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../core-libraries/mongo-mongoose.md">
+            
+                <span>
+            
+                    
+                    Mongo & Mongoose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../core-libraries/passport.md">
+            
+                <span>
+            
+                    
+                    Passport
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../core-libraries/lodash.html">
+            
+                <a href="../core-libraries/lodash.html">
+            
+                    
+                    Lodash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../core-libraries/react.md">
+            
+                <span>
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../core-libraries/builders-bundlers.html">
+            
+                <a href="../core-libraries/builders-bundlers.html">
+            
+                    
+                    Builders & Bundlers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../other-libs-frwrks/">
+            
+                <a href="../other-libs-frwrks/">
+            
+                    
+                    Other Libs & Frwrks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../other-libs-frwrks/fullstack-tutorials.md">
+            
+                <span>
+            
+                    
+                    Fullstack Tutorials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../other-libs-frwrks/ui-ux-tools-libs.md">
+            
+                <span>
+            
+                    
+                    UI/UX Tools & Libs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../other-libs-frwrks/testing-libs-frwrks.md">
+            
+                <span>
+            
+                    
+                    Testing Libss & Frwrks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../other-libs-frwrks/backend-libs-frwrks.md">
+            
+                <span>
+            
+                    
+                    Backend Libs & Frwrks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../other-libs-frwrks/frontend-libs-frwrks.md">
+            
+                <span>
+            
+                    
+                    Frontend Libs & Frwrks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../other-libs-frwrks/fullstack-frameworks.md">
+            
+                <span>
+            
+                    
+                    Fullstack Frameworks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../cs-101/">
+            
+                <a href="../cs-101/">
+            
+                    
+                    CS 101
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../cs-101/algorithms.md">
+            
+                <span>
+            
+                    
+                    Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../cs-101/recursion.md">
+            
+                <span>
+            
+                    
+                    Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../cs-101/data-structures.md">
+            
+                <span>
+            
+                    
+                    Data Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../in-the-wild/">
+            
+                <a href="../in-the-wild/">
+            
+                    
+                    In The Wild
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../in-the-wild/your-portfolio.md">
+            
+                <span>
+            
+                    
+                    Your Portfolio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../in-the-wild/job-search.md">
+            
+                <span>
+            
+                    
+                    Job Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../in-the-wild/interview-preparation.md">
+            
+                <span>
+            
+                    
+                    Interview Preparation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../in-the-wild/open-source-contributing.html">
+            
+                <a href="../in-the-wild/open-source-contributing.html">
+            
+                    
+                    Open-Source Contributing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Clean Code</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="writing-readable-code">Writing Readable Code</h1>
+<p>Developers spend SO MUCH more time reading code than writing it.  This is true even with your own code.  As a favor to yourself and whoever will need to use, maintain or develop your code, please learn to write readable code. </p>
+<p>But what about documentation, Evan?  Good question other Evan.  </p>
+<p>Documentation does not remove the need for readable code.  Documentation is for users with no interest in reading source code; readable code is for developers who want to study, modify, fix, update, or in anyother way work with your codebase. (Including your futur self.  Love yourself.)  </p>
+<p>There are many different opinions on what constitutes great JavaScript code.  The most important thing is just that you&apos;re consistent.  The war between coders that use tabs and coders that use spaces to indent their code is so engrained that <a href="https://www.youtube.com/watch?v=SsoOG6ZeyUI" target="_blank">it&apos;s essentially a joke by now</a>, but it doesn&apos;t <em>really</em> matter as long as you&apos;re consistent.</p>
+<hr>
+<h3 id="self-documenting-code">Self-Documenting Code</h3>
+<p>Self-documenting code is code that reads almost like a very nerdy book.  </p>
+<p>You have already begun your journey towards self-documenting code and you didn&apos;t even know it.  If you look to the process presented in <em>tictactoes</em>, the step from specs to empty code is giving you the start of a user-friendly project. The specs can become documentation for end-users, while the codebase is on it&apos;s way to being developmer-friendly:</p>
+<ul>
+<li>The comments are pulled from the &apos;purpose&apos; field of the spec - this gaurentees that you will have a &apos;why&apos; comment for each component of the code. </li>
+<li>You are building your code around pure functions.</li>
+<li><p>The required functions, arguments, and return values are pre-declared with descriptive names.</p>
+<p>Glorious.</p>
+<hr>
+<h3 id="rules-of-thumb">Rules of Thumb</h3>
+<p>Structural:</p>
+<ul>
+<li>Place all the &apos;workings&apos; of your app in one place.  This means function calls, important variable assignments (or reassignment), and any other lines crucial to understanding your code.   With good naming, this can make your app read like a continuous story instead of a bunch of sentences split up through a phone book. (see example) </li>
+<li>Use single-purpose, pure functions with simple, understandable behavior.</li>
+<li>Have a helpful directory structure</li>
+<li>Within a single file - organize variables, functions, objects, ... in a way that makes sense so you don&apos;t have to rescan the whole file all the time.</li>
+</ul>
+<p>Naming:</p>
+<ul>
+<li>All names of things describe what they do, even if it means having realllly long names. </li>
+<li>Write helpful error messages</li>
+<li>Decide on and stick to a naming convention. ie. camelCase or under_scores, var forty_two = 42, ...</li>
+</ul>
+<p>Syntax:</p>
+<ul>
+<li>Use <a href="https://github.com/prettier/prettier" target="_blank">prettier.js</a> to make your coding style consistent. (white space, code blocks, functions, ... visually consistent)</li>
+</ul>
+</li>
+<li>Show intermediate values. ie. none of this: (array[3])()[title].name.splice(3)</li>
+<li>Phrase things in the most clear way, not the most &apos;elegant&apos; or short way.  No one will care how brilliant you are when they&apos;re 15 minutes in and just starting to understand your code. (personal experience here)</li>
+</ul>
+<p><strong>Do Complete Refactors</strong>.  </p>
+<ul>
+<li>When your application or code changes, go through (at least most of) your codebase to reflect that change - modify variable and function names, reorganize what functions do what, even change your directory strucutre.  </li>
+</ul>
+<p>The better you are about starting with readable code, the easier it will be to keep your code readable.</p>
+<hr>
+<h3 id="two-examples">Two Examples</h3>
+<h3 id="1">1</h3>
+<p>Consider the following 2 snippets of JavaScript:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// difficult to read</span>
+<span class="hljs-keyword">const</span> x = 
+<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">z</span>) </span>{
+<span class="hljs-keyword">let</span> w = <span class="hljs-number">0</span>;z.forEach(
+<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">q</span>)</span>{
+     w += q;
+});<span class="hljs-keyword">return</span> w;
+};
+
+x([<span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>]);
+
+<span class="hljs-comment">// easy to read</span>
+<span class="hljs-keyword">const</span> sumArray = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">array</span>) </span>{
+  <span class="hljs-keyword">let</span> sum = <span class="hljs-number">0</span>;
+  array.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">number</span>) </span>{
+    sum += number;
+  });
+  <span class="hljs-keyword">return</span> sum;
+};
+
+sumArray([<span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>]);
+</code></pre>
+<p>Believe it or not, both of those functions do the exact same thing (in the exact same way!), and both of them are perfectly valid code, but obviously the second one is much easier to follow.  Imagine you&apos;re working on a project with someone else and they&apos;ve written the first function... how long is it going to take you to figure out what&apos;s going on there so you can do your work?  Imagine you&apos;re working on a project all by yourself and YOU wrote the first function a week or two ago... chances are good that you aren&apos;t going to remember exactly what you were up to there and it&apos;s <em>still</em> going to take you a good while to figure it all out again.</p>
+<p>The second one, however, is much easier to follow.  Even if you don&apos;t know exactly what everything in the code is doing, things are named clearly enough that you could guess, and the indentation is consistent enough that it&apos;s easy to parse the different parts of the function.</p>
+<h4 id="2">2</h4>
+<ul>
+<li><pre><code class="lang-javascript"> <span class="hljs-comment">// -----------  Define things in one place ------------ //</span>
+ <span class="hljs-keyword">var</span> command_line_args = process.argv.slice(<span class="hljs-number">2</span>);
+ <span class="hljs-keyword">var</span> first_arg = command_line_args[<span class="hljs-number">0</span>];
+ <span class="hljs-keyword">var</span> second_arg = command_line_args[<span class="hljs-number">1</span>];
+ <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">check_input_type</span>(<span class="hljs-params">input, expected_type</span>) </span>{
+         <span class="hljs-comment">// return true or false</span>
+     };
+ <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add_two_numbers</span>(<span class="hljs-params">num_1, num_2</span>) </span>{
+         <span class="hljs-comment">// return the sum of num_1, num_2</span>
+     };
+ <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">display_to_user</span>(<span class="hljs-params">result</span>) </span>{
+         <span class="hljs-comment">// console log result</span>
+     };
+
+ <span class="hljs-comment">// ------------- Use the stuff you defined elsewhere --------------- //</span>
+ <span class="hljs-keyword">var</span> first_arg_is_valid = check_input_type( first_arg );
+ <span class="hljs-keyword">var</span> second_arg_is_valid = check_input_type( second_arg );
+ <span class="hljs-keyword">if</span> (first_arg_is_valid &amp;&amp; second_arg_is_valid) {
+     <span class="hljs-keyword">var</span> sum_of_args = add_two_numbers( first_arg, second_arg );
+     display_to_user( sum_of_args );
+ } <span class="hljs-keyword">else</span> {
+     display_to_user( <span class="hljs-string">&quot; invalid argument types &quot;</span> );
+ };
+</code></pre>
+<p>This is overkill for code that only adds two numbers, but it gets the point across. In more complicated or abstract programs the time spent writing clear code will more than pay off later.</p>
+</li>
+</ul>
+<hr>
+<h3 id="resources">Resources</h3>
+<p>Mandatory reads:</p>
+<ol>
+<li><a href="https://blog.codinghorror.com/coding-without-comments/" target="_blank">avoid comments</a></li>
+<li>when you can&apos;t, <a href="https://blog.codinghorror.com/when-good-comments-go-bad/" target="_blank">make sure they help</a></li>
+<li>and certainly learn to know <a href="https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/" target="_blank">when they are apropriate</a>  </li>
+<li><a href="http://wiki.c2.com/?CodeForTheMaintainer" target="_blank">code for the maintainer</a>. <a href="https://blog.codinghorror.com/the-noble-art-of-maintenance-programming/" target="_blank">They deserve your respect</a>    </li>
+</ol>
+<p>Other resources:</p>
+<ul>
+<li><a href="https://www.sitepoint.com/self-documenting-javascript/" target="_blank">JS tips</a></li>
+<li><a href="https://onextrapixel.com/10-principles-for-keeping-your-programming-code-clean/" target="_blank">general frontend tips</a></li>
+<li><a href="https://www.martinfowler.com/bliki/CodeAsDocumentation.html" target="_blank">a nice op-ed</a></li>
+<li>THE complete guide to <a href="http://wiki.c2.com/?SelfDocumentingCode" target="_blank">self-documenting code</a></li>
+<li><a href="https://onextrapixel.com/10-principles-for-keeping-your-programming-code-clean/" target="_blank">another article</a>  </li>
+<li><a href="https://github.com/airbnb/javascript" target="_blank">Airbnb style guid</a>  </li>
+<li><a href="https://watchandcode.com/p/premium" target="_blank">Watch and Code</a>. Gordon teaches reading code, but costs a little.  </li>
+<li><a href="http://javascriptissexy.com/beautiful-javascript-easily-create-chainable-cascading-methods-for-expressiveness/" target="_blank">chaining methods to write sentences</a>  </li>
+<li><a href="https://www.youtube.com/watch?v=UjhX2sVf0eg" target="_blank">youtube says it</a>  </li>
+<li><a href="http://read.humanjavascript.com/ch03-code-for-humans.html" target="_blank">js for humans</a>       </li>
+</ul>
+<hr>
+<h1 id="your-assignment">Your Assignment</h1>
+<p>Read through these articles that discuss a few elements of writing good clean code.</p>
+<ol>
+<li><a href="https://www.sitepoint.com/self-documenting-javascript/" target="_blank">This article about self-documenting JavaScript</a>. (It&apos;s not as crazy as it sounds)  </li>
+<li><a href="https://onextrapixel.com/10-principles-for-keeping-your-programming-code-clean/" target="_blank">This list of clean-code tips</a>.  </li>
+<li><p><a href="https://blog.codinghorror.com/coding-without-comments/" target="_blank">This article</a>, <a href="https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/" target="_blank">and this one too</a> about the role of comments in your code.</p>
+<hr>
+<h3 id="bonus-section---literate-programming">Bonus Section - LITERATE PROGRAMMING</h3>
+<p>If you take this concept to it&apos;s absurd conclusion you arrive at something called <strong>Literate Programming</strong>.  In literate programming, the reader comes first and the computer second.  A &apos;literate program&apos; reads and looks like a story with code snippets where you would expect illustrations. We won&apos;t talk about this paradigm in class but it&apos;s worth a look if you&apos;re interested</p>
+</li>
+</ol>
+<p>Literate resources:</p>
+<ul>
+<li><a href="https://github.com/zyedidia/Literate" target="_blank">A tool for writing literate programs</a>.  This repo is a CLI that allows you to write your program in markdown with snippets of JS interspersed.  It will then compile the markdown into JS.  What&apos;s super cool about this tool is you can use it for programming in any language.  The examples are in C and I bet you could still understand them.</li>
+<li><a href="http://www.literateprogramming.com/knuthweb.pdf" target="_blank">The original paper by proposing Literate Programming</a>.  <a href="http://www-cs-faculty.stanford.edu/~knuth/" target="_blank">Donald Knuth</a> came up with the idea.  He&apos;s brilliant. Awards have been invented so he could recieve them.   </li>
+<li><a href="http://fgiasson.com/blog/index.php/2016/06/09/literate-programming-and-team-development/" target="_blank">Collaborating with Literate Programming</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="from-english-to-code.md" class="navigation navigation-prev " aria-label="Previous page: From English to Code">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="testing-101.md" class="navigation navigation-next " aria-label="Next page: Testing 101">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Clean Code","level":"1.6.2","depth":2,"next":{"title":"Testing 101","level":"1.6.3","depth":2,"path":"programming-resources/testing-101.md","ref":"./programming-resources/testing-101.md","articles":[]},"previous":{"title":"From English to Code","level":"1.6.1","depth":2,"path":"programming-resources/from-english-to-code.md","ref":"./programming-resources/from-english-to-code.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"programming-resources/clean-code.md","mtime":"2018-02-23T11:11:00.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-02-24T11:10:39.726Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
