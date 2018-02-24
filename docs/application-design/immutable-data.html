@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Microservices · GitBook</title>
+        <title>Pure Functions · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="frontend-apps.md" />
+    <link rel="next" href="objects-in-js.md" />
     
     
-    <link rel="prev" href="sessions-authentication.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -819,7 +819,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="immutable-data.html">
+        <li class="chapter active" data-level="1.8.1" data-path="immutable-data.html">
             
                 <a href="immutable-data.html">
             
@@ -962,7 +962,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.8.12" data-path="microservices.html">
+        <li class="chapter " data-level="1.8.12" data-path="microservices.html">
             
                 <a href="microservices.html">
             
@@ -988,7 +988,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.14" data-path="immutable-data.html">
+        <li class="chapter active" data-level="1.8.14" data-path="immutable-data.html">
             
                 <a href="immutable-data.html">
             
@@ -1437,7 +1437,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Microservices</a>
+        <a href=".." >Pure Functions</a>
     </h1>
 </div>
 
@@ -1452,21 +1452,22 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="microservices">Microservices</h1>
-<blockquote>
-<p><strong>&quot;The secret to building large apps is never build large apps. Break your  applications into small pieces. Then, assemble those testable, bite-sized pieces into your big application&quot;</strong>
-  -Justin Meyer, author JavaScriptMVC</p>
-</blockquote>
+                                <h1 id="immutable-dataflow">Immutable Dataflow</h1>
+<p>Immutability is taking the idea of pure functions and taking it all the way home.  </p>
+<p>Roughly speaking, its the idea that everything in your program is either a pure function or a piece of data.  Pieces of data can never ever be changed under any circumstances.  Rather than modifying data, you create new copies that are different from the original.  </p>
+<p>So far we have had our model hold the single and only copy of state, our whole app was secondary to the database.  Modern apps are more and more distributed, state is more and more dynamic. This change gives a lot of flexibility and power but also opens your app up to enormous bugs.  What if two users update the same db entry at the same time and the changes aren&apos;t synced?  </p>
+<p>Immutable data is a design strategy to help fight this risk.</p>
+<p>The concept is simple enough, integrating it effectively into an application is quite a bit trickier.  You will have plenty of chance to practice with REACT.</p>
 <hr>
 <h3 id="resources">Resources</h3>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=CKL3fV5UR8w" target="_blank">short, sweet video</a>  </li>
-<li><a href="https://www.youtube.com/watch?v=QAvYmDeA-mg" target="_blank">more detailed video</a>  </li>
-<li><a href="https://github.com/jankeLearning/projects/tree/master/tictactoes/5-microservices" target="_blank">tictactoes 5</a> - example code.  </li>
-<li><a href="https://github.com/snielsson/simple-service-layer-architecture-for-node-express-apps" target="_blank">a pre-fab app template</a>  </li>
-<li><a href="https://thenewstack.io/microservices-node-js/" target="_blank">microservices and functional programming</a>  </li>
-<li><a href="https://addyosmani.com/largescalejavascript/" target="_blank">Heavy, advanced, totally worth it</a>  </li>
-<li><a href="https://blog.risingstack.com/node-hero-node-js-project-structure-tutorial/" target="_blank">Nodehero</a>  </li>
+<li><a href="https://www.youtube.com/watch?v=4LzcQyZ9JOU" target="_blank">better, longer video</a></li>
+<li><a href="https://www.youtube.com/watch?v=DOk8Jxg5CQI" target="_blank">short video</a></li>
+<li><a href="https://www.sitepoint.com/immutability-javascript/" target="_blank">sitepoint</a> - long article</li>
+<li><a href="https://benmccormick.org/2016/06/04/what-are-mutable-and-immutable-data-structures-2/" target="_blank">McCormick</a> - shorter article</li>
+<li><a href="https://wecodetheweb.com/2016/02/12/immutable-javascript-using-es6-and-beyond/" target="_blank">es6 tricks</a></li>
+<li><a href="https://www.quora.com/What-are-the-pros-and-cons-of-using-Immutable-js-vs-lodash-underscore" target="_blank">Quora answer</a>  </li>
+<li><a href="https://medium.com/react-weekly/embracing-immutable-architecture-dc04e3f08543" target="_blank">in react</a></li>
 </ul>
 
                                 
@@ -1495,12 +1496,12 @@
 
             
                 
-                <a href="sessions-authentication.html" class="navigation navigation-prev " aria-label="Previous page: Sessions & Authenticationn">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Application Design">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="frontend-apps.md" class="navigation navigation-next " aria-label="Next page: FrontEnd Apps">
+                <a href="objects-in-js.md" class="navigation navigation-next " aria-label="Next page: Objects in JS">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1511,7 +1512,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Microservices","level":"1.8.12","depth":2,"next":{"title":"FrontEnd Apps","level":"1.8.13","depth":2,"path":"application-design/frontend-apps.md","ref":"./application-design/frontend-apps.md","articles":[]},"previous":{"title":"Sessions & Authenticationn","level":"1.8.11","depth":2,"path":"application-design/sessions-authentication.md","ref":"./application-design/sessions-authentication.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-chapters"],"pluginsConfig":{"collapsible-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"application-design/microservices.md","mtime":"2018-02-23T11:16:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-02-24T12:22:08.946Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Pure Functions","level":"1.8.1","depth":2,"next":{"title":"Objects in JS","level":"1.8.2","depth":2,"path":"application-design/objects-in-js.md","ref":"./application-design/objects-in-js.md","articles":[]},"previous":{"title":"Application Design","level":"1.8","depth":1,"path":"application-design/README.md","ref":"./application-design/README.md","articles":[{"title":"Pure Functions","level":"1.8.1","depth":2,"path":"application-design/immutable-data.md","ref":"./application-design/immutable-data.md","articles":[]},{"title":"Objects in JS","level":"1.8.2","depth":2,"path":"application-design/objects-in-js.md","ref":"./application-design/objects-in-js.md","articles":[]},{"title":"Logic vs. Framework","level":"1.8.3","depth":2,"path":"application-design/logic-vs-framework.md","ref":"./application-design/logic-vs-framework.md","articles":[]},{"title":"MVC & Separation of Concerns","level":"1.8.4","depth":2,"path":"application-design/mvc-separation-concerns.md","ref":"./application-design/mvc-separation-concerns.md","articles":[]},{"title":"Data Modeling","level":"1.8.5","depth":2,"path":"application-design/data-modeling.md","ref":"./application-design/data-modeling.md","articles":[]},{"title":"MVC-LH & Dependency Injectionn","level":"1.8.6","depth":2,"path":"application-design/mvc-lh-dependency-injection.md","ref":"./application-design/mvc-lh-dependency-injection.md","articles":[]},{"title":"Design Patterns","level":"1.8.7","depth":2,"path":"application-design/design-patterns.md","ref":"./application-design/design-patterns.md","articles":[]},{"title":"RESTful Routes","level":"1.8.8","depth":2,"path":"application-design/restful-routes.md","ref":"./application-design/restful-routes.md","articles":[]},{"title":"APIs","level":"1.8.9","depth":2,"path":"application-design/apis.md","ref":"./application-design/apis.md","articles":[]},{"title":"Data Relationships","level":"1.8.10","depth":2,"path":"application-design/data-relationships.md","ref":"./application-design/data-relationships.md","articles":[]},{"title":"Sessions & Authenticationn","level":"1.8.11","depth":2,"path":"application-design/sessions-authentication.md","ref":"./application-design/sessions-authentication.md","articles":[]},{"title":"Microservices","level":"1.8.12","depth":2,"path":"application-design/microservices.md","ref":"./application-design/microservices.md","articles":[]},{"title":"FrontEnd Apps","level":"1.8.13","depth":2,"path":"application-design/frontend-apps.md","ref":"./application-design/frontend-apps.md","articles":[]},{"title":"Immutable Data","level":"1.8.14","depth":2,"path":"application-design/immutable-data.md","ref":"./application-design/immutable-data.md","articles":[]},{"title":"Security","level":"1.8.15","depth":2,"path":"application-design/security.md","ref":"./application-design/security.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-chapters"],"pluginsConfig":{"collapsible-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"application-design/immutable-data.md","mtime":"2018-02-24T12:18:49.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-02-24T12:22:08.946Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
