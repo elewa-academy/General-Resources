@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Chrome · GitBook</title>
+        <title>Deployment · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="terminal.html" />
+    <link rel="next" href="documenting-projects.html" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="building-traspilers.md" />
     
 
     </head>
@@ -666,7 +666,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.7.1" data-path="chrome.html">
+        <li class="chapter " data-level="1.7.1" data-path="chrome.html">
             
                 <a href="chrome.html">
             
@@ -757,7 +757,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.8" data-path="deployment.html">
+        <li class="chapter active" data-level="1.7.8" data-path="deployment.html">
             
                 <a href="deployment.html">
             
@@ -1420,7 +1420,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Chrome</a>
+        <a href=".." >Deployment</a>
     </h1>
 </div>
 
@@ -1435,22 +1435,29 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="developer-tools">Developer Tools</h1>
-<h2 id="what-are-developer-tools">What are developer tools?</h2>
-<p>All of the most popular modern web browsers include a suite of tools designed to help with the development of websites; they are also sometimes referred to as the web inspector. These tools allow you to inspect the html, css, javascript and much more on websites you visit and build.</p>
-<h2 id="why-do-you-need-to-know-how-to-use-them">Why do you need to know how to use them?</h2>
-<p>Knowing how to use your browsers developer tools is an indispensable skill for a web developer. They allow you to easily and quickly track down the cause of issues and bugs like problems with layout or other css hiccups. What might have taken an hour or even a few hours to track down and fix without the use of these tools often takes a matter of minutes or even seconds with the help of developer tools.</p>
-<p>Although they offer you so many useful capabilities, learning how to use the developer tools isn&apos;t that difficult. It can feel clunky the first few times you use them. But with a little practice, you will soon find yourself comfortably using them to experiment and fix bugs with ease on your web pages.</p>
-<h2 id="chromedev">ChromeDev</h2>
-<p>Complete the first two chapters of this <a href="http://discover-devtools.codeschool.com/" target="_blank">short course</a> from Codeschool, it covers all the main capabilities developer tools provides.</p>
-<p>Make sure you can answer yes to each of the following once you have finished the course above:</p>
-<ul>
-<li>You can open the developer tools in your browser.</li>
-<li>You can select a specific html element in your page with dev tools.</li>
-<li>You can you use developer tools to experiment with the css on specific elements on a web page.</li>
-</ul>
-<h2 id="external-resource">External Resource</h2>
-<p><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank">https://developers.google.com/web/tools/chrome-devtools/</a></p>
+                                <h1 id="environmental-variables">Environmental Variables</h1>
+<p>Working with environment variables is a great way to configure different aspects of your Node.js application. Many cloud hosts (Heroku, Azure, AWS, now.sh, etc.) and Node.js modules use environment variables. Hosts, for example, will set a PORT variable that specifies on which port the server should listen to properly work. Modules might have different behaviors (like logging) depending on the value of NODE_ENV variable.</p>
+<p>Accessing environment variables in Node.js is supported right out of the box. When your Node.js process boots up it will automatically provide access to all existing environment variables by creating an env object as property of the process global object. If you want to take a peek at the object run a console.log in your node app:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;express&quot;</span>);
+<span class="hljs-keyword">var</span> app = express();
+
+app.listen(<span class="hljs-number">3000</span>, () =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;App is running with &quot;</span> + process.env)
+})
+</code></pre>
+<p>This code should output all environment variables that this Node.js process is aware of. To access one specific variable, access it like any property of an object:</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Server is listening on port &quot;</span> + process.env.PORT)
+</code></pre>
+<p>You should see that the value of <code>port</code> is undefined on your computer. Cloud hosts like Heroku or Azure, however, use the PORT variable to tell you on which port your server should listen for the routing to work properly. Therefore, the next time you set up a web server, you should determine the port to listen on by checking PORT first and giving it a default value otherwise:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> PORT = process.env.PORT || <span class="hljs-number">3000</span>;
+
+app.listen(PORT, () =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Server is listening on port <span class="hljs-subst">${PORT}</span>`</span> );
+})
+</code></pre>
+<p>The console.log will display the value of PORT if available or 3000 by default.</p>
+<h2 id="loading-variables-dev-vs-prod">Loading variables dev vs prod</h2>
+<p><a href="https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html" target="_blank">an article</a><br><a href="https://github.com/jankeLearning/content-code/tree/master/Week%2005-6/2-environmental-variables" target="_blank">our example</a><br><a href="https://medium.com/@rafaelvidaurre/managing-environment-variables-in-node-js-2cb45a55195f" target="_blank">another article</a>  </p>
 
                                 
                                 </section>
@@ -1478,12 +1485,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Developer Tools">
+                <a href="building-traspilers.md" class="navigation navigation-prev " aria-label="Previous page: Building & Transpilers">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="terminal.html" class="navigation navigation-next " aria-label="Next page: Terminal">
+                <a href="documenting-projects.html" class="navigation navigation-next " aria-label="Next page: Documenting Projects">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1494,7 +1501,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Chrome","level":"1.7.1","depth":2,"next":{"title":"Terminal","level":"1.7.2","depth":2,"path":"developer-tools/terminal.md","ref":"./developer-tools/terminal.md","articles":[]},"previous":{"title":"Developer Tools","level":"1.7","depth":1,"path":"developer-tools/README.md","ref":"./developer-tools/README.md","articles":[{"title":"Chrome","level":"1.7.1","depth":2,"path":"developer-tools/chrome.md","ref":"./developer-tools/chrome.md","articles":[]},{"title":"Terminal","level":"1.7.2","depth":2,"path":"developer-tools/terminal.md","ref":"./developer-tools/terminal.md","articles":[]},{"title":"Code Editors","level":"1.7.3","depth":2,"path":"developer-tools/code-editors.md","ref":"./developer-tools/code-editors.md","articles":[]},{"title":"Git & GitHub","level":"1.7.4","depth":2,"path":"developer-tools/git-github.md","ref":"./developer-tools/git-github.md","articles":[]},{"title":"Debuggers & Linters","level":"1.7.5","depth":2,"path":"developer-tools/debuggers-linters.md","ref":"./developer-tools/debuggers-linters.md","articles":[]},{"title":"Node/NPM & Yarn","level":"1.7.6","depth":2,"path":"developer-tools/npm-node-yarn.md","ref":"./developer-tools/npm-node-yarn.md","articles":[]},{"title":"Building & Transpilers","level":"1.7.7","depth":2,"path":"developer-tools/building-traspilers.md","ref":"./developer-tools/building-traspilers.md","articles":[]},{"title":"Deployment","level":"1.7.8","depth":2,"path":"developer-tools/deployment.md","ref":"./developer-tools/deployment.md","articles":[]},{"title":"Documenting Projects","level":"1.7.9","depth":2,"path":"developer-tools/documenting-projects.md","ref":"./developer-tools/documenting-projects.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"developer-tools/chrome.md","mtime":"2018-02-23T11:09:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-02-24T11:59:02.222Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Deployment","level":"1.7.8","depth":2,"next":{"title":"Documenting Projects","level":"1.7.9","depth":2,"path":"developer-tools/documenting-projects.md","ref":"./developer-tools/documenting-projects.md","articles":[]},"previous":{"title":"Building & Transpilers","level":"1.7.7","depth":2,"path":"developer-tools/building-traspilers.md","ref":"./developer-tools/building-traspilers.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-menu"],"pluginsConfig":{"collapsible-menu":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"developer-tools/deployment.md","mtime":"2018-02-24T11:29:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-02-24T11:59:02.222Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
