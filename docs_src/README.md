@@ -1,1 +1,1 @@
-README.md
+// "plugins": ["collapsible-menu"]
