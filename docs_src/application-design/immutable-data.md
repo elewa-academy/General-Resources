@@ -19,3 +19,8 @@ ___
 * [es6 tricks](https://wecodetheweb.com/2016/02/12/immutable-javascript-using-es6-and-beyond/)
 * [Quora answer](https://www.quora.com/What-are-the-pros-and-cons-of-using-Immutable-js-vs-lodash-underscore)  
 * [in react](https://medium.com/react-weekly/embracing-immutable-architecture-dc04e3f08543)
+
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

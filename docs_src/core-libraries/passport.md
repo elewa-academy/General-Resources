@@ -31,3 +31,9 @@ External Resources
 + jwt: https://jwt.io/
 + https://medium.com/vandium-software/5-easy-steps-to-understanding-json-web-tokens-jwt-1164c0adfcec
 + Nice tutorial: https://scotch.io/tutorials/easy-node-authentication-setup-and-local
+
+
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

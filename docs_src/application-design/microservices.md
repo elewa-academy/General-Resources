@@ -13,3 +13,8 @@
 * [microservices and functional programming](https://thenewstack.io/microservices-node-js/)  
 * [Heavy, advanced, totally worth it](https://addyosmani.com/largescalejavascript/)  
 * [Nodehero](https://blog.risingstack.com/node-hero-node-js-project-structure-tutorial/)  
+
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

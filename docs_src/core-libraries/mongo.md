@@ -41,3 +41,8 @@ External resources
 ---
 + MongoDb in 30 min: https://www.youtube.com/watch?v=pWbMrx5rVBE
 + or if you'd rather read: https://code.tutsplus.com/tutorials/getting-started-with-mongodb-part-1--net-22879
+
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

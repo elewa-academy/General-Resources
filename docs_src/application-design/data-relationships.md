@@ -27,3 +27,8 @@ That's about all you need to know to get started.
 ___
 ### Exercises
 No exercises, just the __Data Model__ and __*Book__ projects.
+
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>
