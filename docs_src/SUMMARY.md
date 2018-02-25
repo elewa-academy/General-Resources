@@ -1,6 +1,6 @@
 # Summary
 
-* [Front Page](./README.md)
+* [General Resources](./README.md)
 * [Key Resources](./key-resources/README.md)
   * [Course Objectives](./key-resources/course-objectives.md)  
   * [Mindset & Expectations](./key-resources/mindset-expectations.md)  
