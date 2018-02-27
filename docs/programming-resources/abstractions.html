@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Prebugging & Error-Handling · GitBook</title>
+        <title>Abstractions · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="code-project-organization.md" />
+    <link rel="next" href="specs.html" />
     
     
-    <link rel="prev" href="tdd-bdd.md" />
+    <link rel="prev" href="exercises.md" />
     
 
     </head>
@@ -327,7 +327,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="abstractions.html">
+        <li class="chapter active" data-level="1.4.2" data-path="abstractions.html">
             
                 <a href="abstractions.html">
             
@@ -405,7 +405,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.8" data-path="prebugging-error-handling.html">
+        <li class="chapter " data-level="1.4.8" data-path="prebugging-error-handling.html">
             
                 <a href="prebugging-error-handling.html">
             
@@ -1489,7 +1489,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Prebugging & Error-Handling</a>
+        <a href=".." >Abstractions</a>
     </h1>
 </div>
 
@@ -1504,35 +1504,115 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="debugging">Debugging</h1>
-<p>Debugging is something you do once your code is running and doesn&apos;t work right.  but there&apos;s a lot you can do to avoid that.</p>
-<p><strong>&quot;plan twice, log once&quot;</strong></p>
-<h3 id="prebugging">Prebugging</h3>
-<ul>
-<li>Make your code &apos;transparent&apos;</li>
-<li>debugging is continuous from the first function to the final product. Always check that it works before adding or modifying. (see above: assume nothing, question everything)</li>
-<li>Always write readable code, have your bugs come from misuse of language, confusion with the challenge, ... not from confusion with your own code</li>
-<li>Build in breakpoints, debuggers, and console.logs where you anticipate problems. They remind your future self that this might be a tricky spot and saving it the time of doing this</li>
-</ul>
-<h3 id="debugging">Debugging</h3>
-<ul>
-<li>tools: debugger, console.log, inspector</li>
-<li>never assume anything. About how your code works, about what an object looks like, ... console.log or debugger everything</li>
-<li>check the resources -&gt; &lt;- do that</li>
-</ul>
-<h2 id="debugger">debugger</h2>
-<p>The debugger keyword stops the execution of JavaScript, and calls (if available) the debugging function. This has the same function as setting a breakpoint in the debugger. If no debugging is available, the debugger statement has no effect. With the debugger turned on, this code will stop executing before it executes the third line.</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x = <span class="hljs-number">15</span> * <span class="hljs-number">5</span>;
-<span class="hljs-keyword">debugger</span>;
-<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;demo&quot;</span>).innerHTML = x;
+                                <h1 id="abstractions">Abstractions</h1>
+<p><a href="#lead-by-example">example 1</a><br><a href="#lead-by-another-example">example 2</a><br><a href="#abstraction">Conclusion</a><br><a href="#resources">Resources</a>  </p>
+<hr>
+<h3 id="lead-by-example">Lead by example</h3>
+<p>These four examples are wrapping the same functionality in more and more layers of abstraction:</p>
+<ol>
+<li>A little script that takes 4 command line args and logs them.  <pre><code class="lang-js"> <span class="hljs-keyword">var</span> cli_args = process.argv.slice(<span class="hljs-number">2</span>);
+ <span class="hljs-built_in">console</span>.log(cli_args[<span class="hljs-number">0</span>]);
+ <span class="hljs-built_in">console</span>.log(cli_args[<span class="hljs-number">1</span>]);
+ <span class="hljs-built_in">console</span>.log(cli_args[<span class="hljs-number">2</span>]);
+ <span class="hljs-built_in">console</span>.log(cli_args[<span class="hljs-number">3</span>]);
 </code></pre>
-<h2 id="chrome-console">chrome console</h2>
-<p>You can open the Chrome Developer tools by clicking on F12. Alternatively, you can open the settings (the three vertical dots in the top right corner), go to &quot;more tools&quot; and click on &quot;Developer Tools&quot;.</p>
-<p>Go to &quot;Console&quot;, where you can run console.log()&apos;s and other chunks of code to test your code.</p>
-<h2 id="console-logs">console logs</h2>
-<p>Console.log()&apos;s are probably the most used statements for debugging your code. When your code doesn&apos;t work as expected, add a console.log() to check the value of a variable or the result of a function.</p>
-<p>The result of the console.log() statement will be displayed in your web browser&apos;s console.</p>
-<h2 id="simple-tests">simple tests</h2>
+</li>
+<li>Wrap all those in a for loop.<pre><code class="lang-js"> <span class="hljs-keyword">var</span> cli_args = process.argv.slice(<span class="hljs-number">2</span>);
+ <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">4</span>; i++) {
+     <span class="hljs-built_in">console</span>.log(cli_args[i]);
+ };
+</code></pre>
+</li>
+<li>Make that into a function.<pre><code class="lang-js"> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">print_four_items</span>(<span class="hljs-params">arg_array</span>) </span>{
+     <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">4</span>; i++) {
+         <span class="hljs-built_in">console</span>.log(cli_args[i]);
+     };
+ };
+</code></pre>
+</li>
+<li>Make that funcion general purpose.<pre><code class="lang-js"> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">print_array</span>(<span class="hljs-params">arg_array</span>) </span>{
+     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> index <span class="hljs-keyword">in</span> arg_array) {
+         <span class="hljs-built_in">console</span>.log(arg_array[index])
+     };
+ };
+</code></pre>
+</li>
+</ol>
+<hr>
+<h3 id="lead-by-another-example">Lead by another example</h3>
+<p>This series builds abstractions on top of abstractions. </p>
+<ol>
+<li>A script to concatinate two args.<pre><code class="lang-js"> <span class="hljs-keyword">var</span> string_arg_1 = process.argv.slice(<span class="hljs-number">2</span>)[<span class="hljs-number">0</span>];
+ <span class="hljs-keyword">var</span> string_arg_2 = process.argv.slice(<span class="hljs-number">2</span>)[<span class="hljs-number">1</span>];
+ <span class="hljs-keyword">var</span> new_string = string_arg_1 + <span class="hljs-string">&apos; &apos;</span> + string_arg_2;
+ <span class="hljs-comment">/// ---------------- becomes ---------------- ///</span>
+ <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">combine_two_strings</span>(<span class="hljs-params">arg_1, arg_2</span>) </span>{
+     <span class="hljs-keyword">var</span> new_string = string_arg_1 + <span class="hljs-string">&apos; &apos;</span> + string_arg_2;
+     <span class="hljs-keyword">return</span> new_string;
+ };
+</code></pre>
+</li>
+<li>a script to set a string as a property in a new object.<pre><code class="lang-js"> <span class="hljs-keyword">var</span> new_obj = {};
+ new_obj.prop = combine_two_strings(process.argv.slice(<span class="hljs-number">2</span>)[<span class="hljs-number">0</span>], process.argv.slice(<span class="hljs-number">2</span>)[<span class="hljs-number">1</span>]);
+ <span class="hljs-comment">/// ---------------- becomes ---------------- ///</span>
+ <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">build_obj_abstraction</span>(<span class="hljs-params">arg_1, arg_2</span>) </span>{
+     <span class="hljs-keyword">var</span> new_obj = {};
+     new_obj.prop = combine_two_strings(arg_1, arg_2);   
+     <span class="hljs-keyword">return</span> new_obj
+ };
+</code></pre>
+</li>
+<li>A script using the <em>abstraction</em> defined above.  This script takes two people and marries them, hyphenated.<pre><code class="lang-js"> <span class="hljs-keyword">var</span> person_1 = { name: <span class="hljs-string">&apos;alex&apos;</span>, surname: <span class="hljs-string">&apos;rodriguez&apos;</span> };
+ <span class="hljs-keyword">var</span> person_2 = { name: <span class="hljs-string">&apos;sam&apos;</span>, surname: <span class="hljs-string">&apos;gopher&apos;</span> };
+ <span class="hljs-keyword">var</span> new_person_1 = {};
+ <span class="hljs-comment">// create new person_1</span>
+ new_person_1 = args_to_prop_abstraction(person_1.surname, person_2.surname);
+ new_person_1.surname = new_person_1.prop;
+ <span class="hljs-keyword">delete</span> new_person_1.prop;
+ new_person_1.name = person_1.name;
+ <span class="hljs-comment">// create new person_2</span>
+ new_person_2 = args_to_prop_abstraction(person_1.surname, person_2.surname);
+ new_person_2.surname = new_person_2.prop;
+ <span class="hljs-keyword">delete</span> new_person_2.prop;
+ new_person_2.name = person_2.name;
+ <span class="hljs-comment">/// ---------------- becomes ---------------- ///</span>
+ <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">marry_two_people</span>(<span class="hljs-params">person_1, person_2</span>) </span>{
+     <span class="hljs-comment">// all that stuff above</span>
+     <span class="hljs-keyword">return</span> [new_person_1, new_person_2];
+ };
+</code></pre>
+</li>
+<li>From dust we have come, and to dust we shall return.<pre><code class="lang-js"> <span class="hljs-keyword">var</span> main_charecter = {};
+ main_charecter.born = <span class="hljs-literal">true</span>;
+ main_charecter.can_walk = <span class="hljs-literal">true</span>;
+ main_charecter.finished_college = <span class="hljs-literal">true</span>;
+ main_charecter = marry_two_people(spouse, main_charecter)[<span class="hljs-number">1</span>];
+ main_charecter.married = <span class="hljs-literal">true</span>;
+ main_charecter.old = <span class="hljs-literal">true</span>;
+ main_charecter.dead = <span class="hljs-literal">true</span>;
+ <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> prop <span class="hljs-keyword">of</span> main_charecter) {
+     <span class="hljs-keyword">delete</span> main_charecter.prop;
+ };
+ <span class="hljs-comment">/// ---------------- becomes ---------------- ///</span>
+ <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">life</span>(<span class="hljs-params">empty_object</span>) </span>{
+     <span class="hljs-comment">// all the code above</span>
+     <span class="hljs-keyword">return</span> main_charecter;
+ };
+</code></pre>
+In the first example, a simple script was wrapped in a function.  This allows the next example to do everything the first example did without caring how it happens.<br>In the second example, a simple script was wrapped in a function.  This allows the next example to do everything the first example did without caring how it happens.
+e t c . . .</li>
+</ol>
+<hr>
+<h1 id="abstraction">ABSTRACTION</h1>
+<p>This is abstraction, everything in programming is abstraction.  jQuery, Express, CSS, they are all tools someone else built so you can make cool stuff without worrying about how it&apos;s implemented.  This is largely a good thing, but has a down-side.</p>
+<p>The downside is that you can&apos;t &quot;figure out&quot; how things work.  With pure JS you can read through it and study it to figure out what the code does.  When reading an Express project or seeing jQuery for the first time, it would takes months of console-logging to figure out how things work. Reading the source code wouldn&apos;t be any more productive.  The best way to learn a library is to listen to the person who wrote it.</p>
+<p>Documentaiton is the developer&apos;s way to tell you how to use their code - args, return values, behavior.  The modules we&apos;ll be using in class have good documentation.  Next week when you&apos;re struggling with the build project, remind yourself you&apos;re learning to use an abstraction someone else wrote for you.</p>
+<hr>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=p7nGcY73epw" target="_blank">The art of abstraction</a></li>
+<li><a href="https://www.youtube.com/watch?v=uNuFVq5QeRk" target="_blank">Near to the metal</a> - some history</li>
+</ul>
 
                                 
                                 </section>
@@ -1560,12 +1640,12 @@
 
             
                 
-                <a href="tdd-bdd.md" class="navigation navigation-prev " aria-label="Previous page: TDD & BDD">
+                <a href="exercises.md" class="navigation navigation-prev " aria-label="Previous page: Programming Exercises">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="code-project-organization.md" class="navigation navigation-next " aria-label="Next page: Code & Project Organizing">
+                <a href="specs.html" class="navigation navigation-next " aria-label="Next page: Specs">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1576,7 +1656,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Prebugging & Error-Handling","level":"1.4.8","depth":2,"next":{"title":"Code & Project Organizing","level":"1.4.9","depth":2,"path":"programming-resources/code-project-organization.md","ref":"./programming-resources/code-project-organization.md","articles":[]},"previous":{"title":"TDD & BDD","level":"1.4.7","depth":2,"path":"programming-resources/tdd-bdd.md","ref":"./programming-resources/tdd-bdd.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-chapters"],"pluginsConfig":{"collapsible-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"programming-resources/prebugging-error-handling.md","mtime":"2018-02-24T20:24:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-02-27T18:34:58.398Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Abstractions","level":"1.4.2","depth":2,"next":{"title":"Specs","level":"1.4.3","depth":2,"path":"programming-resources/specs.md","ref":"./programming-resources/specs.md","articles":[]},"previous":{"title":"Programming Exercises","level":"1.4.1","depth":2,"path":"programming-resources/exercises.md","ref":"./programming-resources/exercises.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-chapters"],"pluginsConfig":{"collapsible-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"programming-resources/abstractions.md","mtime":"2018-02-27T18:32:28.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-02-27T18:34:58.398Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
