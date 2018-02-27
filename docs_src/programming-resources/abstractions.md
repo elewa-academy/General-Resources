@@ -52,60 +52,57 @@ This series builds abstractions on top of abstractions.
         return new_string;
     };
     ```
-1. a script to set a string as a property in a new object.
+1. A script to set a string as a property in an object.
     ```js
+    var obj = {};
+    obj.prop = combine_two_strings(arg_1, arg_2);
+    /// ---------------- becomes ---------------- ///
+    function add_new_property(obj, prop_name, arg1, arg2) {
+        obj[prop_name] = combine_two_strings(arg1, arg2);
+        return obj;
+    };
+    ```
+
+2. A script to combine two string-filled objects.
+    ```js
+    var obj_1 = {'0': 'a', '1': 'b', '2': 'c'};
+    var obj_2 = {'0': 'x', '1': 'y', '2': 'z'};
     var new_obj = {};
-    new_obj.prop = combine_two_strings(process.argv.slice(2)[0], process.argv.slice(2)[1]);
+    for (var i = 0; i < 3; i++) {
+        new_obj[i] = obj_1[i] + obj_2[i]
+    };
     /// ---------------- becomes ---------------- ///
-    function build_obj_abstraction(arg_1, arg_2) {
+    function concatinate_two_objects(obj_1, obj_2) {
         var new_obj = {};
-        new_obj.prop = combine_two_strings(arg_1, arg_2);   
-        return new_obj
-    };
+        var i = 0000;
+        var shortest = {};
+        var longest = {};
+        var length_obj_1 = Object.keys(obj_1).length;
+        var length_obj_2 = Object.keys(obj_2).length;
+
+        if (length_obj_1 < length_obj_2) {    
+            shortest = obj_1;
+            longest = obj_2;
+        } else { 
+            shortest = obj_2;
+            longest = obj_1;
+        };
+
+        for (i; i < shortest; i++) {
+            new_obj[i] = obj_1[i] + obj_2[i];
+        };
+        for (i; i < longest; i++) {
+            new_obj[i] = longest[i];
+        };
+
+        return new_obj;
+    };    
     ```
-2. A script using the _abstraction_ defined above.  This script takes two people and marries them, hyphenated.
-    ```js
-    var person_1 = { name: 'alex', surname: 'rodriguez' };
-    var person_2 = { name: 'sam', surname: 'gopher' };
-    var new_person_1 = {};
-    // create new person_1
-    new_person_1 = args_to_prop_abstraction(person_1.surname, person_2.surname);
-    new_person_1.surname = new_person_1.prop;
-    delete new_person_1.prop;
-    new_person_1.name = person_1.name;
-    // create new person_2
-    new_person_2 = args_to_prop_abstraction(person_1.surname, person_2.surname);
-    new_person_2.surname = new_person_2.prop;
-    delete new_person_2.prop;
-    new_person_2.name = person_2.name;
-    /// ---------------- becomes ---------------- ///
-    function marry_two_people(person_1, person_2) {
-        // all that stuff above
-        return [new_person_1, new_person_2];
-    };
-    ```
-3. From dust we have come, and to dust we shall return.
-    ```js
-    var main_charecter = {};
-    main_charecter.born = true;
-    main_charecter.can_walk = true;
-    main_charecter.finished_college = true;
-    main_charecter = marry_two_people(spouse, main_charecter)[1];
-    main_charecter.married = true;
-    main_charecter.old = true;
-    main_charecter.dead = true;
-    for (var prop of main_charecter) {
-        delete main_charecter.prop;
-    };
-    /// ---------------- becomes ---------------- ///
-    function life(empty_object) {
-        // all the code above
-        return main_charecter;
-    };
-    ```
-In the first example, a simple script was wrapped in a function.  This allows the next example to do everything the first example did without caring how it happens.  
-In the second example, a simple script was wrapped in a function.  This allows the next example to do everything the first example did without caring how it happens.
-e t c . . .
+
+
+In the first example, a simple script was wrapped in a function and made general purpose.  This allows the next example to do everything the first example did without caring how it happens.  
+In the second example, a simple script was wrapped in a function and made general purpose.  This allows the next example to do everything the first example did without caring how it happens.  
+etc . . .
 ___
 # ABSTRACTION
 This is abstraction, everything in programming is abstraction.  jQuery, Express, CSS, they are all tools someone else built so you can make cool stuff without worrying about how it's implemented.  This is largely a good thing, but has a down-side.
