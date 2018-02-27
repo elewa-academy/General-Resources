@@ -98,7 +98,7 @@
   * [Job Search](./in-the-wild/job-search.md)
   * [Interview Preparation](./in-the-wild/interview-preparation.md)
   * [Open-Source Contributing](./in-the-wild/open-source-contributing.md)
-* [Repo](https://github.com/elewa-academy/General-Resources/tree/master/docs_src)
+* [Repo](https://github.com/elewa-academy/General-Resources/blob/master/docs_src/SUMMARY.md)
 * [Home](https://elewa-academy.github.io)
 
 

@@ -1,4 +1,4 @@
-# [Recursion](https://github.com/jankeLearning/content-md/blob/master/algorithms/03-BST-recursion.md)
+# [Recursion](https://elewa-academy.github.io/General-Resources/cs-101/recursion-101.html)
 "A function that calls itself until it doesn't."
     - Mattias P Johansson
     
