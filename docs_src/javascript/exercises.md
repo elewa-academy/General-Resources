@@ -5,15 +5,22 @@ Working on JavaScript exercises serves two main functions - learning how JavaScr
 ---
 ### Exercises
 
+* [JS exercises Code Along](https://elewa-academy.github.io/Frontend-Code-Alongs/00-js-exercises/)
+* [LearnTeachCode](https://github.com/LearnTeachCode/intro-javascript-class)
+* Exercism: [website](https://github.com/exercism/javascript), [CLI](http://exercism.io/languages/javascript/exercises)
+* [Tricky problems with explanations](https://github.com/shadkhan/Javascript-Puzzles-for-Fun)  
+* [Codewars](https://www.codewars.com)
+* [Coderbyte](https://coderbyte.com/)
+* [Project Euler](https://projecteuler.net), for you math heads
 
 
 ---
 ### Resources
 
+* [Tips for converting from words to code](https://github.com/elewa-academy/General-Resources/tree/master/docs_src/local-resources/using-js/english2js)
+* [Testing 101](https://elewa-academy.github.io/General-Resources/programming-resources/testing-101.html#minimal-passing-functions)
 * [Using specs to study code](https://github.com/elewa-academy/studying-with-specs/tree/master)
-* [Tips for converting from words to code]english2js in general-resources/local-resources  
-* minimal passing functions in general-resources/local-resources  
-* conditionalchecks in general-resources/local-resources  
-* testing101 in general resources  
-
+* [Minimal passing functions](https://github.com/elewa-academy/General-Resources/tree/master/docs_src/local-resources/using-js/simplestPassingFuncs)  
+* [Tips for using conditional checks](https://github.com/elewa-academy/General-Resources/tree/master/docs_src/local-resources/using-js/conditionalChecks)
+* [Simpleprogrammer's tips](https://simpleprogrammer.com/solving-problems-breaking-it-down/)
 
