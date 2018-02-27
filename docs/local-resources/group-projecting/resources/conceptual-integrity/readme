@@ -1,0 +1,7 @@
+recommended architecture:  
+    microservices
+
+further recommendaiton:
+    have no express in your microservices
+        export pure JS objects or functions
+        testing will 
