@@ -1,6 +1,6 @@
 # Summary
 
-* [General Resources](./README.md)
+* [Cover Page](./README.md)
 * [Key Resources](./key-resources/README.md)
   * [Course Objectives](./key-resources/course-objectives.md)  
   * [Mindset & Expectations](./key-resources/mindset-expectations.md)  
@@ -99,6 +99,7 @@
   * [Job Search](./in-the-wild/job-search.md)
   * [Interview Preparation](./in-the-wild/interview-preparation.md)
   * [Open-Source Contributing](./in-the-wild/open-source-contributing.md)
+* [Repo](https://github.com/elewa-academy/General-Resources/tree/master/docs_src)
 * [Home](https://elewa-academy.github.io)
 
 

@@ -1,0 +1,1 @@
+asking good questions + understanding your mental models = studying

@@ -1,0 +1,35 @@
+conceptual integrity
+    high level
+        plan your app and make your decisions with the golden circle    
+        your app serves only one very specific use in mind.
+        every feature is directly related to that use.
+        nothing could be removed without impacting the end user's primary activity
+        have quality documentation
+        separate logic and controllers (pure JS, mongoose is fine) from anything environment specific (ejs, express). (microservices)
+        - planning and developing in feature sprints helps ensure that your app maintains CI through it's development lifecycle
+        - microservices allow you to think about and evolve your app at a high enough level that you can think about CI
+    low level  
+        agree on a code style guide
+        make modules/services all use the same Design
+        have a consistent testing style
+        have a consistent error handling
+        have quality documentation/specs
+
+
+
+BDD
+    Behavior Driven Development is a very helpful tool for ensuring CI through the product life-cycle.
+    vs. tdd: they're very compatible
+        bdd can be thought of as a 'wrapper' for TDD. 
+[bdd](https://www.toptal.com/freelance/your-boss-won-t-appreciate-tdd-try-bdd)
+[wikipedia/bdd](https://en.wikipedia.org/wiki/Behavior-driven_development#Principles_of_BDD)
+
+error handling  
+    [joyent, big and good](https://www.joyent.com/node-js/production/design/errors)
+    [sitepoint 1](https://www.sitepoint.com/exceptional-exception-handling-in-javascript/)
+    [sitepoint 2](https://www.sitepoint.com/proper-error-handling-javascript/)
+
+[big heavy read](http://www.dcs.warwick.ac.uk/oldmodelling/hi/theses/allan/chapter5.pdf)
+[golden circle](https://www.youtube.com/watch?v=l5Tw0PGcyN0)
+[simpler definition, still a bit much?](http://cseweb.ucsd.edu/~wgg/CSE131B/Design/node6.html)
+[medium sized article](http://www.safnet.com/writing/tech/2011/11/mythical-man-month-conceptual-integrity.html)
