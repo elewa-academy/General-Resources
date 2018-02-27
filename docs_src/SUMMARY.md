@@ -91,7 +91,7 @@
   * [Fullstack Frameworks](./other-libs-frwrks/fullstack-frameworks.md)
 * [CS 101](./cs-101/README.md)
   * [Algorithms](./cs-101/algorithms.md)
-  * [Recursion-101](./cs-101/recursion-101.md)
+  * [Recursion](./cs-101/recursion.md)
   * [Data Structures](./cs-101/data-structures.md)
 * [In The Wild](./in-the-wild/README.md)
   * [Your Portfolio](./in-the-wild/your-portfolio.md)

@@ -24,6 +24,7 @@ We've selected some of the most basic and useful data structures for you to repl
 5. _Complete Tree_: 
     * Very little guidance.
 
+You can find the starter code [here](https://github.com/elewa-academy/General-Resources/tree/master/docs_src/local-resources/data-structures)
 
 ---
 ### Additional Challenge
