@@ -16,7 +16,7 @@
   * [Agile](./soft-skills/agile.md)
   * [SCRUM](./soft-skills/scrum.md)
 * [Programming Resources](./programming-resources/README.md) 
-  * [Programming Exercises](./programming-resources/programming-exercises.md)
+  * [Exercises](./programming-resources/exercises.md)
   * [Abstractions](./programming-resources/abstractions.md)
   * [Specs](./programming-resources/specs.md)
   * [Clean Code](./programming-resources/clean-code.md)
