@@ -47,7 +47,7 @@ This is because your app is __event driven__.  It sits idle until the user promp
 
 
 
-![](https://github.com/jankeLearning/diagrams/blob/master/code-flow/mvc-lh.png)
+![](https://github.com/elewa-academy/diagrams/blob/master/code-flow/mvc-lh.png)
 
 [TOP](#table-of-contents) 
 ___
