@@ -28,6 +28,8 @@ Exercises
 Rewrite TicTacToe as an MVC app?
 Do [here](https://github.com/jankeLearning/content-code/tree/master/Week%202/2-tictapps)
 
+link to george's youtube series
+link to studying with specs
 
 ___
 ___
