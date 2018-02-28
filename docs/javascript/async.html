@@ -1,0 +1,1869 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Asynchronicity · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="good-practices.md" />
+    
+    
+    <link rel="prev" href="es-star.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Cover Page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../key-resources/">
+            
+                <a href="../key-resources/">
+            
+                    
+                    Key Resources
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../key-resources/course-objectives.md">
+            
+                <span>
+            
+                    
+                    Course Objectives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../key-resources/mindset-expectations.html">
+            
+                <a href="../key-resources/mindset-expectations.html">
+            
+                    
+                    Mindset & Expectations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../key-resources/good-learning-habits.html">
+            
+                <a href="../key-resources/good-learning-habits.html">
+            
+                    
+                    Good Learning Habits
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../key-resources/problem-solving.html">
+            
+                <a href="../key-resources/problem-solving.html">
+            
+                    
+                    Problem Solving
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../key-resouces/notional-machines.md">
+            
+                <span>
+            
+                    
+                    Notional Machines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../key-resources/software-development.md">
+            
+                <span>
+            
+                    
+                    Software Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../key-resources/the-internet.html">
+            
+                <a href="../key-resources/the-internet.html">
+            
+                    
+                    The Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../key-resources/using-this-curriculum.html">
+            
+                <a href="../key-resources/using-this-curriculum.html">
+            
+                    
+                    Using This Curriculum
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../soft-skills/">
+            
+                <a href="../soft-skills/">
+            
+                    
+                    Soft Skills
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../soft-skills/collaboration.md">
+            
+                <span>
+            
+                    
+                    Collaboration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../soft-skills/agile.md">
+            
+                <span>
+            
+                    
+                    Agile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../soft-skills/scrum.md">
+            
+                <span>
+            
+                    
+                    SCRUM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../programming-resources/">
+            
+                <a href="../programming-resources/">
+            
+                    
+                    Programming Resources
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../programming-resources/exercises.html">
+            
+                <a href="../programming-resources/exercises.html">
+            
+                    
+                    Exercises
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../programming-resources/abstractions.html">
+            
+                <a href="../programming-resources/abstractions.html">
+            
+                    
+                    Abstractions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../programming-resources/specs.html">
+            
+                <a href="../programming-resources/specs.html">
+            
+                    
+                    Specs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../programming-resources/clean-code.html">
+            
+                <a href="../programming-resources/clean-code.html">
+            
+                    
+                    Clean Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../programming-resources/pure-functions.md">
+            
+                <span>
+            
+                    
+                    Pure Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../programming-resources/specs.html">
+            
+                <a href="../programming-resources/specs.html">
+            
+                    
+                    Specs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../programming-resources/testing-101.html">
+            
+                <a href="../programming-resources/testing-101.html">
+            
+                    
+                    Testing 101
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../programming-resources/reading-sourcecode.html">
+            
+                <a href="../programming-resources/reading-sourcecode.html">
+            
+                    
+                    Reading Sourcecode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../programming-resources/tdd-bdd.md">
+            
+                <span>
+            
+                    
+                    TDD & BDD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../programming-resources/prebugging-error-handling.html">
+            
+                <a href="../programming-resources/prebugging-error-handling.html">
+            
+                    
+                    Prebugging & Error-Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../programming-resources/programming-paradigms.html">
+            
+                <a href="../programming-resources/programming-paradigms.html">
+            
+                    
+                    Programming & Paradigms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../programming-resources/code-project-organization.md">
+            
+                <span>
+            
+                    
+                    Code & Project Organizing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../programming-resources/development-techniques.md">
+            
+                <span>
+            
+                    
+                    Development Techniques
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../programming-resources/pair-programming.md">
+            
+                <span>
+            
+                    
+                    Pair Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="fundamentals.html">
+            
+                <a href="fundamentals.html">
+            
+                    
+                    FUNdamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="objects-in-js.md">
+            
+                <span>
+            
+                    
+                    Objects in JS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="inheritance.html">
+            
+                <a href="inheritance.html">
+            
+                    
+                    Inheritance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="es-star.html">
+            
+                <a href="es-star.html">
+            
+                    
+                    ES*
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.5" data-path="async.html">
+            
+                <a href="async.html">
+            
+                    
+                    Asynchronicity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="good-practices.md">
+            
+                <span>
+            
+                    
+                    Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="runtimes-compatibility.md">
+            
+                <span>
+            
+                    
+                    Runtimes & Compatibility
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="supersets-extensions.md">
+            
+                <span>
+            
+                    
+                    Supersets & Extensions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="tricky-things.html">
+            
+                <a href="tricky-things.html">
+            
+                    
+                    Tricky Things
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="dom.html">
+            
+                <a href="dom.html">
+            
+                    
+                    DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../css-html/">
+            
+                <a href="../css-html/">
+            
+                    
+                    CSS & HTML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../css-html/html.md">
+            
+                <span>
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../css-html/css.html">
+            
+                <a href="../css-html/css.html">
+            
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../css-html/deeper-css.md">
+            
+                <span>
+            
+                    
+                    Deeper CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../css-html/scss.md">
+            
+                <span>
+            
+                    
+                    SCSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../css-html/sass.md">
+            
+                <span>
+            
+                    
+                    SASS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../css-html/less.md">
+            
+                <span>
+            
+                    
+                    LESS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../developer-tools/">
+            
+                <a href="../developer-tools/">
+            
+                    
+                    Developer Tools
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../developer-tools/chrome.html">
+            
+                <a href="../developer-tools/chrome.html">
+            
+                    
+                    Chrome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../developer-tools/terminal.html">
+            
+                <a href="../developer-tools/terminal.html">
+            
+                    
+                    Terminal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../developer-tools/code-editors.md">
+            
+                <span>
+            
+                    
+                    Code Editors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../developer-tools/git-github.html">
+            
+                <a href="../developer-tools/git-github.html">
+            
+                    
+                    Git & GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../developer-tools/debuggers-linters.md">
+            
+                <span>
+            
+                    
+                    Debuggers & Linters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../developer-tools/npm-node-yarn.md">
+            
+                <span>
+            
+                    
+                    Node/NPM & Yarn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../developer-tools/building-traspilers.md">
+            
+                <span>
+            
+                    
+                    Building & Transpilers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../developer-tools/deployment.html">
+            
+                <a href="../developer-tools/deployment.html">
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../developer-tools/documenting-projects.html">
+            
+                <a href="../developer-tools/documenting-projects.html">
+            
+                    
+                    Documenting Projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../developer-tools/postman.html">
+            
+                <a href="../developer-tools/postman.html">
+            
+                    
+                    Postman
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../application-design/">
+            
+                <a href="../application-design/">
+            
+                    
+                    Application Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../application-design/user-centered-development.html">
+            
+                <a href="../application-design/user-centered-development.html">
+            
+                    
+                    User-Centered Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../application-design/logic-vs-framework.md">
+            
+                <span>
+            
+                    
+                    Logic vs. Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../application-design/mvc-separation-concerns.html">
+            
+                <a href="../application-design/mvc-separation-concerns.html">
+            
+                    
+                    MVC & Separation of Concerns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../application-design/data-modeling.html">
+            
+                <a href="../application-design/data-modeling.html">
+            
+                    
+                    Data Modeling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../application-design/mvc-lh-dependency-injection.html">
+            
+                <a href="../application-design/mvc-lh-dependency-injection.html">
+            
+                    
+                    MVC-LH & Dependency Injectionn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../application-design/design-patterns.md">
+            
+                <span>
+            
+                    
+                    Design Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../application-design/restful-routes.html">
+            
+                <a href="../application-design/restful-routes.html">
+            
+                    
+                    RESTful Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../application-design/apis.md">
+            
+                <span>
+            
+                    
+                    APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../application-design/data-relationships.html">
+            
+                <a href="../application-design/data-relationships.html">
+            
+                    
+                    Data Relationships
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../application-design/sessions-authentication.html">
+            
+                <a href="../application-design/sessions-authentication.html">
+            
+                    
+                    Sessions & Authenticationn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../application-design/microservices.html">
+            
+                <a href="../application-design/microservices.html">
+            
+                    
+                    Microservices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../application-design/frontend-apps.md">
+            
+                <span>
+            
+                    
+                    FrontEnd Apps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../application-design/immutable-data.html">
+            
+                <a href="../application-design/immutable-data.html">
+            
+                    
+                    Immutable Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="../application-design/security.html">
+            
+                <a href="../application-design/security.html">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../core-libraries/">
+            
+                <a href="../core-libraries/">
+            
+                    
+                    Core Libraries
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../core-libraries/core-fs-resources.md">
+            
+                <span>
+            
+                    
+                    Core FS Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../core-libraries/jquery.md">
+            
+                <span>
+            
+                    
+                    jQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../core-libraries/express.html">
+            
+                <a href="../core-libraries/express.html">
+            
+                    
+                    Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../core-libraries/ejs.html">
+            
+                <a href="../core-libraries/ejs.html">
+            
+                    
+                    EJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../core-libraries/jest.md">
+            
+                <span>
+            
+                    
+                    Jest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../core-libraries/mongo.html">
+            
+                <a href="../core-libraries/mongo.html">
+            
+                    
+                    Mongo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../core-libraries/mongoose.html">
+            
+                <a href="../core-libraries/mongoose.html">
+            
+                    
+                    Mongoose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../core-libraries/passport.html">
+            
+                <a href="../core-libraries/passport.html">
+            
+                    
+                    Passport
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../core-libraries/lodash.html">
+            
+                <a href="../core-libraries/lodash.html">
+            
+                    
+                    Lodash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../core-libraries/builders-bundlers.html">
+            
+                <a href="../core-libraries/builders-bundlers.html">
+            
+                    
+                    Builders & Bundlers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../react/">
+            
+                <a href="../react/">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../other-libs-frwrks/">
+            
+                <a href="../other-libs-frwrks/">
+            
+                    
+                    Other Libs & Frameworks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../other-libs-frwrks/ui-ux-tools-libs.md">
+            
+                <span>
+            
+                    
+                    UI/UX Tools & Libs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../other-libs-frwrks/testing-libs-frwrks.md">
+            
+                <span>
+            
+                    
+                    Testing Libs & Frameworks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../other-libs-frwrks/backend-libs-frwrks.md">
+            
+                <span>
+            
+                    
+                    Backend Libs & Frameworks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../other-libs-frwrks/frontend-libs-frwrks.md">
+            
+                <span>
+            
+                    
+                    Frontend Libs & Frameworks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../other-libs-frwrks/fullstack-frameworks.md">
+            
+                <span>
+            
+                    
+                    Fullstack Frameworks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../cs-101/">
+            
+                <a href="../cs-101/">
+            
+                    
+                    CS 101
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../cs-101/algorithms.html">
+            
+                <a href="../cs-101/algorithms.html">
+            
+                    
+                    Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../cs-101/recursion.html">
+            
+                <a href="../cs-101/recursion.html">
+            
+                    
+                    Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../cs-101/data-structures.html">
+            
+                <a href="../cs-101/data-structures.html">
+            
+                    
+                    Data Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../in-the-wild/">
+            
+                <a href="../in-the-wild/">
+            
+                    
+                    In The Wild
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../in-the-wild/your-portfolio.md">
+            
+                <span>
+            
+                    
+                    Your Portfolio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../in-the-wild/job-search.md">
+            
+                <span>
+            
+                    
+                    Job Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../in-the-wild/interview-preparation.html">
+            
+                <a href="../in-the-wild/interview-preparation.html">
+            
+                    
+                    Interview Preparation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../in-the-wild/open-source-contributing.html">
+            
+                <a href="../in-the-wild/open-source-contributing.html">
+            
+                    
+                    Open-Source Contributing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <a target="_blank" href="https://github.com/elewa-academy/General-Resources/blob/master/docs_src/SUMMARY.md">
+            
+                    
+                    Repo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <a target="_blank" href="https://elewa-academy.github.io">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Asynchronicity</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="async-1-callbacks">Async 1: Callbacks</h1>
+<h2 id="javascript-is-asynchronous">JavaScript is asynchronous</h2>
+<h3 id="synchronous-code">Synchronous Code</h3>
+<p>In <em>synchronous</em> programs, if you have two lines of code (L1 followed by L2), then L2 cannot begin running until L1 has finished executing.</p>
+<p>You can imagine this as if you are in a line of people waiting to buy train tickets. You can&apos;t begin to buy a train ticket until all the people in front of you have finished buying theirs. Similarly, the people behind you can&apos;t start buying their tickets until you have bought yours.</p>
+<h3 id="asynchronous-code">Asynchronous Code</h3>
+<p>In <em>asynchronous</em> programs, you can have two lines of code (L1 followed by L2), where L1 schedules some task to be run in the future, but L2 runs before that task completes.</p>
+<p>You can imagine as if you are eating at a sit-down restaurant. Other people order their food. You can also order your food. You don&apos;t have to wait for them to receive their food and finish eating before you order. Similarly, other people don&apos;t have to wait for you to get your food and finish eating before they can order. Everybody will get their food as soon as it is finished cooking.</p>
+<p>Note that asynchronous does not mean the same thing as <em>concurrent</em> or <em>multi-threaded</em>. JavaScript can have asynchronous code, but it is generally <strong>single-threaded</strong>. This is like a restaurant with a single worker who does all of the waiting and cooking. But if this worker works quickly enough and can switch between tasks efficiently enough, then the restaurant seemingly has multiple workers.</p>
+<p>Let&apos;s show this with an example:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Say Hello</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Hello&quot;</span>);
+<span class="hljs-comment">// Say Goodbye 2 seconds from now</span>
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Goodbye&quot;</span>)
+}, <span class="hljs-number">2000</span>);
+<span class="hljs-comment">// Say Hello again</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Hello&quot;</span>);
+</code></pre>
+<p>How do you expect this code to be run? In which order will the three statements be executed? Run the code in the console to check if your thought were correct.</p>
+<p>Because of its asynchronousity JS will not wait until the setTimeout function is finished before it moves on to the next line. Instead it will store the code momentarily away in a <em>callback queue</em> and execute the next line.</p>
+<p>Watch this great <a href="http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D" target="_blank">video</a> to have a better understanding of how this works. It has also has a litte sandbox where you can test this out.</p>
+<p>Understanding asynchronousity is the bread and butter of JS and web development. Often you will send requests to API&apos;s and you&apos;ll want to do something with the response. If you misunderstand JS, you will run into a whole lot of trouble. JS has a couple of ways to handle this kind of requests. The <em>traditional</em> way and the one you absolutely need to know if you want to find a job in this field is called a <em>callback function</em>. We&apos;ll describe this more in detail in below. Later we&apos;ll also talk about <strong>Promises</strong>, which were introduced with ES6 to tackle these kind of problems. With the advent of ES7 you now also have something called <em>async functions</em>, but these only run in Google Chrome for now and we won&apos;t go deeper into those.</p>
+<h2 id="callbacks">Callbacks</h2>
+<p>Unlike some other programming languages, in JavaScript you can pass a function as an argument in another function. In JavaScript, functions are <strong>first-class objects</strong>; that is, functions are of the type <em>Object</em> and they can be used in a first-class manner like any other object (String, Array, Number, etc.) since they are in fact objects themselves.</p>
+<p>Because functions are first-class objects, we can pass a function as an argument in another function and later execute that passed-in function or even return it to be executed later. This is the essence of using <strong>callback functions</strong> in JavaScript.</p>
+<p>A callback function, also known as a <strong>higher-order function</strong>, is a function that is passed to another function (let&#x2019;s call this other function &#x201C;otherFunction&#x201D;) as a parameter, and the callback function is called (or executed) inside the otherFunction. A callback function is essentially a pattern (an established solution to a common problem), and therefore, the use of a callback function is also known as a callback pattern.</p>
+<p>When you were using event listeners as part of the DOM manipulation, you were already using callback functions!!</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> someDiv = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;someDiv&quot;</span>);
+someDiv.addEventListener(<span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-comment">//This is a callback function! It says, after a &quot;Click&quot; run this function</span>
+    alert(<span class="hljs-string">&quot;I clicked some div&quot;</span>);
+})
+</code></pre>
+<p>Alternatively, you could split up the code like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> someDiv = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;someDiv&quot;</span>);
+
+someDiv.addEventListener(<span class="hljs-string">&quot;click&quot;</span>, myFunction); <span class="hljs-comment">// No parentheses here!</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunction</span>(<span class="hljs-params"></span>)</span>{
+    alert(<span class="hljs-string">&quot;I clicked some div&quot;</span>)
+};
+</code></pre>
+<p>And when you see this code, do you have a better understanding of what it does:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+arr.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">el</span>)</span>{ <span class="hljs-comment">// Yes, that&apos;s a callback function!</span>
+    <span class="hljs-keyword">return</span> el * <span class="hljs-number">2</span>
+})
+</code></pre>
+<p>So how would you go about writing functions that take callback functions as arguments? Let&apos;s look at this example:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> db = [];
+<span class="hljs-comment">// A user data object</span>
+<span class="hljs-keyword">var</span> userData = {
+    name: <span class="hljs-string">&quot;Evan Cole&quot;</span>,
+    age: <span class="hljs-number">26</span>,
+    nationality: <span class="hljs-string">&quot;\&apos;Murican&quot;</span>
+};
+
+<span class="hljs-comment">// a function that prints out user data</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">printData</span>(<span class="hljs-params">userData</span>)</span>{
+    <span class="hljs-keyword">for</span> (key <span class="hljs-keyword">in</span> userData){
+        <span class="hljs-built_in">console</span>.log(key + <span class="hljs-string">&quot;: &quot;</span> + userData[key]);
+    }
+};
+
+<span class="hljs-comment">// a function that takes as arguments the data and a callback function</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getData</span>(<span class="hljs-params">inputData, callback</span>)</span>{
+    <span class="hljs-comment">// do something with the data. Store it to a DB for example</span>
+    db.push(inputData);
+    callback(inputData);
+};
+
+<span class="hljs-comment">//call the function with the data and the callback function</span>
+getData(userData, printData);
+</code></pre>
+<p>In the above example you want to make sure the printing of the data only happens <strong>after</strong> you&apos;ve received the data. That&apos;s why you write a function that gets data first and then call a second function that prints the data. This way you&apos;re avoiding that JS moves on to next line, without having retrieved all the data.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// without callback. You&apos;ve defined a function that gets data from an external API</span>
+<span class="hljs-comment">// you store it in a var</span>
+<span class="hljs-keyword">var</span> data = getData(someURI); <span class="hljs-comment">// connects to a server, gets the data, processes the data,...</span>
+
+<span class="hljs-comment">// Immediately afterwards, display the data in your page</span>
+<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;someDiv&quot;</span>).innerHTML = data;
+</code></pre>
+<p>Chances are that in above example the page will remain empty! JS will run the getData function, but may move on to the next line before receiving all the data. That&apos;s why you need to wrap this up in a callback!</p>
+<h2 id="asynchronous-javascript-and-xml-ajax">Asynchronous JavaScript and XML: AJAX</h2>
+<p>AJAX is a set of Web development techniques using many Web technologies on the client side to create asynchronous Web applications. With Ajax, Web applications can send data to and retrieve from a server asynchronously (in the background) without interfering with the display and behavior of the existing page. By decoupling the data interchange layer from the presentation layer, Ajax allows for Web pages, and by extension Web applications, to change content dynamically <strong>without the need to reload the entire page</strong>. In practice, modern implementations commonly substitute <strong>JSON</strong> for XML due to the advantages of being native to JavaScript.</p>
+<p>AJAX calls are made by using the XMLHttpRequest (XHR) object. This is an API in the form of an object whose methods transfer data between a web browser and a web server. The object is provided by the browser&apos;s JavaScript environment. We won&apos;t go too deep into this object, if you want to know more you read up about <a href="https://www.w3schools.com/xml/dom_httprequest.asp" target="_blank">here</a>. We will instead focus on so-called Promise-based httpRequest API&apos;s such as the more recently built-in API Fetch and third-party modules such as Axios and SuperAgent.</p>
+<h2 id="exercises">Exercises</h2>
+<ul>
+<li>Go <a href="https://github.com/jankeLearning/content-code/tree/master/Week%2003/callbacks" target="_blank">here</a></li>
+<li><a href="http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D" target="_blank">watch this and play with the site</a>  </li>
+<li><a href="http://callbackhell.com" target="_blank">a great article</a>  </li>
+<li><a href="https://docs.google.com/presentation/d/16O1__rTtownarL_6n70RhavYkPjvZJOCtfEqQOeDt18/edit#slide=id.g179b920802_0_56" target="_blank">some slides</a>  </li>
+<li><a href="http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/" target="_blank">JS callback conventions</a></li>
+<li><a href="http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/" target="_blank">more on js callback conventions</a></li>
+</ul>
+<h2 id="project">Project</h2>
+<p>Click <a href="https://github.com/jankeLearning/projects/tree/master/03-callbacks%2Bdata_models" target="_blank">here</a> to go the project.</p>
+<h1 id="fetch">Fetch</h1>
+<p>The Fetch API is a built-in javascript interface for fetching resources (including across the network).</p>
+<p>It has a relatively simple syntax and it uses Promises to handle results/callbacks.</p>
+<p>The syntax looks like this: fetch(<em>URL</em>(required), <em>options</em>(optional)).then(<em>response</em>).catch(<em>error</em>).</p>
+<p>So fetch sends a <em>request</em> to an url to retrieve data from, and optionally some options, such as method (GET,POST,...). It will return a <em>response</em> which can be handled in the <code>then</code> statement.</p>
+<p>Let&apos;s make a request to an API. Introducing the Random People API!!</p>
+<pre><code class="lang-javascript">fetch(<span class="hljs-string">&quot;https://randomuser.me/api/&quot;</span>)
+  .then(response =&gt; response.json()) <span class="hljs-comment">// wil return JSON so let&apos;s parse that</span>
+  .then(data =&gt; <span class="hljs-built_in">console</span>.log(data)) <span class="hljs-comment">// let&apos;s examine what this returns</span>
+
+<span class="hljs-comment">// I only want the name:</span>
+
+fetch(<span class="hljs-string">&quot;https://randomuser.me/api/&quot;</span>)
+  .then(response =&gt; response.json())
+  .then(data =&gt; alert(data.results[<span class="hljs-number">0</span>].name.first + <span class="hljs-string">&quot; &quot;</span> + data.results[<span class="hljs-number">0</span>].name.last))
+</code></pre>
+<p><a href="https://developers.google.com/web/updates/2015/03/introduction-to-fetch" target="_blank">Fetch API</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Headers" target="_blank">headers</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Request" target="_blank">Request</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Response" target="_blank">Response</a></p>
+<hr>
+<h1 id="axios">Axios</h1>
+<p>Axios is a third-party module used in the browser and node to make request to internal or external API&apos;s. It makes use of the built-in XMLHttpRequest object to send or retrieve data.</p>
+<p>As this is a third-party module it will need to be imported into your global environment. </p>
+<h3 id="examples">Examples</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Make a request for a user with a given ID</span>
+axios.get(<span class="hljs-string">&apos;/user?ID=12345&apos;</span>)
+  .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">response</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(response);
+  })
+  .catch(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">error</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(error);
+  });
+
+<span class="hljs-comment">// performing a post request</span>
+axios.post(<span class="hljs-string">&apos;/user&apos;</span>, {
+    firstName: <span class="hljs-string">&apos;Fred&apos;</span>,
+    lastName: <span class="hljs-string">&apos;Flintstone&apos;</span>
+  })
+  .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">response</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(response);
+  })
+  .catch(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">error</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(error);
+  });
+</code></pre>
+<h2 id="external-resources">External Resources</h2>
+<ul>
+<li>Axios: <a href="https://github.com/mzabriskie/axios" target="_blank">https://github.com/mzabriskie/axios</a></li>
+<li><a href="https://medium.com/codingthesmartway-com-blog/getting-started-with-axios-166cb0035237" target="_blank">https://medium.com/codingthesmartway-com-blog/getting-started-with-axios-166cb0035237</a></li>
+</ul>
+<hr>
+<h1 id="async-2-promises">Async 2: Promises</h1>
+<p>A <strong>Promise</strong> is an object representing the eventual completion or failure of an asynchronous operation. A promise may be created using its constructor. However, most people are consumers of already-created promises returned from functions. This segment will therefore explore consumption of returned promises first.</p>
+<p>Essentially, a promise is a returned object you attach callbacks to, instead of passing callbacks into a function.</p>
+<h3 id="syntax">Syntax</h3>
+<p>We won&apos;t worry about the Promise constructor just now. If you&apos;re interested you can read more about it <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" title="Promises" target="_blank">here</a>.</p>
+<p>What you need to know now is how to handle API&apos;s that return a Promise-object. We will talk about a couple examples of this later.</p>
+<p>For now this is the syntax you need to worry about:</p>
+<p>function(<em>arguments</em>).then(<em>onfulfill</em>).catch(<em>onreject</em>).</p>
+<ol>
+<li>function returning a promise: this is a function that will return a Promise-object, i.e it will send a <em>request</em> and receive a <em>response</em> back which will have to be <em>fulfilled</em> .</li>
+<li>When the promise has been <em>fulfilled</em> we write code in the <em>thenable</em> what should happen next.</li>
+<li>If the promise failed or has been <em>rejected</em>, we write code in the <em>catch</em> statement for error handling.</li>
+</ol>
+<p>Let&apos;s look back at our previous example to see the difference: </p>
+<pre><code class="lang-javascript"><span class="hljs-comment">//with a callback</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getData</span>(<span class="hljs-params">inputData, callback</span>)</span>{
+    db.push(inputData);
+    callback(inputData);
+};
+
+getData(userData, printData);
+</code></pre>
+<p>Let&apos;s assume getData returns a Promise, to resolve it would look something like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// instead of a callback we add a thenable</span>
+getData(userData)
+  .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>)</span>{
+      <span class="hljs-keyword">return</span> printData(result)
+      })
+  .catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>)</span>{<span class="hljs-keyword">return</span> error})
+
+<span class="hljs-comment">// or in ES6</span>
+getData(userData).then(result =&gt; printdata(result)).catch(error =&gt; error)  <span class="hljs-comment">// much neater</span>
+</code></pre>
+<p><img src="https://mdn.mozillademos.org/files/8633/promises.png" alt=""></p>
+<h3 id="promises-vs-callbacks">Promises vs Callbacks</h3>
+<p>Unlike old-style passed-in callbacks, a promise comes with some guarantees:</p>
+<ul>
+<li>Promises will never be called before the completion of the current run of the JavaScript event loop.</li>
+<li>Promises added with .then even after the success or failure of the asynchronous operation, will be called, as above.</li>
+<li>Multiple promises may be added by calling .then several times, to be executed independently in insertion order.</li>
+</ul>
+<p>But the most immediate benefit of promises is <strong>chaining</strong>.</p>
+<h3 id="chaining"><strong>Chaining</strong></h3>
+<p>A common need is to execute two or more asynchronous operations back to back, where each subsequent operation starts when the previous operation succeeds, with the result from the previous step. We accomplish this by creating a <strong>promise chain</strong>.</p>
+<p>Imagine if the <code>then</code> statement would also return a promise:</p>
+<pre><code class="lang-javascript">doSomething() <span class="hljs-comment">// returns a promise</span>
+  .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>)</span>{
+      <span class="hljs-keyword">return</span> doSomethingElse(result) <span class="hljs-comment">// This also returns a promise, so we can chain another thenable</span>
+  })
+  .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">newResult</span>)</span>{
+      <span class="hljs-keyword">return</span> printNewResult(newResult)
+  })
+  .catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">failure</span>)</span>{
+      <span class="hljs-keyword">return</span> failure
+  })
+
+<span class="hljs-comment">// Much neater in ES6</span>
+doSomething()
+  .then(result =&gt; doSomethingElse(result))
+  .then(newResult =&gt; printNewResult(newResult))
+  .catch(failure =&gt; failure)
+</code></pre>
+<h3 id="fetch-and-axios">Fetch and Axios</h3>
+<p>The Fetch API is a built-in javascript interface for fetching resources (including across the network).</p>
+<p>It has a relatively simple syntax and it uses Promises to handle results/callbacks.</p>
+<p>The syntax looks like this: fetch(<em>URL</em>(required), <em>options</em>(optional)).then(<em>response</em>).catch(<em>error</em>).</p>
+<p>So fetch sends a <em>request</em> to an url to retrieve data from, and optionally some options, such as method (GET,POST,...). It will return a <em>response</em> which can be handled in the <code>then</code> statement.</p>
+<p>Let&apos;s make a request to an API. Introducing the Random People API!!</p>
+<pre><code class="lang-javascript">fetch(<span class="hljs-string">&quot;https://randomuser.me/api/&quot;</span>)
+  .then(response =&gt; response.json()) <span class="hljs-comment">// wil return JSON so let&apos;s parse that</span>
+  .then(data =&gt; <span class="hljs-built_in">console</span>.log(data)) <span class="hljs-comment">// let&apos;s examine what this returns</span>
+
+<span class="hljs-comment">// I only want the name:</span>
+
+fetch(<span class="hljs-string">&quot;https://randomuser.me/api/&quot;</span>)
+  .then(response =&gt; response.json())
+  .then(data =&gt; alert(data.results[<span class="hljs-number">0</span>].name.first + <span class="hljs-string">&quot; &quot;</span> + data.results[<span class="hljs-number">0</span>].name.last))
+</code></pre>
+<p>Axios is a third-party Promise based HTTP client for the browser and node.js. Axios is NOT built-in, so that means we need to import that somehow (more about that in the NPM and module.export sections).</p>
+<p>The same code in axios would look like this:</p>
+<pre><code class="lang-javascript">axios.get(<span class="hljs-string">&quot;https://randomuser.me/api/&quot;</span>)
+.then(response =&gt; response.json())
+.then(data =&gt; alert(data.results[<span class="hljs-number">0</span>].name.first + <span class="hljs-string">&quot; &quot;</span> + data.results[<span class="hljs-number">0</span>].name.last))
+</code></pre>
+<h2 id="exercises">Exercises</h2>
+<p>Need to create some exercises using API requests and promises</p>
+<h2 id="project">Project</h2>
+<p>Link to Project: <a href="https://github.com/jankeLearning/projects/tree/master/04-twitz" target="_blank">https://github.com/jankeLearning/projects/tree/master/04-twitz</a></p>
+<h2 id="external-resources">External Resources</h2>
+<ul>
+<li>From the people at Google: <a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises" target="_blank">https://developers.google.com/web/fundamentals/getting-started/primers/promises</a></li>
+<li>For dummies: <a href="https://scotch.io/tutorials/javascript-promises-for-dummies" target="_blank">https://scotch.io/tutorials/javascript-promises-for-dummies</a></li>
+<li>Fetch API: <a href="https://developers.google.com/web/updates/2015/03/introduction-to-fetch" target="_blank">https://developers.google.com/web/updates/2015/03/introduction-to-fetch</a></li>
+<li>Axios: <a href="https://github.com/mzabriskie/axios" target="_blank">https://github.com/mzabriskie/axios</a></li>
+<li>you get the gist: <a href="https://gist.github.com/domenic/3889970" target="_blank">https://gist.github.com/domenic/3889970</a></li>
+<li><a href="https://colintoh.com/blog/staying-sane-with-asynchronous-programming-promises-and-generators" target="_blank">learning promises</a>  </li>
+<li>a sick <a href="https://github.com/vasanthk/async-javascript" target="_blank">github of examples</a>  </li>
+<li><a href="https://caolan.github.io/async/" target="_blank">a library</a> to help with async programming.  </li>
+<li><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise</a></li>
+<li><a href="https://scotch.io/tutorials/javascript-promises-for-dummies" target="_blank">https://scotch.io/tutorials/javascript-promises-for-dummies</a></li>
+<li><a href="http://www.telerik.com/blogs/what-is-the-point-of-promises" target="_blank">http://www.telerik.com/blogs/what-is-the-point-of-promises</a></li>
+<li><a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261" target="_blank">https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261</a>  </li>
+<li><a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9jAhrjtZ9U93UMIhnCc44MH" target="_blank">video from flo</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="es-star.html" class="navigation navigation-prev " aria-label="Previous page: ES*">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="good-practices.md" class="navigation navigation-next " aria-label="Next page: Good Practices">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Asynchronicity","level":"1.5.5","depth":2,"next":{"title":"Good Practices","level":"1.5.6","depth":2,"path":"javascript/good-practices.md","ref":"./javascript/good-practices.md","articles":[]},"previous":{"title":"ES*","level":"1.5.4","depth":2,"path":"javascript/es-star.md","ref":"./javascript/es-star.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-chapters"],"pluginsConfig":{"collapsible-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"javascript/async.md","mtime":"2018-02-24T11:47:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-02-28T18:43:55.913Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

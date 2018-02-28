@@ -1,0 +1,28 @@
+convert your pseudocode into code:
+
+	if a property is present, check it's type
+		if it's type is right
+			say it's all good
+		else 
+			replace it with the fallback and say you did
+	else
+		say it was gone and put in the fallback
+	if there's an extra property
+		alert the user
+
+-------------------------------------------------------
+
+	if (property is not undefined) {
+		if (property is right type) {
+			message += 'all good'
+		} else {
+			property = fallback 
+			message += 'type was bad, replaced'
+		}
+	} else {
+		property = fallback
+		message += 'prop was absent, fallback inserted'
+	}
+	if (property is not in schema) {
+		message += 'extra property detected'
+	}
