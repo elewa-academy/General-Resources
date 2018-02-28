@@ -1,0 +1,6 @@
+this is a simple terminal app to add two numbers
+
+to use it
+	navigate to the right directory
+	enter: node app.js <num1> <num2>
+
