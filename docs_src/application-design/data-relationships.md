@@ -15,13 +15,13 @@ Data relationships and data types can be classified by their degree of interconn
      
 From a data modeling point of view there are only 3 numbers - 0, 1, and 'many'.  A data relation is between two units of data, the relationship types are the possible ways of combining 0, 1 and 'many':
 * Zero to Zero:
-    * ![](https://github.com/elewa-academy/diagrams/blob/master/data-relations/0-0.png)
+    * ![](../diagrams/data-relations/0-0.png)
 * One to One:
-    * ![](https://github.com/elewa-academy/diagrams/blob/master/data-relations/1-1.png)
+    * ![](../diagrams/data-relations/1-1.png)
 * One to Many,  or Many to One:
-    * ![](https://github.com/elewa-academy/diagrams/blob/master/data-relations/m-1.png)
+    * ![](../diagrams/data-relations/m-1.png)
 * Many to Many:
-    * ![](https://github.com/elewa-academy/diagrams/blob/master/data-relations/m-m.png)
+    * ![](../diagrams/data-relations/m-m.png)
 
 That's about all you need to know to get started.  
 ___

@@ -36,7 +36,7 @@ ___
 
 ### How does this all fit together ?
 
-![](https://github.com/elewa-academy/diagrams/blob/master/git-hub/where-it-fits.png)
+![](../diagrams/git-github.png)
 
 Git is like a really **epic save button** for your files and directories - officially Git is called a version control system.
 

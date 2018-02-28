@@ -95,8 +95,8 @@ ___
 Below is a diagram that takes an example argument 'mattress' and illustrates the recursive solution indicated by our answers to the above questions.  
 
 
-![](https://github.com/elewa-academy/diagrams/blob/master/code-flow/recursion-example.png)
-![](https://github.com/elewa-academy/diagrams/blob/master/code-flow/legend.png)
+![](../diagrams/recursion/recursion-example.png)
+![](../diagrams/legend.png)
 __Mini Quiz__: Can you guess why this example uses an 8 letter word?
 
 ___

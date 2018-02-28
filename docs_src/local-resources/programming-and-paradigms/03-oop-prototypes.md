@@ -142,8 +142,8 @@ In the previous examples we have set protoypes by directly manipulating the '.\_
         ```javascript
         var first_obj = {first_prop: 1};
         var second_obj = {second_prop: 2};
-        var second_obj = Object.assign(second_obj, first_obj);
-        var second_obj; // {second_prop: 2, first_prop: 1}
+        Object.assign(second_obj, first_obj);
+        econd_obj; // {second_prop: 2, first_prop: 1}
         ```
     * This method doesn't actually modify the prototype chain.  It's sort of the opposite of 'create', it combines two or more objects into one.  When you assign one object to another you are literally copying the methods from one object to another. Use '.hasOwnProperty()' to explore the difference between '.assign()' and '.create()'.
     * Knowing when and how to use this one can be tricky to figure out.  We'll address this in the next chapter by recommending and discussing a few _design patterns_.

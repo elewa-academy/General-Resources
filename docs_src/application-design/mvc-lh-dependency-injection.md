@@ -47,7 +47,7 @@ This is because your app is __event driven__.  It sits idle until the user promp
 
 
 
-![](https://github.com/elewa-academy/diagrams/blob/master/code-flow/mvc-lh.png)
+![](../diagrams/mvc-lh.png)
 
 [TOP](#table-of-contents) 
 ___
@@ -80,7 +80,7 @@ See how this architecture makes your life easy, you only have to change the L an
 ___
 ### An Example
 
-[i make perfect code](https://github.com/jankeLearning/content-code/tree/master/Week%2003/mvc-lh-calc)
+
 
 [TOP](#table-of-contents)  
 ___  
