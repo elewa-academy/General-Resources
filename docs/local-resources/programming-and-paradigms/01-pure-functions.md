@@ -1,1 +1,0 @@
-d4 ex16 for side effects
