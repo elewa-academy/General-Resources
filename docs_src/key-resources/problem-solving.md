@@ -1,6 +1,5 @@
 # Constriant-Based Problem Solving
 
---- link to "learning from code"
 
 One of the most important skills you can learn to become a 10x developer is to write exactly and only the simplest code necessary.  This skill is much harder to learn and much more valuable than being able to write cool applications or being able to code challenging algorithms.
 
