@@ -15,7 +15,7 @@
   * [Agile](./soft-skills/agile.md)
   * [SCRUM](./soft-skills/scrum.md)
 * [Programming Resources](./programming-resources/README.md) 
-  * [Exercises](./programming-resources/exercises.md)
+  * [Learning From Code](./programming-resources/learning-from-code.md)
   * [Abstractions](./programming-resources/abstractions.md)
   * [Specs](./programming-resources/specs.md)
   * [Clean Code](./programming-resources/clean-code.md)
@@ -100,6 +100,7 @@
   * [Job Search](./in-the-wild/job-search.md)
   * [Interview Preparation](./in-the-wild/interview-preparation.md)
   * [Open-Source Contributing](./in-the-wild/open-source-contributing.md)
+* [Code Samples](https://github.com/elewa-academy/General-Resources/tree/master/docs_src/local-resources)
 * [Repo](https://github.com/elewa-academy/General-Resources/blob/master/docs_src/SUMMARY.md)
 * [Home](https://elewa-academy.github.io)
 

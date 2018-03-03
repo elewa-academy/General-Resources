@@ -96,7 +96,7 @@ Below is a diagram that takes an example argument 'mattress' and illustrates the
 
 
 ![](../diagrams/recursion/recursion-example.png)
-![](../diagrams/legend.png)
+![](../diagrams/recursion/legend.png)
 __Mini Quiz__: Can you guess why this example uses an 8 letter word?
 
 ___

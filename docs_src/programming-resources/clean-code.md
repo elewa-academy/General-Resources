@@ -1,7 +1,8 @@
 # Writing Readable Code
-Developers spend SO MUCH more time reading code than writing it.  This is true even with your own code.  As a favor to yourself and whoever will need to use, maintain or develop your code, please learn to write readable code. 
 
-But what about documentation, Evan?  Good question other Evan.  
+“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” — _Martin Fowler_
+
+Developers spend SO MUCH more time reading code than writing it.  This is true even with your own code.  As a favor to yourself and whoever will need to use, maintain or develop your code, please learn to write readable code. 
 
 Documentation does not remove the need for readable code.  Documentation is for users with no interest in reading source code; readable code is for developers who want to study, modify, fix, update, or in anyother way work with your codebase. (Including your futur self.  Love yourself.)  
  

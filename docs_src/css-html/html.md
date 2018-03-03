@@ -1,0 +1,1 @@
+* HTML5: [Mozilla](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5), [W3](https://www.w3schools.com/html/html5_intro.asp)
