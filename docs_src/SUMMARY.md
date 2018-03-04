@@ -53,6 +53,7 @@
   * [Code Editors](./developer-tools/code-editors.md)
   * [Git & GitHub](./developer-tools/git-github.md)
   * [Wireframes](./developer-tools/wireframes.md)
+  * [Sketchboard](./developer-tools/sketchboard.md)
   * [Debuggers & Linters](./developer-tools/debuggers-linters.md)
   * [Node/NPM & Yarn](./developer-tools/npm-node-yarn.md)
   * [Building & Transpilers](./developer-tools/building-traspilers.md)
