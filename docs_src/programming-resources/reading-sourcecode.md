@@ -17,7 +17,7 @@ ___
 Here's a few resources, find the one that works for you. 
 * [Code with intent](https://codewithintent.com/how-to-read-native-javascript-code/) 
 * [Benjycui](https://github.com/benjycui/benjycui.github.io/blob/master/posts/how-to-read-open-source-javascript-code.md)
-* [Quora](https://www.quora.com/Whats-the-best-way-to-approach-reading-source-code-for-a-JavaScript-library) - the first, long answer. not the later short ones
+* [Quora](https://www.quora.com/Whats-the-best-way-to-approach-reading-source-code-for-a-JavaScript-library) - Huy Duong's answer.
 
 The best resoure of all: 
 * Your own experience.  Read a lot of source code.  
