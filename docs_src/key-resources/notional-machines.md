@@ -13,3 +13,10 @@ you will also need to learn when to use which one
 our projects, curriculum and classroom experiences are designed to help you with this
 
 by the end of this class we hope to equip you with a whole bunch of these tools that will help you learn and quickly come up with effective solutions.
+
+pythontutor.com/javascript
+loupe
+chrome devtools debugger
+	https://developers.google.com/web/tools/chrome-devtools/javascript/step-code
+	https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints
+	https://developer.dynamsoft.com/dwt/kb/2873
