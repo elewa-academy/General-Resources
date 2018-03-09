@@ -6,7 +6,7 @@
   * [Mindset & Expectations](./key-resources/mindset-expectations.md) 
   * [Good Learning Habits](./key-resources/good-learning-habits.md)  
   * [Problem Solving](./key-resources/problem-solving.md)
-  * [Notional Machines](./key-resouces/notional-machines.md)
+  * [Mental Models](./key-resouces/mental-models.md)
   * [Software Development](./key-resources/software-development.md)
   * [The Internet](./key-resources/the-internet.md)
   * [Using This Curriculum](./key-resources/using-this-curriculum.md)

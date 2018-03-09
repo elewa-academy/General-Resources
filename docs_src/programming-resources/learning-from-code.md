@@ -5,17 +5,10 @@ Working on JavaScript exercises serves two main functions - learning how JavaScr
 ---
 ### Resources
 
-* [JavaScript Pseudocode](http://dondi.lmu.build/share/intro/pseudocode2js-v02.pdf)  
-* [Tips for converting from words to code](https://github.com/elewa-academy/General-Resources/tree/master/docs_src/local-resources/using-js/english2js)
-* [Specs](https://elewa-academy.github.io/General-Resources/programming-resources/specs.html)
-* [Using specs to study code](https://github.com/elewa-academy/studying-with-specs/tree/master)
-* [Testing 101](https://elewa-academy.github.io/General-Resources/programming-resources/testing-101.html#minimal-passing-functions)
-* [Minimal passing functions](https://github.com/elewa-academy/General-Resources/tree/master/docs_src/local-resources/using-js/simplestPassingFuncs)  
-* [Tips for using conditional checks](https://github.com/elewa-academy/General-Resources/tree/master/docs_src/local-resources/using-js/conditionalChecks)
-* [Simpleprogrammer's tips](https://simpleprogrammer.com/solving-problems-breaking-it-down/)
+[Codewars Project](https://elewa-academy.github.io/Fundamentals/3-codewars-gallery/)
 
 ---
-### Exercises
+### Additional Exercises
 
 * [JS exercises Code Along](https://elewa-academy.github.io/Frontend-Code-Alongs/00-js-exercises/)
 * [LearnTeachCode](https://github.com/LearnTeachCode/intro-javascript-class)

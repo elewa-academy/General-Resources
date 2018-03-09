@@ -35,14 +35,9 @@ All the other answers to this Quora question focus on the more technical side of
 ___
 ### Cyber-Security 102 - the non-human
 
+At the core of most mechanical security measures is [some form of mathematical encryption](https://www.makeuseof.com/tag/encryption-care/).  Encryption is incredibly robust (assuming there were no human errors in the implementation). There are [two main encryption strategies](https://www.youtube.com/watch?v=ERp8420ucGs), both of these are build on the foundations of Number Theory and large prime numbers.  To crack these simple encryptions with brute force you would need all the computers in the world and at many hundreds of years.  Or a hacker could open your computer, email themselves your private key, and walk out of the coffee shop.  
 
-The fancy numbery stuff
-95% of this:  some things take VVVEERRYYY long to compute or guess
-Prime numbers, prime factors:  public/private keys
-Email verification codes
-Hashing, salting, …
-
-Common types of security risks:
+This imbalance is also visible in a list of common security risks:
 * Denial Of Service: Overload the system with requests until it breaks.
 * Phishing: You were gulible enough to follow a questionable link.
 * Malwares, trojans: Small programs that run on your computer. Probably because you were gulible enough to install them.
@@ -52,7 +47,8 @@ Common types of security risks:
 Most of these are humans making mistakes or even intentionally sabotaging your system.
 
 Take away: 
-* The algorithmic/computer side of netowrk security is really quite solid.  
+* The algorithmic/computer side of security is very solid.  
+* The Systems side is pretty good.
 * The human side is pretty weak.
 ___
 ### [Security in Node.js/NPM](https://www.bithound.io/npm-package-security)
