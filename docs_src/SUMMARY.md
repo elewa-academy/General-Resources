@@ -62,7 +62,7 @@
 * [Application Design](./application-design/README.md)
   * [User-Centered Development](./application-design/user-centered-development.md)
   * [Logic vs. Framework](./application-design/logic-vs-framework.md)
-  * [MVC & Separation of Concerns](./application-design/mvc-separation-concerns.md)
+  * [MVC](./application-design/mvc.md)
   * [Data Modeling](./application-design/data-modeling.md)
   * [MVC-LH & Dependency Injectionn](./application-design/mvc-lh-dependency-injection.md)
   * [Design Patterns](./application-design/design-patterns.md)
