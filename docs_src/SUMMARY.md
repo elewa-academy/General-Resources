@@ -50,6 +50,7 @@
   * [SASS](./css-html/sass.md)
   * [LESS](./css-html/less.md)
 * [Developer Tools](./developer-tools/README.md)
+  * [Node.js](./developer-tools/node-js.md)
   * [Chrome](./developer-tools/chrome.md)
   * [Terminal](./developer-tools/terminal.md)
   * [Code Editors](./developer-tools/code-editors.md)
