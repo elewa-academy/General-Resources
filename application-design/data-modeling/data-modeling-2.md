@@ -25,9 +25,10 @@ From a data modeling point of view there are only 3 numbers - 0, 1, and 'many'. 
 
 That's about all you need to know to get started.  
 ___
-### Exercises
-No exercises, just the __Data Model__ and __*Book__ projects.
 
+### Resources
+
+* [Many-to-Many in Mongoose](https://github.com/elewa-academy/General-Resources/blob/master/backend-libraries/mongoose.md)
 
 ___
 ___
