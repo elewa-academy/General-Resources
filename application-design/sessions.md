@@ -11,7 +11,7 @@ So you ask how is this stateless if it remembers me?  The server doesn't remembe
   
 [cookies article](http://www.whatarecookies.com)  
 
-[Exercise example](https://github.com/jankeLearning/content-code/tree/master/Week%2006/sessions-intro)
+[Exercise example](./sessions-demo)
 
 ---
 describe and diagrams for manual authentication flow
