@@ -1,8 +1,0 @@
-to use this app navigate to this directory:
-	1. 'node app.js'
-	2. open 'localhost:1337' in the browser
-	3. more instructions there
-
-known bugs
-	can't handle chained operations from the url
-	ie the app breaks if you pass in only one argument, even though the backend can handle it

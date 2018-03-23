@@ -1,1 +1,0 @@
-The basic mvc-lh calcs from /0-basic-browser-only, but refactored to run in the terminal.
