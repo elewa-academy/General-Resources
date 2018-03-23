@@ -1,6 +1,4 @@
-link to youtube project
-
-more in general about why this is needed, how it works, yada
+> This file refers to [this project](https://github.com/jankeLearning/projects/tree/master/04-be-you-tube)
 
 # Node 2 - A Frontend Build Environment
 First we saw Node as an app to run JS outside of the browser.  
