@@ -1,6 +1,6 @@
 Visit the [General Resources Wiki](https://github.com/elewa-academy/General-Resources/wiki) to access all of the content.
 
-The repo is just used for stashing resources that the wiki links to.
+This repo is just used for stashing resources the wiki links to.
 
 ___
 ___
