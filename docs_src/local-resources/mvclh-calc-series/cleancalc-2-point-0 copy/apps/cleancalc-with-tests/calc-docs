@@ -1,8 +1,0 @@
-to use app enter:
-	node calc.js <operation> <num1> (<num2>, optional)
-
-accepted operation names:
-	add
-	subtract
-	multiply
-	divide
