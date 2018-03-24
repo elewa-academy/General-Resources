@@ -135,3 +135,8 @@ Here you'll find some resources about some more trickier concepts regarding Java
 + if you have programming experience : http://spencertipping.com/js-in-ten-minutes/js-in-ten-minutes.pdf
 
 + [Object coersion](https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/)
+
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

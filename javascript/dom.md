@@ -45,3 +45,9 @@ ___
 * [Google's guide to optimizing for frontend](https://developers.google.com/web/fundamentals/performance/)
 * [Udacity course](https://www.udacity.com/course/browser-rendering-optimization--ud860)
 * [a github readme](https://github.com/vasanthk/browser-rendering-optimization)
+
+
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

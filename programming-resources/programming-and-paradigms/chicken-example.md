@@ -53,3 +53,8 @@ All of these questions relate to the same concern - what features of a chicken o
 * Rename all chickens to 'Updike'. 
     * farm.chickens.forEach(/* change name to updike */).
     * Because all chickens are being given the same name, it may seem like all chickens should share a name property.  Untrue.  Names are 1-1 with chickens, they just happen o all have the same name
+
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

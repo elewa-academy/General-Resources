@@ -79,3 +79,7 @@ ___
 * [bst](https://khan4019.github.io/front-end-Interview-Questions/bst.html)
     	https://github.com/tivrama/DataStructures
 	    https://github.com/mgechev/javascript-algorithms/tree/master/src/data-structures
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

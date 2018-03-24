@@ -227,3 +227,8 @@ https://bevacqua.github.io/promisees/
 + http://www.telerik.com/blogs/what-is-the-point-of-promises
 + https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261  
 + [video from flo](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jAhrjtZ9U93UMIhnCc44MH)
+
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

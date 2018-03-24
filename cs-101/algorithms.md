@@ -28,3 +28,7 @@ ___
 * [Algorithms for Web Developers](http://giocc.com/a-gentle-introduction-to-algorithms-for-web-developers.html)
 * [Big 0 in plain english](http://stackoverflow.com/questions/487258/plain-english-explanation-of-big-o)  
 * [clean examples](https://github.com/LindsayElia/algoClass)
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

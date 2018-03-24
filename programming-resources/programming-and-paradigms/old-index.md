@@ -20,3 +20,8 @@ tl;dr - js is a nifty mix.  It's probably best to use objects at the small scale
 
 [outline, functional top level usage](https://teamtreehouse.com/community/what-type-of-paradigm-language-javascript-is)
 [fp, oop tictactoe](https://raygun.com/blog/programming-paradigms-example/)
+
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

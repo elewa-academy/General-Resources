@@ -96,3 +96,7 @@ git checkout master
 #		|- book-holder ## -> to stash built gitbook while changing branches
 ```
 We use this script to build and publish the gitbook curriculum every time we make changes. Without this script, it's a real pain.  You need to copy-paste stuff all over the place, make a few commits, and procrastinate the next publish until you can't anymore. With this script it's all done with a single terminal command.
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

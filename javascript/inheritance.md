@@ -27,3 +27,8 @@ All mammals come from that guy.  Every
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/An_evolutionary_tree_of_mammals.jpeg/450px-An_evolutionary_tree_of_mammals.jpeg)
 
 http://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/
+
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

@@ -28,3 +28,8 @@ Programming paradigms emerged to address this issue.  By thinking of algorithms 
 JavaScript is a strange mutt, it natively supports much of what is needed for the most popular paradigms.  What it doesn't support natively, someone has probably written a library to implement.  As a student this puts you in a tricky position; You'll have to be extra diligent or you could slip very easily into very bad habits. With power comes responsibility. 
 
 
+
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

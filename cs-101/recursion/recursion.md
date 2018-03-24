@@ -160,3 +160,8 @@ Like with algorithms, recursion is a tricky topic.  Take a look through all of t
 ___
 ### Next Steps
 The best two options for further exploring recursion are _sorting algorithms_ and _data structures_.  We reccomend going the data structrure route, if you'd like to spend some extra time to learn about sorting just let us know.  We can point you the way.
+
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

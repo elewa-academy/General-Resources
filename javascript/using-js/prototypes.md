@@ -179,4 +179,10 @@ ___
 ### NLS Resources
 * [Advanced ES6 Literal stuff](http://2ality.com/2015/09/proto-es6.html)
 * [Defining and Setting properties](http://2ality.com/2012/08/property-definition-assignment.html)
+
+
 ___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>
+
+

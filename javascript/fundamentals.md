@@ -33,3 +33,7 @@ JS Resources
 * [exercism - cli](http://exercism.io/languages/javascript/exercises)
 * [using conditionals](https://github.com/jankeLearning/content-md/blob/master/content-code/Week%2001/conditionalChecks)
 * [THAT guy](http://www.thatjsdude.com/interview/js1.html)
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

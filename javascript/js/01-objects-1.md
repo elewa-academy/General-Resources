@@ -151,3 +151,7 @@ Exercises
 + clone [this repo](https://github.com/RienCosyns/objects)
 + Go over [bank account example](https://github.com/jankeLearning/content-code/tree/master/Week%2001/objects). Go only to the next one once you understand what each script does.
 + wonderful video: https://www.youtube.com/watch?v=rlLuL3jYLvA
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

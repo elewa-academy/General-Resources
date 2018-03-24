@@ -198,3 +198,7 @@ External resources
 + MDN: https://developer.mozilla.org/en/docs/Web/JavaScript/Closures
 + javascript.info: http://javascript.info/arrow-functions
 + bind method: https://stackoverflow.com/questions/2236747/use-of-the-javascript-bind-method
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

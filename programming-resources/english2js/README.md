@@ -63,3 +63,8 @@ Here's a rough procedure you can use to tackle a coding challenge.  Feel free to
 
 7) Once it works, pass some tests and enter an optional refactor phase. 
 
+
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

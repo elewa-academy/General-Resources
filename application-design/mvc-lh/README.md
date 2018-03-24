@@ -1,5 +1,3 @@
-add in 'dependency injection'
-
 # MVC-LH
 Learning this will prepare you for the transition to Express and allow you to reuse your week 3 and 4 projects in Express applications.
 

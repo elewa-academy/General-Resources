@@ -19,3 +19,7 @@ ___
 Most resources on Procedural Programming explain it by comparing it to other paradigms.  Here are two that descibe it alone.
 * [A video](https://www.youtube.com/watch?v=oaRSx0ef4r0)
 * [An article](http://wiki.c2.com/?ProceduralProgramming)
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

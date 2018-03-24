@@ -22,3 +22,7 @@ ___
 * [EDP for loose coupling](http://michd.me/blog/event-driven-javascript-a-simple-event-dispatcher/)
 * [JS EDP frameworks](https://www.oreilly.com/ideas/event-driven-application-design-with-javascript)
 * [Eventemitter module](https://medium.freecodecamp.org/understanding-node-js-event-driven-architecture-223292fcbc2d)
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>

@@ -38,3 +38,8 @@ Loading variables dev vs prod
 [an article](https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html)  
 [our example](https://github.com/jankeLearning/content-code/tree/master/Week%2005-6/2-environmental-variables)  
 [another article](https://medium.com/@rafaelvidaurre/managing-environment-variables-in-node-js-2cb45a55195f)  
+
+
+___
+___
+### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>
