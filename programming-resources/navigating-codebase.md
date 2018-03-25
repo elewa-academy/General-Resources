@@ -32,11 +32,10 @@ Some good libraries to start with:
 * [Reddit recommendations](https://www.reddit.com/r/javascript/comments/2zt8wg/suggestions_for_must_read_javascript_source_code/)
 ___
 ### resources
+* [VS Code Navigation Features](https://code.visualstudio.com/docs/editor/editingevolved)
 * [youtube search](https://www.youtube.com/results?search_query=how+to+read+javascript+code). push your favorites or add them to the wiki
-* [code search engine](https://cs.chromium.org)
-___
-### Project
-[Inside Express](https://github.com/jankeLearning/projects/tree/master/06-inside-express)
+* [Code Search Engine](https://cs.chromium.org)
+
 ___
 ### Counterpoint
 
