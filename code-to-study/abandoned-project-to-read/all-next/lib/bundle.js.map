@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "sources": [
+    "bundle.js"
+  ],
+  "names": [
+    "app",
+    "require"
+  ],
+  "mappings": ";;AAAA,IAAIA,MAAMC,QAAQ,iBAAR,CAAV",
+  "file": "bundle.js",
+  "sourceRoot": "../src",
+  "sourcesContent": [
+    "var app = require('./consoleTester');\n\n\n"
+  ]
+}

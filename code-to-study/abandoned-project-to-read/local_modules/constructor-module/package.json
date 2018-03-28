@@ -1,0 +1,11 @@
+{
+  "name": "model-constructor",
+  "version": "1.0.0",
+  "description": "a simple model object constructor",
+  "main": "index.js",
+  "author": "Arnaud Rinquin",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "repository": "git@github.com:ArnaudRinquin/local_modules_poc.git"
+}

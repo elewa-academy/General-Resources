@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY APP</title>
+    <style type="text/css">
+        .inline {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+Edit Quote
+    <% for(var i=0; i<quotes.length; i++) {%>
+        <form  action="/quotes/update/<%= quotes[i]._id %>" method="POST">
+            <input type="text" placeholder="name" name="name" value="<%=quotes[i].name%>">
+            <input type="text" placeholder="quote" name="quote" value="<%=quotes[i].quote%>">
+            <button type="submit">Submit</button>
+        </form>
+    <% } %>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+nextone
+	model doesn't store who played
+	player and board services
+	closure and non-closure versions of app
+
+challenges
+	lodash it
+	class it
+	manual authenticate the data server
+
+todo
+	make it work

@@ -1,0 +1,3 @@
+this calculator is used from the url navbar in your browser, like this:
+	localhost:3000/add/4/5
+	localhost:3000/subract/6/2

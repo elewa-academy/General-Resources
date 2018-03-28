@@ -1,0 +1,25 @@
+<% include header %>
+
+<% if (errors) { %>
+  <% for (key in errors){ %>
+    <h4><%= key %>: <span><%= errors[key].msg %></span></h4>
+  <% } %> 
+<% } %>
+
+<h1>Sign up!</h1>
+<form action="/auth/signup" method="post">
+  <label for="fname">First Name: </label>
+  <input type="text" name="fname" value="" placeholder="John">
+  <label for="lname">Last Name: </label>
+  <input type="text" name="lname" value="" placeholder="Doe">
+  <label for="username">Username: </label>
+  <input type="text" name="username" placeholder="TheDoe">
+  <label for="email">Email: </label>
+  <input type="email" name="email" placeholder="john.doe@domain.com">
+  <label for="password">Password: </label>
+  <input type="password" name="password">
+  <label for="password2">Confirm password: </label>
+  <input type="password" name="password2">
+  <button type="submit">Sign up</button>
+</form>
+<% include footer %>

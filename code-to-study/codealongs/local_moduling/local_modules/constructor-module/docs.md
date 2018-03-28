@@ -1,0 +1,15 @@
+modelObject:
+	properties:
+
+		...
+
+
+
+		...
+
+modelConstructor: 
+
+...
+
+
+...

@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<!-- prepare all things -->
+		
+		<!-- app script -->
+		<script src="./scripts/FEapp.js"></script>
+		<script src="./scripts/playerModel.js"></script>
+		<script src="./scripts/boardModel.js"></script>
+
+		<!-- axios, for async server calls -->
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		
+		<!-- run initializing script when all resources are loaded -->
+		<script>
+			window.addEventListener('DOMContentLoaded', function() {
+				app.initialize();
+			});
+		</script>	
+	</head>
+	<body>
+		<table id='ticTacBoard'></table>
+	</body>
+	<footer>
+		<!-- style resources -->
+		<link rel="stylesheet" type="text/css" href="./styles/tictactoe.css">
+	</footer>
+</html>
+
+

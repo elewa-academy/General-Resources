@@ -1,0 +1,20 @@
+createApplication: function
+	args: none
+	return: app function 
+		// don't worry much about this
+		// know only that it is the function passed into node's port
+		// it handles all incoming requests as args
+	behavior: builds and returns an express application.
+	properties: 2
+		request: object - read the imported file
+		response: object - read the imported file
+	methods: 5 + 19
+		application: function - read the imported file
+		Route: function - read the imported file
+		Router: function - read the imported file
+		query: function - read the imported file
+		static: function - npm module also developed by Express people
+		the 19: modules that aren't bundled with express - throw errors if accessed
+
+
+

@@ -1,0 +1,18 @@
+Fancy Fancy Time
+    local/global state
+    reusable dom components
+    logic in the frontend
+    restful api backend
+    cors
+    service based architecture
+    an app is a user experience, not a port
+
+this app avoides the most complicated aspects of context in front-end apps
+
+also isn't mvvm
+
+services/static_app/public/scripts/front_end_app is the stand-in for a REACT app (bundle.js)
+
+challenge
+    create a 'state_component' that stores a value in a 'state' attribute
+        it will display its state value

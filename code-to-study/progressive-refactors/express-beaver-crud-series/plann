@@ -1,0 +1,3 @@
+compact both models into a single one
+	it'll have a validation method that is reset
+

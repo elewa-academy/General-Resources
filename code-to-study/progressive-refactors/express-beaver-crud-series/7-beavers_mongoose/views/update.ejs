@@ -1,0 +1,12 @@
+<%- include ./partials/head.ejs -%>
+
+  <h1>Update <%= beaver.name %></h1>
+  <form action="/beavers/update/<%= beaver.id %>" method="POST">
+    <input type="text" name="name" value="<%= beaver.name %>">
+    <input type="text" name="age" value="<%= beaver.age %>">
+    <input type="text" name="location" value="<%= beaver.location %>">
+    <input type="submit" valu="Update beaver">
+  </form>
+
+
+<%- include ./partials/footer.ejs -%>

@@ -1,0 +1,15 @@
+{
+  "name": "environmental-variables",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "prod": "nodemon indexProduction.js",
+    "dev": "nodemon indexDevelopment.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "version": 3,
+  "sources": [
+    "browserController.js"
+  ],
+  "names": [
+    "BrowserController",
+    "meth",
+    "arg1",
+    "arg2",
+    "undefined",
+    "view",
+    "render",
+    "Controller",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;;;;;;;;;IAAMA,iB;;;;;;;;;;;2BACGC,I,EAAMC,I,EAAMC,I,EAAM;AACvB,UAAI,KAAKF,IAAL,MAAeG,SAAnB,EAA8B;AAC5B,aAAKH,IAAL,EAAWC,IAAX,EAAiBC,IAAjB;AACD,OAFD,MAEO;AACL,aAAKE,IAAL,CAAUC,MAAV;AACD;AACF;;;;EAP6BC,U;;AAUhCC,OAAOC,OAAP,GAAiBT,iBAAjB",
+  "file": "browserController.js",
+  "sourceRoot": "../../src/controllers",
+  "sourcesContent": [
+    "class BrowserController extends Controller {\n  browse(meth, arg1, arg2) {\n    if (this[meth] !== undefined) {\n      this[meth](arg1, arg2);\n    } else {\n      this.view.render();\n    }  \n  }\n}\n\nmodule.exports = BrowserController;"
+  ]
+}

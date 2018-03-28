@@ -1,0 +1,11 @@
+{
+  "name": "rudolph",
+  "version": "1.0.0",
+  "description": "My module that does not do much",
+  "main": "index.js",
+  "author": "Arnaud Rinquin",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "repository": "git@github.com:ArnaudRinquin/local_modules_poc.git"
+}

@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<!-- prepare all things -->
+		
+		<!-- app script -->
+		<script src="./scripts/front_end_app.js"></script>
+
+		<!-- axios, for async server calls -->
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		
+		<!-- run initializing script when all resources are loaded -->
+		<script>
+			window.addEventListener('DOMContentLoaded', function() {
+				app.initialize();
+			});
+		</script>	
+	</head>
+	<body>
+		<div id='container'></div>
+	</body>
+</html>
+
+

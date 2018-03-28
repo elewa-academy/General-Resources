@@ -1,0 +1,14 @@
+{
+  "name": "local_moduling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "object-module": "file:local_modules/object-module",
+    "constructor-module": "file:local_modules/constructor-module"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT"
+}

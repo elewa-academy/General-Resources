@@ -1,0 +1,24 @@
+{
+  "name": "local_moduling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",  
+  "scripts": {
+    "compile": "babel-compile -p es2015 src:lib",
+    "build": "node src/consoleTester.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "object-module": "file:local_modules/object-module",
+    "constructor-module": "file:local_modules/constructor-module",
+    "babel-cli": "*",
+    "babelify": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-compile": "*",
+    "babel-preset-es2015": "*"
+  },
+  "license": "MIT"
+}
+

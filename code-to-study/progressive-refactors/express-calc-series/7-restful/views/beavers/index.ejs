@@ -1,0 +1,16 @@
+<div>This page will contain a list with all saved beavers</div>
+<ul class="data">
+    <!-- passes indes -->
+    <div><%= [__filename, Object.keys(locals), __lines] %></div>
+    <div><%# keys = Object.keys(locals) %></div>
+<!--     <ul><%# for(var key in keys) { %>
+    <li><%# locals[""+keys[key]] %></li>
+    <%# } %>
+</ul> -->
+    <% for(i in data) {%>
+        <%- include("index/_element") -%>
+    <% } %>
+</ul>
+<form action="/beavers/new" method="GET">
+    <button type="submit">Add a beaver</button>
+</form>

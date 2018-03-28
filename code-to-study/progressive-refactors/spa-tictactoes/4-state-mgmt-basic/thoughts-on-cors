@@ -1,0 +1,7 @@
+single routes is possible, but not really done.
+
+doing it later in a single route opens it for all subsequent routes
+	extra work to unallow or whatever
+
+can have proxy server that accepts all, it has auth
+	nother server without cors

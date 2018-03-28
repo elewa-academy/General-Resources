@@ -1,0 +1,20 @@
+<% include header %>
+            <h1> Elium Students </h1>
+            <table>
+                <tr class="thead">
+                    <td>Name</td>
+                    <td>Age</td>
+                    <td>Sex</td>
+                    <td>Country</td>
+                </tr>
+                <% students.forEach((student) => { %>
+                    <tr>
+                        <td><a href="/students/profile/<%= student.id %>"><%= student.name %></a></td>
+                        <td><%= student.age %></td>
+                        <td><%= student.sex %></td>
+                        <td><%= student.country %></td>
+                    </tr>
+                <% }) %>
+            </table>
+            <button type="button"><a href="/students/add">Add Student</a></button>
+<% include footer %>

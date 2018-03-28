@@ -1,0 +1,32 @@
+{
+  "name": "express0",
+  "version": "1.0.0",
+  "description": "first express app",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "dev": "node --debug ./bin/start.js",
+    "start": "nodemon --debug --debug-brk ./bin/start.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "colors": "^1.1.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "mongoose": "^4.6.0",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
+    "stack-trace": "0.0.9",
+    "webpack": "^1.13.2"
+  },
+  "devDependencies": {
+    "nedb": "^1.8.0",
+    "nodemon": "^1.10.2"
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY APP</title>
+    <style type="text/css">
+        .inline {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+  May Node and Express be with you.
+
+  <ul class="quotes">
+  <% for(var i=0; i<quotes.length; i++) {%>
+    <li class="quote">
+        <span><%= quotes[i].name %></span>
+        <span><%= quotes[i].quote %></span>
+        <form class="inline" action="/quotes/delete/<%= quotes[i]._id %>" method="POST">
+            <input class="inline" type="submit" value="Delete">
+        </form>
+        <form class="inline" action="/quotes/update/<%= quotes[i]._id %>" method="GET">
+            <input class="inline" type="submit" value="Edit">
+        </form>
+
+    </li>
+  <% } %>
+  </ul>
+
+  <form action="/quotes" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="quote" name="quote">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "name": "student-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RienCosyns/Code-Alongs.git"
+  },
+  "keywords": [],
+  "author": "Rien Cosyns",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RienCosyns/Code-Alongs/issues"
+  },
+  "homepage": "https://github.com/RienCosyns/Code-Alongs#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "^4.16.1",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^4.2.1",
+    "mongoose": "^4.12.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}

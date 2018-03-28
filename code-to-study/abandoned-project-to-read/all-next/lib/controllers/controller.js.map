@@ -1,0 +1,35 @@
+{
+  "version": 3,
+  "sources": [
+    "controller.js"
+  ],
+  "names": [
+    "Controller",
+    "model",
+    "view",
+    "key",
+    "get",
+    "err",
+    "object",
+    "console",
+    "log",
+    "render",
+    "getAll",
+    "allEm",
+    "id",
+    "valueNew",
+    "update",
+    "newObject",
+    "add",
+    "allOfem",
+    "delete",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;;;;;IAAMA,U;AACL,qBAAYC,KAAZ,EAAmBC,IAAnB,EAAyB;AAAA;;AACxB,OAAKD,KAAL,GAAaA,KAAb;AACA,OAAKC,IAAL,GAAYA,IAAZ;AACA;;;;yBAEMC,G,EAAK;AAAA;;AACX,QAAKF,KAAL,CAAWG,GAAX,CAAeD,GAAf,EAAoB,UAACE,GAAD,EAAMC,MAAN,EAAiB;AACpC,QAAGD,GAAH,EAAQ;AACPE,aAAQC,GAAR,CAAYH,GAAZ;AACA,KAFD,MAEO;AACN,WAAKH,IAAL,CAAUO,MAAV,CAAiBH,MAAjB;AACA;AACD,IAND;AAOA;;;2BAEQ;AAAA;;AACR,QAAKL,KAAL,CAAWS,MAAX,CAAkB,UAACL,GAAD,EAAMM,KAAN,EAAgB;AACjC,QAAGN,GAAH,EAAQ;AACPE,aAAQC,GAAR,CAAYH,GAAZ;AACA,KAFD,MAEO;AACN,YAAKH,IAAL,CAAUO,MAAV,CAAiBE,KAAjB;AACA;AACD,IAND;AAOA;;;yBAEMC,E,EAAIT,G,EAAKU,Q,EAAU;AAAA;;AACzB,QAAKZ,KAAL,CAAWa,MAAX,CAAkBF,EAAlB,EAAsBT,GAAtB,EAA2BU,QAA3B,EAAqC,UAACR,GAAD,EAAS;AAC7C,QAAGA,GAAH,EAAQ;AACPE,aAAQC,GAAR,CAAYH,GAAZ;AACA,KAFD,MAEO;AACN,YAAKJ,KAAL,CAAWS,MAAX,CAAkB,UAACL,GAAD,EAAMM,KAAN,EAAgB;AACjC,UAAGN,GAAH,EAAQ;AACPE,eAAQC,GAAR,CAAYH,GAAZ;AACA,OAFD,MAEO;AACN,cAAKH,IAAL,CAAUO,MAAV,CAAiBE,KAAjB;AACA;AACD,MAND;AAOA;AACD,IAZD;AAaA;;;uBAEII,S,EAAW;AAAA;;AACf,QAAKd,KAAL,CAAWe,GAAX,CAAeD,SAAf,EAA0B,UAACV,GAAD,EAAS;AAClC,QAAIA,GAAJ,EAAS;AACRE,aAAQC,GAAR,CAAYH,GAAZ;AACA,KAFD,MAEO;AACN,YAAKJ,KAAL,CAAWS,MAAX,CAAkB,UAACL,GAAD,EAAMY,OAAN,EAAkB;AACnC,UAAGZ,GAAH,EAAQ;AACPE,eAAQC,GAAR,CAAYH,GAAZ;AACA,OAFD,MAEO;AACN,cAAKH,IAAL,CAAUO,MAAV,CAAiBQ,OAAjB;AACA;AACD,MAND;AAOA;AACD,IAZD;AAaA;;;0BAEML,E,EAAI;AAAA;;AACV,QAAKX,KAAL,CAAWiB,MAAX,CAAkBN,EAAlB,EAAsB,UAACP,GAAD,EAAS;AAC9B,QAAIA,GAAJ,EAAS;AACRE,aAAQC,GAAR,CAAYH,GAAZ;AACA,KAFD,MAEO;AACN,YAAKJ,KAAL,CAAWS,MAAX,CAAkB,UAACL,GAAD,EAAMY,OAAN,EAAkB;AACnC,UAAGZ,GAAH,EAAQ;AACPE,eAAQC,GAAR,CAAYH,GAAZ;AACA,OAFD,MAEO;AACN,cAAKH,IAAL,CAAUO,MAAV,CAAiBQ,OAAjB;AACA;AACD,MAND;AAOA;AACD,IAZD;AAaA;;;;;;AAKFE,OAAOC,OAAP,GAAiBpB,UAAjB",
+  "file": "controller.js",
+  "sourceRoot": "../../src/controllers",
+  "sourcesContent": [
+    "class Controller {\n\tconstructor(model, view) {\n\t\tthis.model = model;\n\t\tthis.view = view;\n\t}\n\n\tgetOne(key) {\n\t\tthis.model.get(key, (err, object) => {\n\t\t\tif(err) {\n\t\t\t\tconsole.log(err);\n\t\t\t} else {\n\t\t\t\tthis.view.render(object)\n\t\t\t}\n\t\t})\n\t}\n\n\tgetAll() {\n\t\tthis.model.getAll((err, allEm) => {\n\t\t\tif(err) {\n\t\t\t\tconsole.log(err);\n\t\t\t} else {\n\t\t\t\tthis.view.render(allEm)\n\t\t\t}\n\t\t});\n\t}\n\n\tupdate(id, key, valueNew) {\n\t\tthis.model.update(id, key, valueNew, (err) => {\n\t\t\tif(err) {\n\t\t\t\tconsole.log(err)\n\t\t\t} else {\n\t\t\t\tthis.model.getAll((err, allEm) => {\n\t\t\t\t\tif(err) {\n\t\t\t\t\t\tconsole.log(err);\n\t\t\t\t\t} else {\n\t\t\t\t\t\tthis.view.render(allEm)\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t}\n\t\t});\n\t}\n\n\tpost(newObject) {\n\t\tthis.model.add(newObject, (err) => {\n\t\t\tif (err) {\n\t\t\t\tconsole.log(err);\n\t\t\t} else {\t\n\t\t\t\tthis.model.getAll((err, allOfem) => {\n\t\t\t\t\tif(err) {\n\t\t\t\t\t\tconsole.log(err);\n\t\t\t\t\t} else {\t\n\t\t\t\t\t\tthis.view.render(allOfem);\n\t\t\t\t\t};\n\t\t\t\t});\n\t\t\t};\n\t\t});\n\t}\n\n\tdelete(id) {\n\t\tthis.model.delete(id, (err) => {\n\t\t\tif (err) {\n\t\t\t\tconsole.log(err);\n\t\t\t} else {\t\n\t\t\t\tthis.model.getAll((err, allOfem) => {\n\t\t\t\t\tif(err) {\n\t\t\t\t\t\tconsole.log(err);\n\t\t\t\t\t} else {\t\n\t\t\t\t\t\tthis.view.render(allOfem);\n\t\t\t\t\t};\n\t\t\t\t});\n\t\t\t};\n\t\t});\n\t}\n\n\n}\n\nmodule.exports = Controller;"
+  ]
+}

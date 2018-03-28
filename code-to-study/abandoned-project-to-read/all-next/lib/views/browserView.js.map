@@ -1,0 +1,27 @@
+{
+  "version": 3,
+  "sources": [
+    "browserView.js"
+  ],
+  "names": [
+    "BrowserView",
+    "template",
+    "name",
+    "undefined",
+    "document",
+    "getElementById",
+    "textContent",
+    "JSON",
+    "stringify",
+    "db",
+    "View",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;;;;;;;;;IAAMA,W;;;AACJ,uBAAYC,QAAZ,EAAsB;AAAA;;AAAA,qHACdA,QADc;AAErB;;;;2BAEMC,I,EAAM;AACX,UAAIA,SAASC,SAAb,EAAwB;AACtBC,iBAASC,cAAT,CAAwB,SAAxB,EAAmCC,WAAnC,GAA+C,KAAKL,QAAL,GAAgB,GAAhB,GAAsBC,IAArE;AACAE,iBAASC,cAAT,CAAwB,IAAxB,EAA8BC,WAA9B,GAA0CC,KAAKC,SAAL,CAAe,KAAKC,EAApB,CAA1C;AACD,OAHD,MAGO;AACLL,iBAASC,cAAT,CAAwB,SAAxB,EAAmCC,WAAnC,GAA+C,oBAA/C;AACAF,iBAASC,cAAT,CAAwB,IAAxB,EAA8BC,WAA9B,GAA0CC,KAAKC,SAAL,CAAe,KAAKC,EAApB,CAA1C;AACD;AACF;;;;EAbuBC,I;;AAgB1BC,OAAOC,OAAP,GAAiBZ,WAAjB",
+  "file": "browserView.js",
+  "sourceRoot": "../../src/views",
+  "sourcesContent": [
+    "class BrowserView extends View {\n  constructor(template) {\n    super(template);\n  }\n\n  render(name) {\n    if (name !== undefined) {\n      document.getElementById(\"display\").textContent=this.template + ' ' + name;\n      document.getElementById(\"db\").textContent=JSON.stringify(this.db);\n    } else {\n      document.getElementById(\"display\").textContent=\"that doesn't exist\";\n      document.getElementById(\"db\").textContent=JSON.stringify(this.db);\n    }  \n  }\n}\n\nmodule.exports = BrowserView;"
+  ]
+}

@@ -1,0 +1,23 @@
+
+        <h2><%= painter %></h2>
+        
+        <% if (data) { %>
+            
+            <div>
+            <% for(var i=0; i<data.landscapes.length; i++) {%>
+                <img src= <%= data.landscapes[i] %> >
+                <br>
+            <% } %>
+            </div>
+            
+            <div>
+            <% for(var i=0; i<data.portraits.length; i++) {%>
+                <img src= <%= data.portraits[i] %> >
+                <br>
+            <% } %>
+            </div>
+
+            
+
+        <% } %>
+   

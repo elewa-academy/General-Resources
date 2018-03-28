@@ -1,0 +1,19 @@
+{
+  "name": "node-intro",
+  "version": "1.0.0",
+  "description": "an intro into node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RienCosyns/Code-Alongs.git"
+  },
+  "author": "Rien Cosyns",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RienCosyns/Code-Alongs/issues"
+  },
+  "homepage": "https://github.com/RienCosyns/Code-Alongs#readme"
+}

@@ -1,0 +1,4 @@
+JsonWebTokens
+
+commented out line 111 in to make node-inspector work!!!
+C:\Users\Pensarfeo\AppData\Roaming\npm\node_modules\node-inspector\lib\InjectorClient.js

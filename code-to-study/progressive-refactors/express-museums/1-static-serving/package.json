@@ -1,0 +1,14 @@
+{
+  "name": "paintings",
+  "version": "1.0.0",
+  "description": "ms. timlin",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "George Fourikis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

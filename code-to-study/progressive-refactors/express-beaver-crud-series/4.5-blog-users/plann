@@ -1,0 +1,28 @@
+this app continues from the blog with comments in 4.
+copy paste it in here and you'll be refactoring it:
+	0 - overview:
+		the index page will now contain a list of users.  the current user will be highlighted in a different color.  
+		when a not current user is clicked, it is set to current and the current current-user is set to false.  
+		when the current user is clicked, that user's 'current' is set to false and there is now no current user.
+		when a new post is written, the author is automatically set to the current user.
+		if there is no current user, the author is set to 'anonymous'
+	1 - build a user model object. you can test it in a separarate js file, no need to build it in you app
+		user schema: {
+				name: 'string',
+				current: boolean,
+				id: number
+			}
+		model.changeUser
+			args: an id
+			return: your call
+			behavior: switches the selected user's current to the oposite of its value.  if it is setting a false to true, it will search the database (findBy) to switch the current current-user to false
+	2 - create a CRUD router file for accessing the users model.
+	3 - modify your index page to
+		display all users, the current user is a different color.
+		each user is also a button with actions that direct to the user CRUD handlers
+	4 - modify the createPost handler
+		it will now automatically set the author based on the current user
+
+
+
+

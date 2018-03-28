@@ -1,0 +1,20 @@
+{
+  "name": "simplepassport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set DEBUG=express:* & nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.10",
+    "mongoose": "^4.6.3",
+    "nodemon": "^1.11.0"
+  }
+}

@@ -1,0 +1,22 @@
+blog site steps:
+	1 - build a simple CRUD app that deals with blog posts.  it will be like this:
+		post schema: {
+				author: 'string',
+				text: 'string',
+				id: number
+			}
+		have a model object
+		have the handlers routered out
+	2 - filter articles by author on home page
+		findBy method
+		filteredBy handler
+		filteredBy view
+	3 - add comments
+		modify readPost view: create and list all relevant comments
+		make comment model: schema = {
+					author: 'string',
+					text: 'string',
+					postId: number,
+					id: number
+				}
+	

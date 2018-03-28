@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ccc;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li a:hover {
+  color: gold;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.success {
+  background-color: green;
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  height: 25px;
+  padding: 10px;
+  text-align: center;
+  list-style: none;
+}
+
+.danger {
+  background-color: red;
+  color: black;
+  list-style: none;
+  width: 50%;
+  margin: 0 auto;
+  height: 25px;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.thead {
+  background-color: black;
+  color: white;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  display: block;
+  width: 40%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(4, 0, 255, 0.8);
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+.deleteButton {
+  background-color: red;
+}
+
+form {
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+}
+
+input {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+}

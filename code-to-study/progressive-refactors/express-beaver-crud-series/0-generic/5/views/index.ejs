@@ -1,0 +1,14 @@
+<strong>PEOPLE</strong> <br>
+<ul>
+<% for(var i = 0; i < db.length; i++) { %>
+	<li> 
+		<%= db[i].name %> <br>
+		<a href='/person/<%= db[i].id %>'> read </a> <br> 
+		<a href='/person/<%= db[i].id %>/update'> update </a> <br>
+		<a href='/person/<%= db[i].id %>/delete'> delete </a> <br>
+	</li>
+	<br>
+<% } %>
+</ul>
+<br>
+<a href='/person'> create a new person </a>

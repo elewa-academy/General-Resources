@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update contact</title>
+</head>
+<body>
+	<h1>Update contact</h1>
+	<form action="/update/<%= contact.id %>" method="POST">
+		<input type="text" name="name" value="<%= contact.name %>">
+		<input type="text" name="phone" value="<%= contact.phone %>">
+		<input type="text" name="email" value="<%= contact.email %>">
+		<input type="submit" value="submit update">
+	</form>
+</body>
+</html>

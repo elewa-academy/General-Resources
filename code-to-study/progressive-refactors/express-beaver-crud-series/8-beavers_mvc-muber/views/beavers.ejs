@@ -1,0 +1,19 @@
+<%- include ./partials/head.ejs %>
+
+		<a href="/beavers/add"><button>Add a beaver!</button></a>
+		<% beavers.forEach( beaver => { %>
+			<ul>
+				<li>Name: <%= beaver.name %></li>
+				<li>Age: <%= beaver.age %></li>
+				<li>Location: <%= beaver.location %></li>
+				<li><a href="/beavers/<%= beaver.id %>"><button>View beaver</button></a></li>
+				<li><a href="/beavers/update/<%= beaver.id %>"><button>Update beaver</button></a></li>
+				<li>
+					<form action="/beavers/delete/<%= beaver.id %>" method="post">
+						<input type="submit" value="Delete beaver">
+					</form>
+				</li>
+			</ul>
+		<% }) %>
+
+<%- include ./partials/footer.ejs %>

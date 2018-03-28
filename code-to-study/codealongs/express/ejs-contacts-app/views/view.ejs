@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View contact</title>
+</head>
+<body>
+	<p>Name: <%= contact.name %></p>
+	<p>Phone: <%= contact.phone %></p>
+	<p>Email: <%= contact.email %></p>
+	<a href="/update/<%= contact.id %>"><button>Update contact</button></a>
+	<form action="/delete/<%= contact.id %>" method="POST">
+		<input type="submit" value="Delete contact">
+	</form>
+</body>
+</html>

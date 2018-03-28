@@ -1,0 +1,29 @@
+{
+  "version": 3,
+  "sources": [
+    "calcUser.js"
+  ],
+  "names": [
+    "Controller",
+    "model",
+    "view",
+    "id",
+    "arg1",
+    "arg2",
+    "get",
+    "err",
+    "op",
+    "console",
+    "log",
+    "render",
+    "operation",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;;;;;IAAMA,U;AACL,qBAAYC,KAAZ,EAAmBC,IAAnB,EAAyB;AAAA;;AACxB,OAAKD,KAAL,GAAaA,KAAb;AACA,OAAKC,IAAL,GAAYA,IAAZ;AACA;;;;yBAEMC,E,EAAIC,I,EAAMC,I,EAAM;AAAA;;AACtB,QAAKJ,KAAL,CAAWK,GAAX,CAAeH,EAAf,EAAmB,UAACI,GAAD,EAAMC,EAAN,EAAa;AAC/B,QAAGD,GAAH,EAAQ;AACPE,aAAQC,GAAR,CAAYH,GAAZ;AACA,KAFD,MAEO;AACN,WAAKL,IAAL,CAAUS,MAAV,CAAiBH,GAAGI,SAAH,CAAaR,IAAb,EAAmBC,IAAnB,CAAjB;AACA;AACD,IAND;AAOA;;;;;;AAIFQ,OAAOC,OAAP,GAAiBd,UAAjB",
+  "file": "calcUser.js",
+  "sourceRoot": "../../src/controllers",
+  "sourcesContent": [
+    "class Controller {\n\tconstructor(model, view) {\n\t\tthis.model = model;\n\t\tthis.view = view;\n\t}\n\n\tdoMath(id, arg1, arg2) {\n\t\tthis.model.get(id, (err, op) => {\n\t\t\tif(err) {\n\t\t\t\tconsole.log(err)\n\t\t\t} else {\n\t\t\t\tthis.view.render(op.operation(arg1, arg2));\n\t\t\t}\n\t\t})\n\t}\n\n}\n\nmodule.exports = Controller;"
+  ]
+}

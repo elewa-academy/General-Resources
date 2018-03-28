@@ -1,0 +1,34 @@
+{
+  "version": 3,
+  "sources": [
+    "consoleTester.js"
+  ],
+  "names": [
+    "modelConstructor",
+    "require",
+    "View",
+    "Controller",
+    "operationSchema",
+    "name",
+    "type",
+    "fallback",
+    "args",
+    "operation",
+    "operationsModel",
+    "add",
+    "numArgs",
+    "a",
+    "b",
+    "subtract",
+    "mulitply",
+    "divide",
+    "vw",
+    "cn"
+  ],
+  "mappings": ";;AAAA,IAAIA,mBAAmBC,QAAQ,mBAAR,CAAvB;AACA,IAAIC,OAAOD,QAAQ,cAAR,CAAX;AACA,IAAIE,aAAaF,QAAQ,wBAAR,CAAjB;;AAEA,IAAIG,kBAAkB;AACrBC,UAAM;AACLC,cAAM,QADD;AAELC,kBAAU;AAFL,KADe;AAKrBC,UAAM;AACLF,cAAM,QADD;AAELC,kBAAU;AAFL,KALe;AASrBE,eAAW;AACVH,cAAM,UADI;AAEVC,kBAAU;AAFA;AATU,CAAtB;AAcA,IAAIG,kBAAkBV,iBAAiBI,eAAjB,CAAtB;;AAEA,IAAIO,MAAM;AACNN,UAAM,KADA;AAENO,aAAS,CAFH;AAGNH,eAAW,mBAASI,CAAT,EAAYC,CAAZ,EAAe;AACtB,eAAOD,IAAIC,CAAX;AACH;AALK,CAAV;AAOA,IAAIC,WAAW;AACXV,UAAM,UADK;AAEXO,aAAS,CAFE;AAGXH,eAAW,mBAASI,CAAT,EAAYC,CAAZ,EAAe;AACtB,eAAOD,IAAIC,CAAX;AACH;AALU,CAAf;AAOA,IAAIE,WAAW;AACXX,UAAM,UADK;AAEXO,aAAS,CAFE;AAGXH,eAAW,mBAASI,CAAT,EAAYC,CAAZ,EAAe;AACtB,eAAOD,IAAIC,CAAX;AACH;AALU,CAAf;AAOA,IAAIG,SAAS;AACTZ,UAAM,QADG;AAETO,aAAS,CAFA;AAGTH,eAAW,mBAASI,CAAT,EAAYC,CAAZ,EAAe;AACtB,eAAOD,IAAIC,CAAX;AACH;AALQ,CAAb;AAOAJ,gBAAgBC,GAAhB,CAAoBA,GAApB,EAAyB,YAAI,CAAE,CAA/B;AACAD,gBAAgBC,GAAhB,CAAoBI,QAApB,EAA8B,YAAI,CAAE,CAApC;AACAL,gBAAgBC,GAAhB,CAAoBK,QAApB,EAA8B,YAAI,CAAE,CAApC;AACAN,gBAAgBC,GAAhB,CAAoBM,MAApB,EAA4B,YAAI,CAAE,CAAlC;;AAGA,IAAIC,KAAK,IAAIhB,IAAJ,CAAS,WAAT,CAAT;AACA,IAAIiB,KAAK,IAAIhB,UAAJ,CAAeO,eAAf,EAAgCQ,EAAhC,CAAT",
+  "file": "consoleTester.js",
+  "sourceRoot": "../src",
+  "sourcesContent": [
+    "var modelConstructor = require('model-constructor');\nvar View = require('./views/view');\nvar Controller = require('./controllers/calcUser');\n\nvar operationSchema = {\n\tname: {\n\t\ttype: 'string',\n\t\tfallback: 'akermann'\n\t},\n\targs: {\n\t\ttype: 'number',\n\t\tfallback: 2\n\t},\n\toperation: {\n\t\ttype: 'function',\n\t\tfallback: 'A(x, y)'\n\t}\n};\nvar operationsModel = modelConstructor(operationSchema);\n\nvar add = {\n    name: 'add',\n    numArgs: 2,\n    operation: function(a, b) {\n        return a + b;\n    }\n};\nvar subtract = {\n    name: 'subtract',\n    numArgs: 2,\n    operation: function(a, b) {\n        return a - b;\n    }\n};\nvar mulitply = {\n    name: 'multiply',\n    numArgs: 2,\n    operation: function(a, b) {\n        return a * b;\n    }\n};\nvar divide = {\n    name: 'divide',\n    numArgs: 2,\n    operation: function(a, b) {\n        return a / b;\n    }\n};\noperationsModel.add(add, ()=>{});\noperationsModel.add(subtract, ()=>{});\noperationsModel.add(mulitply, ()=>{});\noperationsModel.add(divide, ()=>{});\n\n\nvar vw = new View('yo there ');\nvar cn = new Controller(operationsModel, vw)\n\n\n\n"
+  ]
+}

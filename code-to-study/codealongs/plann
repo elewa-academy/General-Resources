@@ -1,0 +1,263 @@
+calc steps
+	1. george's steps
+	2. 
+
+
+explicitly pair them with projects
+	frontend
+		projects
+			a. fe muscles - pages
+			b. logic vs framework - cleancalc
+			c. mvc repos - pjs
+			d. app design objects - tictactoes
+			e. mega model
+			f. midterm
+			g. collaboration
+			h. building & apis
+			i. portfolio facelift - react 
+		code alongs
+			1. js exercises
+				learn environment + tools
+				exercises with good practices
+			2. consolidate js 30
+				simplify portfolio
+				all js files required into a bootstrap
+			3. user centered development
+				tictactoes
+				battleship
+				flight simulator
+				whatever they choose
+			4. logic vs framework
+				cleancalc together
+				another thing?
+				google maps api object your location on portfolio
+				soundcloud object in portfolio
+			5. bulding repos & mvc
+				tictactoes from curriculum sample
+				come prepared with all 10 steps set up
+				copy them into separate folders
+				build them into a repo
+				mvc refactor pjs 10
+				add to repo as demo
+			6. handling larger projects
+				reading codebase and repos
+				calc mvc-lh
+			7. inheritance
+				inheritance lesson and exercises
+				build a model factory that takes schemas
+				refactor it into the todos
+			8. async refactor
+				async lecture and exercises
+				build async model factory
+				refactor todo to use this
+			9. collaboration guided
+				provide user stories and specs
+				together we figure out the deployment schedule
+				then they split in teams and do it
+			10. collaboration unguided
+				start with nothing
+				pick a problem
+				together narrow down to a solution
+				design user stories
+				order user stories
+				split into groups and go
+			11 components, apis, building
+				work through be-youtube
+				document, deconstruct, reconstruct portfolio component
+		pairs
+			1. fundamentals
+				- 3 days
+				projects
+					a. fe muscles - pages
+				code alongs
+					1. js exercises
+					2. consolidate js 30
+					3. user centered development
+			2. logic vs framework
+				- 1
+				projects
+					b. cleancalc
+				code alongs
+					4. logic vs framework
+			3. sep concerns, mvc, repos
+				- 1
+				projects
+					c. pjs
+				code alongs
+					5. building repos
+			4. app structure, objects, biggers
+				- 1
+				projects
+					d. tictactoes
+				code alongs
+					6. handling larger projects
+			5. models & js deeper
+				- 2
+				projects
+					e. models inheritance
+					f. async refactor
+				code alongs
+					7. inheritance
+					8. async refactor
+			6. collaboration
+				- 2
+				projects
+					g. collaboration
+				code alongs
+					9. collab guided
+					10. collab unguided
+			7. frontend tools
+				- 2
+				projects
+					h. building & apis - be youtube
+					i. portfolio facelift - react
+				code alongs
+					11 components, apis, building
+
+
+
+
+use these to teach processes
+	notional machine
+	reading/navigating code
+	runtime vs src code
+	problem to coding domain
+		paradigms
+		architecture
+		releases
+	front-back user centered
+	other novice challenges? 
+		find that paper
+	working from specs
+	building repos
+	study habits
+	rmc
+		read the code
+		write user stories
+		add a story or two
+		refactor
+		specs
+		replicate
+	no need to do these from scratch?
+	problem understanding
+	collaboration
+	worked-out-examples paper
+	types
+		refactors
+		from scratch
+		document
+		debug
+		expand
+
+code-alongs
+	frontend
+		consolidate js 30's
+			make a home page that links to them all
+			put a navbar on top of it all
+			put it all in a repo
+			give it a box
+		simple js exercises
+			- 2 days?
+			"computational thinking"
+			english 2 js
+			specs
+			notional machine / debugging
+				- tools and techniques that live in the wild
+				demo-assessment
+				debugger
+					- for stepping forward and backwards
+					http://blog.watchandcode.com/2016/02/16/debugging-javascript-for-beginners/
+					* https://simpleprogrammer.com/effective-debugging/
+					* http://blog.codeunion.io/2014/09/03/teaching-novices-how-to-debug-code/
+				javascript sandbox site
+		----
+		user-centered development
+			- reverse engineering sites with api's
+			- nothing fancy, fast and many
+			objective: user stories, wireframes, front-back
+			ideas
+				make a true google mask
+				some user stories that require js/jquery
+					can slide through photos, can expand, can navigate
+		logic vs framework
+		pjs tdl repo
+			- building a good repo
+			1. have them follow pjs, sure to save each step in a fresh folder
+			2. branch, ctr-c ctr-v, merge, version tag, readme, ...
+			3. demo, final readme, tests for last version
+		battleship
+			- 2-3 days
+			- at each step add it to a growing complete repo
+				each on a branch, merged into master with v. tags, final version is demo'd
+			1. user stories and html
+			2. add stories 1 at a time in front-back as pure functions
+				one story is building board
+			3. refactor into mvc objects
+			4. inject into app object
+		speced collaboration
+			- given specs and user stories (specs for html) in order
+			1. divide between them
+			2. code their bits
+			3. reassemble
+			4. refactor to take callbacks
+		of their choice
+			0. choose an enormous problem and determine an app
+				by us, in code, in two days
+			1. user stories
+			2. feature deployment scheduel
+			3. specs
+			4. divide and conquer
+			5. hella win
+			6. refactor app to take promises
+		----
+		superize portfolios w/ ghapi
+			- build environment
+			- async frontend apps
+			- es fancy
+			- build a vjs/jquery "component" for projects that is populated on load
+				takes array of repos you want to feature, map
+			https://developer.github.com/v3/guides/getting-started/
+			https://developer.github.com/v3/
+			user can
+				search all your repos
+				view your activity
+				view your stars/watches
+				per box
+					fork
+					view topics / tags
+					contributors
+					search code
+			next step - react.  if you want
+				you now get components, map, fap, building, ...
+
+
+	fullstack - later
+
+
+
+
+some things to do
+	https://github.com/Turfie/Elium-exercises
+	todo together
+	https://github.com/GeorgeFourikis/Node-Express-Step-by-Step
+	https://github.com/GeorgeFourikis/BasicWebPage
+	https://github.com/GeorgeFourikis/JSExercises
+	https://github.com/GeorgeFourikis/NodeExamples
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

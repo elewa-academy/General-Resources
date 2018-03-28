@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacts app</title>
+</head>
+<body>
+	<a href="/add"><button>Add a contact</button></a>
+	<h1>Contacts</h1>
+	<% database.forEach( contact => { %>
+		<ul>
+			<li>
+				<p><%= contact.name %></p>
+				<p><%= contact.phone %></p>
+				<p><%= contact.email %></p>
+			</li>
+			<a href="/view/<%= contact.id %>"><button>view contact</button</a>
+		</ul>
+	<% }) %>	
+</body>
+</html>

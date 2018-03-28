@@ -1,0 +1,31 @@
+<table id='daBoard'>
+	<% for (var i = 0; i < 3; i++) { %>
+	    <tr>
+	    <% for (var j = 0; j < 3; j++) { %>  
+	    	<td><%= inserter %></td>
+   		<% } %>
+	    </tr>    
+   	<% } %>
+</table>
+<br>
+<!-- or -->
+<table id='daBoard'>
+	<% for (var i = 0; i < 3; i++) { %>
+	    <tr>
+	    <% for (var j = 0; j < 3; j++) { %>  
+	    	<td>*</td>
+   		<% } %>
+	    </tr>    
+   	<% } %>
+</table>
+<br>
+<!-- or -->
+<table id='daBoard'><% for (var i = 0; i < 3; i++) { %>
+    <tr>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>    
+   <% } %>
+</table>
+<link rel="stylesheet" type="text/css" href="./table.css">

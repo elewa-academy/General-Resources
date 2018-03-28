@@ -1,0 +1,28 @@
+this'll be your views
+
+	index.ejs
+		show all posts 
+		be warm and welcoming
+
+	readPost.ejs
+		display that post
+		display it's comments only
+		create new comment button
+
+	createPost.ejs
+		yup
+
+	deletePost.ejs
+		yup
+
+	updatePost.ejs
+		yup
+
+	createComment.ejs
+		yup
+
+	deleteComment.ejs
+		yup
+
+	updateComment.ejs
+		yup

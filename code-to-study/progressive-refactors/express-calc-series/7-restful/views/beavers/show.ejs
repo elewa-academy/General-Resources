@@ -1,0 +1,11 @@
+<h2>Here is more information about <%= data.fullName %> </h2>
+<div>Name: <%=data.fullName%> </div>
+<div>Email: <%=data.email%> </div>
+<div>Address: <%=data.address%> </div>
+
+<form action="/beavers/edit/<%=data._id%>" method="GET">
+    <button type="submit" id="Edit">Edit</button>
+</form>
+<form action="/beavers/delete/<%=data._id%>" method="POST">
+    <button type="submit" id="detele">Delete</button>
+</form>

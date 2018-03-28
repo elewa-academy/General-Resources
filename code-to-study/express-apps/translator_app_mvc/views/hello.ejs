@@ -1,0 +1,39 @@
+<link rel="stylesheet" type="text/css" href="/public/style.css">
+<h3>Add new sentence:</h3>
+        <form action = "/sentence" method="POST">
+            New phrase: <input type="text" name="sentence">
+            <input type="submit" value="Add sentence">
+        </form>
+<h3>Your translations:</h3>
+<!-- with IN we'll get index keys, with OF we'll get values -->
+<ul><% for (var index in output){ %> <!-- sentences list -->
+    <%# console.log("=>", index, "\n ", output[index], "\n output[index].trObj: ", output[index].trObj.length , output[index].trObj ) %>
+    <li><%= output[index].phrase %>
+        <form action = "/sentence/<%= output[index].phrase %>/delete" method="post" >
+            <input type="submit" value ="Delete">
+        </form>
+        
+        <form action = "/sentence/<%= output[index].phrase %>/update" method="get">
+            <input type="submit" value ="Update">
+        </form>
+        <form action = "/sentence/<%= output[index].phrase %>" method="get">
+            <input type="submit" value ="Add translation">
+        </form>
+
+            <ul>
+                <% var trans = output[index].trObj %>
+                <% for (var key of trans) { %>                    
+                    <li><%= key.lang %>: <%= key.tr %>
+                        <form action = "/sentence/<%= output[index].phrase %>/delete/<%= key.lang %>" method="post">
+                            <input type="submit" value ="Delete">
+                        </form>
+                        <form action = "/sentence/<%= output[index].phrase %>/update/<%= key.lang %>" method="get">
+                            <input type="submit" value ="Update">
+                        </form>
+                    </li>
+                <% } %>
+            </ul>
+
+    </li>
+    <%}%>
+<ul>

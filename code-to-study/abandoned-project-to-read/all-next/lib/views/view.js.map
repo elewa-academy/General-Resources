@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "sources": [
+    "view.js"
+  ],
+  "names": [
+    "View",
+    "template",
+    "value",
+    "console",
+    "log",
+    "module",
+    "exports"
+  ],
+  "mappings": ";;;;;;IAAMA,I;AACJ,gBAAYC,QAAZ,EAAsB;AAAA;;AACpB,SAAKA,QAAL,GAAgBA,QAAhB;AACD;;;;2BAEMC,K,EAAO;AACZC,cAAQC,GAAR,CAAYF,KAAZ;AACD;;;;;;AAGHG,OAAOC,OAAP,GAAiBN,IAAjB",
+  "file": "view.js",
+  "sourceRoot": "../../src/views",
+  "sourcesContent": [
+    "class View {\n  constructor(template) {\n    this.template = template;\n  }\n\n  render(value) {\n    console.log(value);\n  }\n}\n\nmodule.exports = View;\n"
+  ]
+}

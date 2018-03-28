@@ -1,0 +1,18 @@
+<%- include header %>
+    <h1>Add Student</h1>
+    <form method="POST" action="/students/add">
+        <% if (message) { %>
+            <p><%= message %></p>
+        <% } %>
+        <label for="name">Name: </label>
+        <input type="text" name="name" value="" autofocus="autofocus">
+        <label for="age">Age: </label>
+        <input type="number" name="age" value="">
+        <label for="sex">Sex: </label>
+        <input type="text" name="sex" value="">
+        <label for="country">Country: </label>
+        <input type="text" name="country" value="">
+        <button type="submit">Add</button>
+    </form>
+    <a href="/">Back</a>
+<%- include footer %>

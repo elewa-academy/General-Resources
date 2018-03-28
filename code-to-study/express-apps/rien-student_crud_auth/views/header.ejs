@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Student Crud</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+    <nav>
+        <ul>
+            <% if (currentUser) { %>
+                <li><a href="/auth/logout">Logout</a></li>
+            <% } else { %>
+                <li><a href="/auth/signup">Signup</a></li>
+                <li><a href="/auth/login">Login</a></li>
+            <% } %>
+            
+        </ul>
+    </nav>
+        <div class="container">
+        <%- messages("messages", locals) %>
+        

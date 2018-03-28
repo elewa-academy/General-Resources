@@ -1,0 +1,15 @@
+an api-like local_module, configured with schema
+	uses lodash
+	uses promises
+
+axios calls
+
+class-based front-end app
+	babeled
+
+architecture
+	move
+	product/config
+
+ENV
+

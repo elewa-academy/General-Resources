@@ -1,0 +1,22 @@
+{
+  "name": "translatorappmvc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "engines": {
+    "node": "6.4.0"
+  },
+  "author": "gk3000",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}

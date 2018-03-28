@@ -1,0 +1,64 @@
+body {
+  background-color: #ccc;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.thead {
+  background-color: black;
+  color: white;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  display: block;
+  width: 40%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(4, 0, 255, 0.8);
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+.deleteButton {
+  background-color: red;
+}
+
+form {
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+}
+
+input {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+}

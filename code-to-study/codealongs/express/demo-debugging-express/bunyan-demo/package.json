@@ -1,0 +1,18 @@
+{
+  "name": "bunyan-demo",
+  "version": "1.0.0",
+  "description": "Simple logging example with console.log",
+  "author": "Tony Pujals (http://twitter.com/subfuzion)",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "bunyan": "^1.4.0",
+    "express": "^4.13.3",
+    "mongodb": "^1.4.39",
+    "morgan": "^1.6.1",
+    "underscore": "^1.8.3"
+  }
+}
