@@ -1,4 +1,4 @@
-# SPECIFICATIONS
+# CODE SPECIFICATIONS
 Writing and reading specifications (also called documentation, or API's) is one of the most important skills in software development.  Below is a short example-based guide to reading and writing specs using 3 snippets of code: 
 * A pure function
 * An object literal w/o methods
