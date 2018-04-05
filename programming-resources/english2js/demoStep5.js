@@ -1,12 +1,12 @@
 // 
 // 5) Create a skeletal function filled with your short senteces where the logic would go:
 
-var isItPalindrome = function(stringInput) {
+function isItPalindrome(stringInput) {
+	let returner = true
 	// is a word
 	if (/* stringInput is only letters */) {
-		var palindromeStatus;
 		/* is stringInput a palindrome? */
-		return palindromeStatus;
+		return returner;
 	} 
 	// isn't a word
 	else {
