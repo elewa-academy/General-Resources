@@ -26,11 +26,11 @@ Each classification calls for a differently structured conditional check:
 1. Mutally Exclusive  -  'if'/'else'/'else if' information:
 ```
 if (you never existed) {
-never mind
+	never mind
 } else if (you're dead) {
-hold funeral
+	hold funeral
 } else {
-invite to dinner
+	invite to dinner
 };
 ```
 2. Logically Dependant  -  nested if statements:
