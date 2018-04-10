@@ -24,7 +24,7 @@ The 3 relationships to consider:
 
 Each classification calls for a differently structured conditional check:
 1. Mutally Exclusive  -  'if'/'else'/'else if' information:
-    ```javascript
+    ```js
     if (you never existed) {
     	never mind
     } else if (you're dead) {
@@ -34,7 +34,7 @@ Each classification calls for a differently structured conditional check:
     };
     ```
 2. Logically Dependant  -  nested if statements:
-	```javascript
+	```js
 	if (the ground is wet) {
 		if (it's raining) {
 			bring umbrella
@@ -46,7 +46,7 @@ Each classification calls for a differently structured conditional check:
 	};
 	```
 3. Logically Independant  -  sequential if statements
-	```javascript
+	```js
     if (you woke up) {
 		all good
 	} else {
