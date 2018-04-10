@@ -24,40 +24,40 @@ The 3 relationships to consider:
 
 Each classification calls for a differently structured conditional check:
 1. Mutally Exclusive  -  'if'/'else'/'else if' information:
-    ```js
-    if (you never existed) {
-    	never mind
-    } else if (you're dead) {
-    	hold funeral
-    } else {
-    	invite to dinner
-    };
-    ```
+```
+if (you never existed) {
+never mind
+} else if (you're dead) {
+hold funeral
+} else {
+invite to dinner
+};
+```
 2. Logically Dependant  -  nested if statements:
-	```js
-	if (the ground is wet) {
-		if (it's raining) {
-			bring umbrella
-		} else {
-			turn off sprinkler
-		};
+```
+if (the ground is wet) {
+	if (it's raining) {
+		bring umbrella
 	} else {
-		lay down in grass
+		turn off sprinkler
 	};
-	```
+} else {
+	lay down in grass
+};
+```
 3. Logically Independant  -  sequential if statements
-	```js
-    if (you woke up) {
-		all good
-	} else {
-		call your phone
-	};
-	if (i'm dead) {
-		hold funeral
-	} else {
-		be disappointed
-	};
-	```  
+```
+if (you woke up) {
+	all good
+} else {
+	call your phone
+};
+if (i'm dead) {
+	hold funeral
+} else {
+	be disappointed
+};
+```  
 	  
 ___  
 ### Resources  
