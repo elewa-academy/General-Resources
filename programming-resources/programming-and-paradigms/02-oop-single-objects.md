@@ -10,7 +10,7 @@ ___
 
 OOP is a great first paradigm after the second-nature Procedural Programming. It's the closest to what we have experience with in our regular lives, but still teaches powerful organizational techniques specific to programming.  From life you're used to dealing with self-contained items, nearly everything you ever interact with is a self-contained item.  So why not build our programs from self-contained items?  
 
-On top of it's intuitive and practical appeal, OOP is well supported by JavaScript making it an even better starting point for us.  The language is designed so it's syntax and behind-the-scenes workings encourage object oriented thoughts.
+At first it may sound intuitive to structure your programs with objects, but this is not always the case.  After the basic examples (cars, people) OOP becomes abstract very quickly.  Effective OOP modeling requires a strong grasp of application dynamics, separation of concerns, and absraction.  This is one of the main sticking points in a beginner programmer's learning path. Don't despair!
 
 With some motivation, let's now ask ...
 ___
