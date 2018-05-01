@@ -38,13 +38,18 @@ Each shape represents an object in your program.  The arrows show which objects 
 
 This is because your app is __event driven__.  It sits idle until the user prompts it to change.  After a user triggers an event, tha event is set in motion, triggering a series function calls ending in a _state change_ (new data in memory) --> 
 1. The handler recieves and parses the user's action, passing cleaned input values to the controller object.
-  * Object of methods
 2. The controller retrieves the application state from the model. 
-  * Object with methods (1 per user story), & properties ()
 3. Passing the state and user input as arguments, the controller asks the logic to decide what changes are necessary.  The logic returns the new application state.
 4. The controller saves the new state to the model.
 5. The controller calls the view with whatever data is needed to redraw the UI.
 
+
+Component Details:
+* Model: Object with methods & properties to store and protect data
+* View: Object with methods for drawing to the UI
+* Controller: Object with methods for use cases & properties for Model, Logic, View
+* Logic: Object with pure function methods
+* Handler: Object with event-driven UI listeners, calls Controller
 
 
 ![](./mvc-lh.png)
