@@ -1,0 +1,19 @@
+- 1 file, a function that uses another function
+
+- 1 file, a function that does something then uses the f'
+
+- 1 file, takes a few args, does something, calls other func 
+
+- 1 file, takes a few args, does something, calls other func with results
+
+- 1 file, takes a few args, one goes to it the other to HOF
+
+- 1 file, takes a few, does a thing, calls other differently depending, sends error message
+
+1 file, this is callbacks and this is the nodedev community callback convention
+
+2 files, now what if the other is in a different file
+
+2 files, and what if all you have of the other is it's docs
+
+2 files, module side uses promise

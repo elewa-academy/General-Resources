@@ -1,0 +1,19 @@
+higherOrder:  function
+	args: 3
+		arg1, arg2: numbers
+			- you do math with them
+		callback: function
+			args: 2
+				err: false or a string
+				argument: a number or undefined
+			return: we don't know we don't care
+			behavior:  we don't know we don't care
+	return: undefined - the result is handled by a callback
+	behavior: to do math if both args are numbers, and send an informative error message otherwise
+
+callBack: function
+	args: 2
+		err: false if everything went well. a string otherwise.
+		argument: number if everthing went well. otherwise undefined.
+	return: undefined
+	behavior:  if err isn't false, console log the error. else do something with argument

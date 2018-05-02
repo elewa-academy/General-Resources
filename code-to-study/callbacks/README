@@ -1,0 +1,22 @@
+dealing with callbacks is a 2-faced endeavor.  On one side are functions written to handle callbacks, on the other side is using these functions
+
+functions which execute callbacks:
+	a normal function
+	with an extra argument which is a function
+	in place of a return statement, they execute the callback function
+
+using functions which execute callbacks:
+	1) decide the two things you want to happen and in what order
+	2) the first one will be the function that takes callbacks
+	3) the second will be the function passed into the callback
+
+why callbacks? to guarentee the order of things happening.
+you've heard node is asynchronous:
+	lines of code are initiated in order
+	but executed at their leisure
+so: 
+	console.log the result after doing the math
+	rerender home page AFTER new data is added  
+  
+[a good article](http://blog.gvm-it.eu/post/22040726249/callback-conventions-in-nodejs-how-and-why)  
+	
