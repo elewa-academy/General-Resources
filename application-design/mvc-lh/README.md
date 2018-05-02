@@ -44,6 +44,13 @@ This is because your app is __event driven__.  It sits idle until the user promp
 5. The controller calls the view with whatever data is needed to redraw the UI.
 
 
+Component Details:
+* Model: Object with methods & properties to store and protect data
+* View: Object with methods for drawing to the UI
+* Controller: Object with methods for use cases & properties for Model, Logic, View
+* Logic: Object with pure function methods
+* Handler: Object with event-driven UI listeners, calls Controller
+
 
 ![](./mvc-lh.png)
 

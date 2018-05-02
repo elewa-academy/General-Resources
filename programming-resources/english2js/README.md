@@ -2,8 +2,7 @@
 When learning to program the first barrier you reach is the language itself: 
 1. syntax, data types, operators, scope, context, ... 
 
-Very quickly afterwards you reach a much more substantial barrier, one that will always be there: 
-2.  going from a blank page and a challenge to finished code.
+Very quickly afterwards you reach a much more substantial barrier, one that will always be there:  going from a blank page and a challenge, to finished code.
 
 This second problem is much more difficult. It requires creative AND logical thinking, a toolkit of remembered solutions, but most importantly it requires a good mindset and some helpful habits.  This lesson is inteded to get you started on the path to good habits and a helpful mindset.
 
