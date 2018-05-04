@@ -16,7 +16,8 @@ And when you look up the [documentation for '.splice'](https://developer.mozilla
 
 The short answer is that 'Array.prototype' is the ancestor of all arrays. All objects have a properyt called '\_\_proto\_\_' that sets that object's ancestor. Because the '\_\_proto\_\_' of all arrays is 'Array.prototype', any methods or properties attached to 'Array.prototype' can be called by any array.  You can _overwrite_ the properties/methods of an object's ancestor by attaching a property/method of the same name directly to the child object.  
 
-Pictures are helpful:
+Pictures are helpful:  
+
 ![](https://cdn-images-1.medium.com/max/1200/1*S9Bi34EoJeYcpxPnH1IycQ.jpeg)
 
 In JS objects are the players, not the game.   The game is objects/prototypes, functions and asynchronicity.  While there are language features that _abstract away_ prototypical inheritance (constructor funcitons, es6 classes), but under the hood there are still just objects pointing at other objects.  For this reason we will be covering pure prototype manipulation.  Hopefully by the end of this long lesson you will not only be able to understand how JS language features are using inheritance but will be able to come up with your own solutions.
