@@ -77,9 +77,9 @@ See how this architecture makes your life easy, you only have to change the L an
 
 |   |   __M__	|  __V__   	| __C__  	|   __L__	|  __H__ 	|   
 |:---:  |:---:	|:---:	|:---:	|:---:	|:---:	|
-|   Termianl   |    js 	|   console.log	|   js	|   js	|   ternimal args	|
+|   Terminal   |    js 	|   console.log	|   js	|   js	|   process.argv	|
 |   Browser    |  js 	|   DOM stuff	|   js	|   js	|   events	|
-|   Node webapp    |   js	|   EJS	|   js	|   js	|   Express	|
+|   Node webapp    |   js	|   res.send	|   js	|   js	|   Express Routes	|
 
 [TOP](#table-of-contents)
 ___
