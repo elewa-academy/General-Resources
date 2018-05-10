@@ -85,7 +85,7 @@ See how this architecture makes your life easy, you only have to change the L an
 ___
 ### An Example
 
-
+[Code to Study](https://github.com/elewa-academy/General-Resources/tree/master/code-to-study/sync-vs-async-code)
 
 [TOP](#table-of-contents)  
 ___  
