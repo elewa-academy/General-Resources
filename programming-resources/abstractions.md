@@ -5,8 +5,10 @@
 [Resources](#resources)  
 
 ___
+
 ### Lead by example
 These four examples are wrapping the same functionality in more and more layers of abstraction:
+
 0. A little script that takes 4 command line args and logs them.  
     ```js
     var cli_args = process.argv.slice(2);
@@ -14,7 +16,7 @@ These four examples are wrapping the same functionality in more and more layers 
     console.log(cli_args[1]);
     console.log(cli_args[2]);
     console.log(cli_args[3]);
-    ```
+    ```  
 1. Wrap all those in a for loop.
     ```js
     var cli_args = process.argv.slice(2);
