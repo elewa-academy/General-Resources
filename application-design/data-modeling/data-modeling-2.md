@@ -21,7 +21,7 @@ From a data modeling point of view there are only 3 numbers - 0, 1, and 'many'. 
 * One to Many,  or Many to One:
     * ![](./data-relations-png/m-1.png)
 * Many to Many:
-    * ![](./data-relations-pngi/m-m.png)
+    * ![](./data-relations-png/m-m.png)
 
 That's about all you need to know to get started.  
 ___
