@@ -14,16 +14,16 @@ Data relationships and data types can be classified by their degree of interconn
     * Each individual can be connected to multiple other individuals. 
      
 From a data modeling point of view there are only 3 numbers - 0, 1, and 'many'.  A data relation is between two units of data, the relationship types are the possible ways of combining 0, 1 and 'many':
-* Zero to Zero:
-    * ![](../diagrams/data-relations/0-0.png)
-* One to One:
-    * ![](../diagrams/data-relations/1-1.png)
-* One to Many,  or Many to One:
-    * ![](../diagrams/data-relations/m-1.png)
-* Many to Many:
-    * ![](../diagrams/data-relations/m-m.png)
+* Zero to Zero:  
+  > ![](./data-relations-png/0-0.png)
+* One to One:  
+  > ![](./data-relations-png/1-1.png)
+* One to Many,  or Many to One:  
+  > ![](./data-relations-png/m-1.png)
+* Many to Many:  
+  > ![](./data-relations-png/m-m.png)
 
-That's about all you need to know to get started.  
+That's about all you need to know to get started, making this work is a whole nother issue.
 ___
 
 ### Resources
