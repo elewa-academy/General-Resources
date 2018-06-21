@@ -1,5 +1,0 @@
-Any object passed into our schematizer can be different from the schema:
-
-	1) one or more of the required properties is missing
-	2) one or more of the required properties is of the wrong type
-	3) there are properties in the object that are not in the schema
